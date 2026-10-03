@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Qutub Minar, India Gate and Humayun's Tomb">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060F23"/><stop offset="1" stop-color="#355A86"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFBF6"/><stop offset="1" stop-color="#DCCDB4"/>
+    </linearGradient>
+    <pattern id="jali" width="54" height="54" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#E6A338" stroke-opacity=".13" stroke-width="1">
+        <path d="M27 0 54 27 27 54 0 27Z"/><path d="M27 13 41 27 27 41 13 27Z"/>
+      </g>
+    </pattern>
+    <clipPath id="pool"><rect x="0" y="470" width="800" height="130"/></clipPath>
+    <radialGradient id="glow"><stop offset="0" stop-color="#E6A338" stop-opacity=".55"/><stop offset="1" stop-color="#E6A338" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="400" cy="260" r="170" fill="url(#glow)"/>
+  <circle cx="400" cy="260" r="54" fill="#E6A338" fill-opacity=".9"/>
+  <rect width="800" height="600" fill="url(#jali)"/>
+  
+  <rect x="0" y="470" width="800" height="130" fill="#0B1B3C" fill-opacity="0.85"/>
+  
+  <g color="#F6EFE2" fill="url(#stone)" stroke="none"><path d="M122 470 L138 180 L174 180 L190 470Z"/><rect x="119.64" y="391.4" width="72.72" height="9" rx="2"/><rect x="115.64" y="387.4" width="80.72" height="5" rx="2" opacity=".85"/><rect x="121.95" y="330.5" width="68.1" height="9" rx="2"/><rect x="117.95" y="326.5" width="76.1" height="5" rx="2" opacity=".85"/><rect x="124.03999999999999" y="275.4" width="63.92" height="9" rx="2"/><rect x="120.03999999999999" y="271.4" width="71.92" height="5" rx="2" opacity=".85"/><rect x="125.80000000000001" y="229.0" width="60.4" height="9" rx="2"/><rect x="121.80000000000001" y="225.0" width="68.4" height="5" rx="2" opacity=".85"/><path d="M139.0 180 C137.64 168.24 144.1 157.6 156 152 C167.9 157.6 174.36 168.24 173.0 180 Z"/><g fill="currentColor"><path d="M156 136 L156 152" stroke="currentColor" stroke-width="3"/><circle cx="156" cy="130" r="5"/><path d="M156 118 l4 7 -4 7 -4 -7Z"/></g><path d="M300 470 V280 h170 V470 h-42 V320 h-86 V470Z"/><rect x="292" y="258" width="186" height="24" rx="3"/><rect x="330" y="234" width="110" height="24" rx="3"/><rect x="548" y="374" width="190" height="96" rx="3"/><path d="M614 470 L614 427.1 C614 402.92 629.4 392 642.0 392 C654.6 392 670 402.92 670 427.1 L670 470 Z" fill="#0B1B3C" fill-opacity=".65"/><rect x="608" y="352" width="70" height="24" rx="3"/><path d="M597.0 354 C593.3199999999999 317.88 610.8 285.2 643 268 C675.2 285.2 692.6800000000001 317.88 689.0 354 Z"/><g fill="currentColor"><path d="M643 244 L643 268" stroke="currentColor" stroke-width="3"/><circle cx="643" cy="238" r="5"/><path d="M643 226 l4 7 -4 7 -4 -7Z"/></g><rect x="542.0" y="370" width="48" height="5" rx="1"/><rect x="548.0" y="348" width="4" height="26"/><rect x="557.3333333333334" y="348" width="4" height="26"/><rect x="570.6666666666666" y="348" width="4" height="26"/><rect x="580.0" y="348" width="4" height="26"/><rect x="543.0" y="342" width="46" height="6" rx="2"/><path d="M550.4 342 C549.152 331.584 555.08 322.15999999999997 566 317.2 C576.92 322.15999999999997 582.848 331.584 581.6 342 Z"/><path d="M566 303.2 L566 317.2" stroke="currentColor" stroke-width="3"/><circle cx="566" cy="297.2" r="5"/><path d="M566 285.2 l4 7 -4 7 -4 -7Z"/><rect x="696.0" y="370" width="48" height="5" rx="1"/><rect x="702.0" y="348" width="4" height="26"/><rect x="711.3333333333334" y="348" width="4" height="26"/><rect x="724.6666666666666" y="348" width="4" height="26"/><rect x="734.0" y="348" width="4" height="26"/><rect x="697.0" y="342" width="46" height="6" rx="2"/><path d="M704.4 342 C703.152 331.584 709.08 322.15999999999997 720 317.2 C730.92 322.15999999999997 736.848 331.584 735.6 342 Z"/><path d="M720 303.2 L720 317.2" stroke="currentColor" stroke-width="3"/><circle cx="720" cy="297.2" r="5"/><path d="M720 285.2 l4 7 -4 7 -4 -7Z"/></g>
+</svg>

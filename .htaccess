@@ -1,0 +1,108 @@
+# Tajview Holidays — Apache configuration
+# Upload this file to public_html alongside index.html.
+
+RewriteEngine On
+
+# ---- Pretty URLs -------------------------------------------------------
+# /tours/taj-mahal-day-tour-from-delhi  ->  tour.html?tour=...
+RewriteRule ^tours/([a-z0-9-]+)/?$ tour.html?tour=$1 [L,QSA]
+# /journal/best-time-to-visit-taj-mahal  ->  blog-post.html?post=...
+RewriteRule ^journal/([a-z0-9-]+)/?$ blog-post.html?post=$1 [L,QSA]
+# /about  ->  about.html  (works for every page, no .html needed)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^.]+)/?$ $1.html [L]
+
+# ---- Redirects from the old WordPress URLs -----------------------------
+Redirect 301 /taj-mahal-tour-packages/ /taj-mahal-tour-packages.html
+Redirect 301 /new-delhi-tour-packages/ /new-delhi-tour-packages.html
+Redirect 301 /same-day-tour-packages/ /same-day-tour-packages.html
+Redirect 301 /jaipur-tour-packages/ /jaipur-tour-packages.html
+Redirect 301 /golden-triangle-tour-packages/ /golden-triangle-tour-packages.html
+Redirect 301 /rajasthan-tour-packages/ /rajasthan-tour-packages.html
+Redirect 301 /agra-tours/ /agra-tours.html
+Redirect 301 /delhi-tours/ /delhi-tours.html
+Redirect 301 /jaipur-tours/ /jaipur-tours.html
+Redirect 301 /jodhpur-tours/ /jodhpur-tours.html
+Redirect 301 /udaipur-tours/ /udaipur-tours.html
+Redirect 301 /jaisalmer-tours/ /jaisalmer-tours.html
+Redirect 301 /ranthambore-tours/ /ranthambore-tours.html
+Redirect 301 /about-us/ /about.html
+Redirect 301 /contact-us/ /contact.html
+Redirect 301 /plan-my-tour/ /contact.html
+Redirect 301 /blogs-plan-my-tour/ /contact.html
+Redirect 301 /privacy-policy/ /privacy.html
+Redirect 301 /blog/ /blog.html
+Redirect 301 /car-rent/ /car-rent.html
+Redirect 301 /varanasi/ /varanasi-tours.html
+Redirect 301 /tour-packages/ /tours.html
+Redirect 301 /tour-by-city/ /tours.html
+Redirect 301 /homepage/ /index.html
+Redirect 301 /taj-mahal-day-tour-from-delhi-by-car/ /tour.html?tour=taj-mahal-day-tour-from-delhi
+Redirect 301 /taj-mahal-sunrise-tour-from-delhi-by-car/ /tour.html?tour=taj-mahal-sunrise-tour-from-delhi
+Redirect 301 /same-day-taj-mahal-tour-from-delhi-by-superfast-train/ /tour.html?tour=taj-mahal-tour-by-gatimaan-express
+Redirect 301 /taj-mahal-private-luxury-car-tour-from-delhi/ /tour.html?tour=taj-mahal-luxury-car-tour-from-delhi
+Redirect 301 /2-days-taj-mahal-overnight-tour-from-delhi/ /tour.html?tour=2-days-taj-mahal-overnight-tour
+Redirect 301 /1-day-delhi-and-1-day-agra-tour-by-car/ /tour.html?tour=delhi-and-agra-2-day-private-tour
+Redirect 301 /7-days-golden-triangle-tour-with-ranthambore/ /tour.html?tour=7-days-golden-triangle-with-ranthambore
+Redirect 301 /8-days-golden-triangle-tour-with-udaipur/ /tour.html?tour=8-days-golden-triangle-with-udaipur
+Redirect 301 /8-days-golden-triangle-tour-with-pushkar-jodhpur/ /tour.html?tour=8-days-golden-triangle-with-pushkar-jodhpur
+Redirect 301 /10-days-golden-triangle-tour-with-jodhpur-udaipur/ /tour.html?tour=10-days-golden-triangle-with-jodhpur-udaipur
+Redirect 301 /12-days-rajasthan-heritage-wildlife-tour/ /tour.html?tour=12-days-rajasthan-heritage-wildlife-tour
+Redirect 301 /13-days-classic-rajasthan-cultural-tour/ /tour.html?tour=13-days-classic-rajasthan-cultural-tour
+Redirect 301 /golden-triangle-tour-2-days/ /tour.html?tour=2-days-golden-triangle-tour
+Redirect 301 /golden-triangle-tour-3-days/ /tour.html?tour=3-days-golden-triangle-private-tour
+Redirect 301 /golden-triangle-tour-4-days/ /tour.html?tour=4-days-golden-triangle-classic-tour
+Redirect 301 /golden-triangle-tour-5-days/ /tour.html?tour=5-days-golden-triangle-discovery-tour
+Redirect 301 /golden-triangle-tour-6-days/ /tour.html?tour=6-days-golden-triangle-heritage-tour
+Redirect 301 /golden-triangle-tour-7-days/ /tour.html?tour=7-days-golden-triangle-tour
+Redirect 301 /old-new-delhi-private-guided-city-tour-8-hours/ /tour.html?tour=new-delhi-private-city-tour
+Redirect 301 /delhi-full-day-tour/ /tour.html?tour=new-delhi-private-city-tour
+Redirect 301 /half-day-delhi-city-tour-4-to-6-hours/ /tour.html?tour=half-day-delhi-city-tour
+Redirect 301 /evening-delhi-city-tour-4-hours-old-delhi/ /tour.html?tour=evening-delhi-city-tour
+Redirect 301 /delhi-temples-and-spiritual-sites-tour-8-hours/ /tour.html?tour=delhi-temples-and-spiritual-sites-tour
+Redirect 301 /old-delhi-food-tasting-tour-with-chandni-chowk-4-hours/ /tour.html?tour=old-delhi-food-tasting-tour
+Redirect 301 /2-days-old-delhi-new-delhi-city-tour-in-48-hours/ /tour.html?tour=delhi-2-days-city-tour
+Redirect 301 /jaipur-city-tour-by-car-from-delhi/ /tour.html?tour=jaipur-day-tour-from-delhi-by-car
+Redirect 301 /jaipur-city-private-day-tour-by-superfast-train/ /tour.html?tour=jaipur-day-tour-by-superfast-train
+Redirect 301 /jaipur-private-sightseeing-with-professional-guide/ /tour.html?tour=jaipur-private-sightseeing-tour
+Redirect 301 /jaipur-sightseeing-tour/ /tour.html?tour=jaipur-private-sightseeing-tour
+Redirect 301 /private-jaipur-shoppingtour/ /tour.html?tour=jaipur-shopping-tour
+Redirect 301 /jaipur-luxury-privatetour/ /tour.html?tour=jaipur-luxury-private-tour
+Redirect 301 /overnight-jaipur-tour-package/ /tour.html?tour=jaipur-luxury-private-tour
+Redirect 301 /jaipur-tour-package/ /tour.html?tour=jaipur-private-sightseeing-tour
+Redirect 301 /2-days-taj-mahal-and-jaipur-tour-by-car/ /tour.html?tour=2-days-taj-mahal-and-jaipur-tour
+Redirect 301 /taj-mahal-sunrise-tour-with-elephant-conservation-from-delhi/ /tour.html?tour=taj-mahal-sunrise-with-elephant-conservation
+Redirect 301 /taj-mahal-guide-tour/ /taj-mahal-tour-packages.html
+Redirect 301 /taj-mahal-transport-tour/ /taj-mahal-tour-packages.html
+Redirect 301 /taj-mahal-transport-guide-tour/ /taj-mahal-tour-packages.html
+Redirect 301 /taj-mahal-honeymoon-tour/ /taj-mahal-tour-packages.html
+
+# ---- Error pages -------------------------------------------------------
+ErrorDocument 404 /404.html
+
+# ---- Compression -------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# ---- Browser caching ---------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp         "access plus 1 year"
+  ExpiresByType image/svg+xml      "access plus 1 year"
+  ExpiresByType text/css           "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/html          "access plus 1 hour"
+</IfModule>
+
+# ---- Force HTTPS -------------------------------------------------------
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ---- Security headers --------------------------------------------------
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

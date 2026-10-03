@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Camel caravan near Jaisalmer">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#13295A"/><stop offset="1" stop-color="#D8923E"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFBF6"/><stop offset="1" stop-color="#DCCDB4"/>
+    </linearGradient>
+    <pattern id="jali" width="54" height="54" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#E6A338" stroke-opacity=".13" stroke-width="1">
+        <path d="M27 0 54 27 27 54 0 27Z"/><path d="M27 13 41 27 27 41 13 27Z"/>
+      </g>
+    </pattern>
+    <clipPath id="pool"><rect x="0" y="470" width="800" height="130"/></clipPath>
+    <radialGradient id="glow"><stop offset="0" stop-color="#FFE0A8" stop-opacity=".55"/><stop offset="1" stop-color="#FFE0A8" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="400" cy="300" r="170" fill="url(#glow)"/>
+  <circle cx="400" cy="300" r="54" fill="#FFE0A8" fill-opacity=".9"/>
+  <rect width="800" height="600" fill="url(#jali)"/>
+  
+  <rect x="0" y="470" width="800" height="130" fill="#0B1B3C" fill-opacity="0.85"/>
+  
+  <g color="#F6EFE2" fill="url(#stone)" stroke="none"><g opacity=".95"><rect x="470" y="324" width="250" height="106"/><path d="M474 324 h18 v-13 h-18Z"/><path d="M502 324 h18 v-13 h-18Z"/><path d="M530 324 h18 v-13 h-18Z"/><path d="M558 324 h18 v-13 h-18Z"/><path d="M586 324 h18 v-13 h-18Z"/><path d="M614 324 h18 v-13 h-18Z"/><path d="M642 324 h18 v-13 h-18Z"/><path d="M670 324 h18 v-13 h-18Z"/><path d="M698 324 h18 v-13 h-18Z"/><path d="M440 430 V342 a30 24 0 0 1 60 0 V430Z"/><path d="M700 430 V342 a30 24 0 0 1 60 0 V430Z"/><path d="M500 424 L500 403.1 C500 391.32 507.15 386 513.0 386 C518.85 386 526 391.32 526 403.1 L526 424 Z" fill="#0B1B3C" fill-opacity=".5"/><path d="M540 424 L540 403.1 C540 391.32 547.15 386 553.0 386 C558.85 386 566 391.32 566 403.1 L566 424 Z" fill="#0B1B3C" fill-opacity=".5"/><path d="M580 424 L580 403.1 C580 391.32 587.15 386 593.0 386 C598.85 386 606 391.32 606 403.1 L606 424 Z" fill="#0B1B3C" fill-opacity=".5"/><path d="M620 424 L620 403.1 C620 391.32 627.15 386 633.0 386 C638.85 386 646 391.32 646 403.1 L646 424 Z" fill="#0B1B3C" fill-opacity=".5"/><path d="M660 424 L660 403.1 C660 391.32 667.15 386 673.0 386 C678.85 386 686 391.32 686 403.1 L686 424 Z" fill="#0B1B3C" fill-opacity=".5"/><rect x="569.0" y="307" width="52" height="5" rx="1"/><rect x="575.0" y="285" width="4" height="26"/><rect x="585.6666666666666" y="285" width="4" height="26"/><rect x="600.3333333333334" y="285" width="4" height="26"/><rect x="611.0" y="285" width="4" height="26"/><rect x="570.0" y="279" width="50" height="6" rx="2"/><path d="M577.84 279 C576.4672 267.5424 582.988 257.176 595 251.72 C607.012 257.176 613.5328 267.5424 612.16 279 Z"/><path d="M595 237.72 L595 251.72" stroke="currentColor" stroke-width="3"/><circle cx="595" cy="231.72" r="5"/><path d="M595 219.72 l4 7 -4 7 -4 -7Z"/></g><path d="M0 460 q180 -70 360 -18 t440 -34 V600 H0Z" fill="#0B1B3C" fill-opacity=".30"/><path d="M0 524 q220 -86 450 -22 t350 -16 V600 H0Z" fill="#0B1B3C" fill-opacity=".48"/><g opacity=".9"><g transform="translate(112 528) scale(1.45)" fill="currentColor"><path d="M6 2 q0 -16 14 -19 q12 -21 26 -3 q18 0 20 22 l0 8 q-32 7 -60 0Z"/><path d="M62 8 q6 -6 7 -22 q1 -17 11 -24 q7 -5 11 1 l9 -3 1 7 -9 3 q-7 3 -7 11 q-1 22 -11 29Z"/><path d="M10 8 l-5 28 h6 l7 -26Z"/><path d="M26 10 l-1 26 h6 l3 -26Z"/><path d="M48 10 l2 26 h6 l-2 -26Z"/><path d="M62 8 l7 28 h6 l-7 -28Z"/></g><g transform="translate(232 540) scale(1.2)" fill="currentColor"><path d="M6 2 q0 -16 14 -19 q12 -21 26 -3 q18 0 20 22 l0 8 q-32 7 -60 0Z"/><path d="M62 8 q6 -6 7 -22 q1 -17 11 -24 q7 -5 11 1 l9 -3 1 7 -9 3 q-7 3 -7 11 q-1 22 -11 29Z"/><path d="M10 8 l-5 28 h6 l7 -26Z"/><path d="M26 10 l-1 26 h6 l3 -26Z"/><path d="M48 10 l2 26 h6 l-2 -26Z"/><path d="M62 8 l7 28 h6 l-7 -28Z"/></g><g transform="translate(326 548) scale(0.95)" fill="currentColor"><path d="M6 2 q0 -16 14 -19 q12 -21 26 -3 q18 0 20 22 l0 8 q-32 7 -60 0Z"/><path d="M62 8 q6 -6 7 -22 q1 -17 11 -24 q7 -5 11 1 l9 -3 1 7 -9 3 q-7 3 -7 11 q-1 22 -11 29Z"/><path d="M10 8 l-5 28 h6 l7 -26Z"/><path d="M26 10 l-1 26 h6 l3 -26Z"/><path d="M48 10 l2 26 h6 l-2 -26Z"/><path d="M62 8 l7 28 h6 l-7 -28Z"/></g></g></g>
+</svg>

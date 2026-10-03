@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A safari jeep below Ranthambore fort">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1B3C"/><stop offset="1" stop-color="#6E5A2E"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDFBF6"/><stop offset="1" stop-color="#DCCDB4"/>
+    </linearGradient>
+    <pattern id="jali" width="54" height="54" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#E6A338" stroke-opacity=".13" stroke-width="1">
+        <path d="M27 0 54 27 27 54 0 27Z"/><path d="M27 13 41 27 27 41 13 27Z"/>
+      </g>
+    </pattern>
+    <clipPath id="pool"><rect x="0" y="440" width="800" height="160"/></clipPath>
+    <radialGradient id="glow"><stop offset="0" stop-color="#E6A338" stop-opacity=".55"/><stop offset="1" stop-color="#E6A338" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="400" cy="270" r="170" fill="url(#glow)"/>
+  <circle cx="400" cy="270" r="54" fill="#E6A338" fill-opacity=".9"/>
+  <rect width="800" height="600" fill="url(#jali)"/>
+  
+  <rect x="0" y="440" width="800" height="160" fill="#0B1B3C" fill-opacity="0.85"/>
+  
+  <g color="#F6EFE2" fill="url(#stone)" stroke="none"><path d="M0 440 L220 270 L430 344 L640 250 L800 440Z" fill="#0B1B3C" fill-opacity=".5"/><path d="M190 290 L300 244 L470 300 L640 254" fill="none" stroke="currentColor" stroke-width="8" stroke-opacity=".7" stroke-linejoin="round"/><rect x="274.0" y="240" width="52" height="5" rx="1"/><rect x="280.0" y="218" width="4" height="26"/><rect x="290.6666666666667" y="218" width="4" height="26"/><rect x="305.3333333333333" y="218" width="4" height="26"/><rect x="316.0" y="218" width="4" height="26"/><rect x="275.0" y="212" width="50" height="6" rx="2"/><path d="M282.84 212 C281.4672 200.5424 287.988 190.176 300 184.72 C312.012 190.176 318.5328 200.5424 317.16 212 Z"/><path d="M300 170.72 L300 184.72" stroke="currentColor" stroke-width="3"/><circle cx="300" cy="164.72" r="5"/><path d="M300 152.72 l4 7 -4 7 -4 -7Z"/><g transform="translate(96 440) scale(1.0)" fill="currentColor" opacity=".9"><path d="M-3 0 v-66.0 h6 V0Z"/><path d="M0 -120 q-46 6 -50 32 q-26 10 -8 30 q40 16 116 0 q18 -20 -8 -30 q-4 -26 -50 -32Z"/></g><g transform="translate(700 440) scale(1.1)" fill="currentColor" opacity=".9"><path d="M-3 0 v-74.80000000000001 h6 V0Z"/><path d="M0 -136 q-46 6 -50 32 q-26 10 -8 30 q40 16 116 0 q18 -20 -8 -30 q-4 -26 -50 -32Z"/></g><g transform="translate(188 440) scale(0.75)" fill="currentColor" opacity=".9"><path d="M-3 0 v-50.6 h6 V0Z"/><path d="M0 -92 q-46 6 -50 32 q-26 10 -8 30 q40 16 116 0 q18 -20 -8 -30 q-4 -26 -50 -32Z"/></g><g transform="translate(300 496)" fill="currentColor"><path d="M0 0 h150 v-26 h34 l22 26 h18 v26 h-224Z"/><path d="M12 -26 h126 v-28 h-126Z" opacity=".55"/><rect x="12" y="-72" width="170" height="6" rx="3"/><path d="M12 -72 v18 M98 -72 v18 M182 -72 v18" stroke="currentColor" stroke-width="5"/><circle cx="44" cy="30" r="20"/><circle cx="178" cy="30" r="20"/><circle cx="44" cy="30" r="8" fill="#0B1B3C" fill-opacity=".5"/><circle cx="178" cy="30" r="8" fill="#0B1B3C" fill-opacity=".5"/></g></g>
+</svg>
