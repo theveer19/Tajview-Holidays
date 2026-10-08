@@ -263,7 +263,7 @@ function initDurationTabs() {
         <div><b>${esc(tour.route)}</b><span>Pickup and drop in Delhi</span></div>
       </div>
       <ol class="day-list">
-        ${tour.itinerary.map((d, i) => `<li><span class="day-no">${i + 1}</span><span>${esc(d.text)}</span></li>`).join("")}
+        ${tour.itinerary.map(d => `<li><span class="day-no">${esc(d.time.replace(/^Day /, ""))}</span><span><b>${esc(d.title)}</b><br>${esc(d.text)}</span></li>`).join("")}
       </ol>
       <a class="btn btn--gold" href="tour.html?tour=${tour.slug}">See the full itinerary</a>`;
   };
@@ -496,11 +496,14 @@ function initTourDetail() {
         </ul>
 
         <h2>Your day by day</h2>
-        ${tour.itinerary.map((d, i) => `
-          <details class="accordion"${i === 0 ? " open" : ""}>
-            <summary><span class="day-no">${i + 1}</span>${esc(d.day)}</summary>
-            <div class="acc-body">${esc(d.text)}</div>
-          </details>`).join("")}
+        <ol class="timeline">
+          ${tour.itinerary.map(d => `
+            <li class="timeline__step">
+              <span class="timeline__time">${esc(d.time)}</span>
+              <h3 class="timeline__title">${esc(d.title)}</h3>
+              <p class="timeline__text">${esc(d.text)}</p>
+            </li>`).join("")}
+        </ol>
 
         <h2>What the price covers</h2>
         <ul class="tick-list">${tour.includes.map(i => `<li>${esc(i)}</li>`).join("")}</ul>
