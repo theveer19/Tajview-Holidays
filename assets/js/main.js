@@ -82,8 +82,18 @@ function initHeader() {
       closeTimer = setTimeout(() => setMenu(item, false), 180);
     });
 
-    /* Keyboard: tabbing into the menu opens it, tabbing out closes it. */
-    item.addEventListener("focusin", () => { closeAllMenus(item); setMenu(item, true); });
+    /* Keyboard: tabbing into the menu opens it, tabbing out closes it.
+       A tap also moves focus (Android Chrome), and the click that follows would
+       toggle the menu straight back shut — so focus that comes from a pointer
+       is left to the click handler. */
+    let pointerFocus = false;
+    item.addEventListener("pointerdown", () => { pointerFocus = true; });
+    item.addEventListener("click", () => { pointerFocus = false; });
+    item.addEventListener("focusin", () => {
+      if (pointerFocus) return;
+      closeAllMenus(item);
+      setMenu(item, true);
+    });
     item.addEventListener("focusout", e => {
       if (!item.contains(e.relatedTarget)) setMenu(item, false);
     });
@@ -263,7 +273,7 @@ function initDurationTabs() {
         <div><b>${esc(tour.route)}</b><span>Pickup and drop in Delhi</span></div>
       </div>
       <ol class="day-list">
-        ${tour.itinerary.map((d, i) => `<li><span class="day-no">${i + 1}</span><span>${esc(d.text)}</span></li>`).join("")}
+        ${tour.itinerary.map(d => `<li><span class="day-no">${esc(d.time.replace(/^Day /, ""))}</span><span><b>${esc(d.title)}</b><br>${esc(d.text)}</span></li>`).join("")}
       </ol>
       <a class="btn btn--gold" href="tour.html?tour=${tour.slug}">See the full itinerary</a>`;
   };
@@ -495,12 +505,15 @@ function initTourDetail() {
           ${tour.highlights.map(h => `<li>${esc(h)}</li>`).join("")}
         </ul>
 
-        <h2>Your day by day</h2>
-        ${tour.itinerary.map((d, i) => `
-          <details class="accordion"${i === 0 ? " open" : ""}>
-            <summary><span class="day-no">${i + 1}</span>${esc(d.day)}</summary>
-            <div class="acc-body">${esc(d.text)}</div>
-          </details>`).join("")}
+        <h2>${tour.days > 1 ? "Your day by day" : "Your tour schedule"}</h2>
+        <ol class="timeline">
+          ${tour.itinerary.map(d => `
+            <li class="timeline__step">
+              <span class="timeline__time">${esc(d.time)}</span>
+              <h3 class="timeline__title">${esc(d.title)}</h3>
+              <p class="timeline__text">${esc(d.text)}</p>
+            </li>`).join("")}
+        </ol>
 
         <h2>What the price covers</h2>
         <ul class="tick-list">${tour.includes.map(i => `<li>${esc(i)}</li>`).join("")}</ul>
@@ -609,6 +622,33 @@ function initBlogPost() {
 }
 
 /* --------------------------------------------------------------- fleet -- */
+/* -------------------------------------------------------- review links -- */
+/* Home page: Google / TripAdvisor buttons, shown only when SITE has the URL */
+function initReviewLinks() {
+  const host = qs("#reviewLinks");
+  if (!host) return;
+  const links = [
+    [SITE.googleReviewUrl, "Read our Google reviews"],
+    [SITE.tripadvisorUrl, "Read us on TripAdvisor"]
+  ].filter(([url]) => url);
+  host.innerHTML = links
+    .map(([url, label]) => `<a class="btn btn--outline btn--sm" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`)
+    .join("");
+}
+
+/* ------------------------------------------------------------ payments -- */
+/* Contact page: payment methods and the deposit note, both from PAYMENT in data.js */
+function initPayments() {
+  if (typeof PAYMENT === "undefined") return;
+  const list = qs("#paymentMethods");
+  const note = qs("#paymentNote");
+  if (list) {
+    list.innerHTML = PAYMENT.methods
+      .map(([name, text]) => `<div><dt>${esc(name)}</dt><dd>${esc(text)}</dd></div>`).join("");
+  }
+  if (note) note.textContent = PAYMENT.note;
+}
+
 function initFleet() {
   const host = qs("#fleetGrid");
   if (!host) return;
@@ -756,6 +796,35 @@ function initScrollProgress() {
 }
 
 /* In-page links glide rather than jump, and land below the sticky header. */
+/* --------------------------------------------------------- smooth scroll -- */
+/* Lenis (assets/js/lenis.min.js) eases mouse-wheel and trackpad scrolling.
+   It drives the real page scroll, so sticky headers, scroll events and the
+   reveal observers keep working. Touch screens and reduced-motion users keep
+   the browser's own scrolling, and the library is not even downloaded for them. */
+let lenis = null;
+function initSmoothScroll() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+
+  const main = qs('script[src*="main.js"]');
+  const src = main ? main.src.replace(/main\.js(\?.*)?$/, "lenis.min.js") : "assets/js/lenis.min.js";
+  const script = document.createElement("script");
+  script.src = src;
+  script.async = true;
+  script.onload = () => {
+    if (typeof Lenis === "undefined") return;
+    lenis = new Lenis({
+      lerp: 0.085,            /* lower = longer, silkier glide */
+      wheelMultiplier: 0.95,
+      smoothWheel: true,
+      autoRaf: true
+    });
+    /* panels that scroll on their own keep native scrolling */
+    qsa("#primaryNav, .sub-menu, textarea, select, .review-rail").forEach(el => el.setAttribute("data-lenis-prevent", ""));
+  };
+  document.head.appendChild(script);
+}
+
 function initSmoothAnchors() {
   qsa('a[href^="#"]').forEach(a => {
     a.addEventListener("click", e => {
@@ -767,6 +836,7 @@ function initSmoothAnchors() {
       const header = qs("#siteHeader");
       const offset = (header ? header.offsetHeight : 0) + 12;
       const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      if (lenis) { lenis.scrollTo(top, { duration: 1.4 }); return; }
       window.scrollTo({
         top,
         behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
@@ -801,6 +871,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initForms();
   initScrollProgress();
   initHeroParallax();
+  initSmoothScroll();
   initSmoothAnchors();
   /* reveals last: every grid above has rendered by now */
   initReveals();

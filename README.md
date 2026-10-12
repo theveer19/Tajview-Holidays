@@ -170,46 +170,44 @@ handler in `main.js` before the WhatsApp window opens.
 
 ## Design system
 
-The palette is taken from the monument itself: Makrana marble for the page,
-the red sandstone of the great gateway and the mosque as the main contrast, and
-the three stones used in the pietra dura inlay — lapis, jade and amber — as
-accents. Nothing in it was invented; you can stand at the Taj Mahal and point at
-every colour.
+Crisp white page, deep peacock structure, saffron for the one thing that moves.
+The peacock is the Mughal court bird — the throne, the enamelwork, the blue
+pottery of Jaipur — and saffron is the colour of Indian ceremony. White marble
+holds them apart, which is also how the monument itself is built.
 
-| Token | Value | Where it comes from | Used for |
-| --- | --- | --- | --- |
-| `--marble` | `#FAF7F1` | Makrana marble | Page background |
-| `--marble-lit` | `#FFFDF9` | Marble in sun | Cards and panels |
-| `--sand` | `#F0E8DA` | Weathered marble | Alternating bands |
-| `--sand-deep` | `#DCCDB2` | Marble shadow | Borders and rules |
-| `--lapis-800` | `#8A3826` | Red sandstone gateway | Dark bands, footer, buttons |
-| `--lapis-900` | `#5A2318` | Sandstone in shadow | Headlines, deepest band |
-| `--carnelian` | `#1F3C72` | Lapis lazuli inlay | Eyebrows, booking buttons |
-| `--peacock` | `#15706A` | Jade inlay | Inclusion ticks, secondary |
-| `--marigold` | `#DFA23C` | Amber and yellow jasper inlay | Accents, arch outlines |
-| `--ink` | `#241F1A` | — | Body text |
+| Token | Value | Used for |
+| --- | --- | --- |
+| `--marble` | `#FAFAF8` | Page background |
+| `--marble-lit` | `#FFFFFF` | Cards and panels |
+| `--sand` | `#EFF3F0` | Tinted alternating bands |
+| `--sand-deep` | `#DCE4DF` | Rules and borders |
+| `--lapis-900` | `#072A26` | Footer, dark bands, headings |
+| `--lapis-800` | `#0B3B35` | Primary buttons, assurance row |
+| `--lapis-700` | `#11564E` | Links and hover states |
+| `--marigold` | `#E8A13A` | Calls to action, accents, hairlines |
+| `--carnelian` | `#B54A33` | Eyebrows, booking buttons |
+| `--peacock` | `#2E7D52` | Inclusion ticks, confirmations |
+| `--ink` | `#14201D` | Body text |
 
-The token names still say `lapis` for the sandstone values because they are
-referenced throughout the stylesheet; the values are what matter.
-
-The page carries a faint marble vein, drawn as an inline SVG and tiled — no image
-file, about 600 bytes, and it fixes to the viewport so it reads as stone rather
-than wallpaper.
+The token names still read `lapis` and `peacock` from an earlier palette; they
+are referenced throughout the stylesheet, so the values are what matter.
 
 ### Contrast
 
-Every pairing was measured against WCAG AA. The weakest is the gold-on-sandstone
-used in the arch badge at 5.22:1; the rest sit between 5.4 and 15.3. Body text on
-marble is 15.27:1.
+Every pairing on the site was measured against WCAG AA. **The lowest ratio
+anywhere is 4.82:1**, against a 4.5 requirement for body text. Body text on the
+page sits at 16:1.
 
 | Pair | Ratio |
 | --- | --- |
-| Body text on marble | 15.27 |
-| Headline sandstone on marble | 11.63 |
-| Eyebrow lapis on marble | 10.08 |
-| Marble text on sandstone band | 10.74 |
-| Caption grey on marble | 5.42 |
-| Gold on deep sandstone | 5.55 |
+| Body text on page | 16.02 |
+| Headings on page | 14.69 |
+| White on peacock button | 12.42 |
+| Cream on footer | 13.36 |
+| Deep peacock on saffron button | 7.01 |
+| Eyebrow clay on page | 5.03 |
+| Caption grey on tinted band | 4.85 |
+| Leaf tick on page | 4.82 |
 
 Built to pass the basics: responsive to 360px, visible keyboard focus,
 `prefers-reduced-motion` respected, semantic landmarks, and a print stylesheet.
