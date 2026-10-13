@@ -3,7 +3,9 @@
    Depends on data.js (SITE, TOURS, COLLECTIONS, CITIES, REVIEWS, PARTNERS)
    ========================================================================== */
 
-const money = n => SITE.currency + n.toLocaleString("en-IN");
+/* Prices are stored in rupees. money() returns a span the currency switcher can
+   re-price in place; formatMoney() turns rupees into the visitor's currency. */
+const money = n => `<span class="money" translate="no" data-inr="${n}">${formatMoney(n)}</span>`;
 const qs  = (sel, ctx = document) => ctx.querySelector(sel);
 const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 const esc = str => String(str).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -20,6 +22,147 @@ function photo(base, alt, sizes, opts) {
   const eager = opts.eager ? ' fetchpriority="high"' : ' loading="lazy"';
   return `<img src="${base}-800.webp" srcset="${base}-800.webp 800w, ${base}-1600.webp 1600w" ` +
          `sizes="${sizes}" alt="${esc(alt)}" decoding="async"${eager}>`;
+}
+
+/* ------------------------------------------- currency and language tools -- */
+const CURRENCIES = {
+  INR: "Indian rupee", USD: "US dollar", EUR: "Euro", GBP: "British pound", AUD: "Australian dollar",
+  CAD: "Canadian dollar", AED: "UAE dirham", SGD: "Singapore dollar", JPY: "Japanese yen",
+  CHF: "Swiss franc", CNY: "Chinese yuan", RUB: "Russian rouble", MYR: "Malaysian ringgit", NZD: "NZ dollar"
+};
+/* Units of each currency per 1 rupee. Used until (or if) the live rates load. */
+const FX_FALLBACK = { INR: 1, USD: 0.0113, EUR: 0.0097, GBP: 0.0085, AUD: 0.0172, CAD: 0.0157, AED: 0.0415,
+  SGD: 0.0146, JPY: 1.69, CHF: 0.0091, CNY: 0.0805, RUB: 0.92, MYR: 0.048, NZD: 0.0189 };
+const LANGUAGES = [
+  ["en", "English"], ["hi", "हिन्दी"], ["fr", "Français"], ["de", "Deutsch"], ["es", "Español"],
+  ["it", "Italiano"], ["pt", "Português"], ["nl", "Nederlands"], ["ru", "Русский"], ["ja", "日本語"],
+  ["ko", "한국어"], ["zh-CN", "中文"], ["ar", "العربية"]
+];
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* private mode */ } }
+};
+let currentCurrency = store.get("tv_currency") || "INR";
+let fxRates = FX_FALLBACK;
+try { const c = JSON.parse(store.get("tv_fx") || "null"); if (c && c.rates) fxRates = Object.assign({}, FX_FALLBACK, c.rates); } catch (e) {}
+
+function formatMoney(inr) {
+  const code = CURRENCIES[currentCurrency] ? currentCurrency : "INR";
+  if (code === "INR") return SITE.currency + Number(inr).toLocaleString("en-IN");
+  const value = inr * (fxRates[code] || FX_FALLBACK[code]);
+  const digits = value < 10 ? 2 : 0;
+  const txt = new Intl.NumberFormat("en", { style: "currency", currency: code, minimumFractionDigits: digits, maximumFractionDigits: digits }).format(value);
+  return "≈ " + txt;
+}
+function repriceAll() {
+  qsa(".money[data-inr]").forEach(el => {
+    el.textContent = formatMoney(+el.dataset.inr);
+    el.title = currentCurrency === "INR" ? "" : "Approximate, converted from " + SITE.currency + Number(el.dataset.inr).toLocaleString("en-IN") + " at today's rate. Quotes are issued in rupees.";
+  });
+}
+function loadLiveRates() {
+  try {
+    const c = JSON.parse(store.get("tv_fx") || "null");
+    if (c && Date.now() - c.t < 12 * 3600e3) return;
+  } catch (e) {}
+  fetch("https://open.er-api.com/v6/latest/INR").then(r => r.json()).then(d => {
+    if (!d || d.result !== "success" || !d.rates) return;
+    const rates = {};
+    Object.keys(CURRENCIES).forEach(k => { if (d.rates[k]) rates[k] = d.rates[k]; });
+    fxRates = Object.assign({}, FX_FALLBACK, rates);
+    store.set("tv_fx", JSON.stringify({ t: Date.now(), rates }));
+    repriceAll();
+  }).catch(() => { /* keep the fallback rates */ });
+}
+
+/* Google's website translator, driven by our own dropdown */
+function currentLang() {
+  const m = document.cookie.match(/(?:^|;\s*)googtrans=\/[^/]+\/([^;]+)/);
+  return m ? decodeURIComponent(m[1]) : "en";
+}
+function setTransCookie(lang) {
+  const host = location.hostname;
+  const exp = lang === "en" ? "; expires=Thu, 01 Jan 1970 00:00:00 GMT" : "";
+  const val = lang === "en" ? "" : "/en/" + lang;
+  document.cookie = "googtrans=" + val + "; path=/" + exp;
+  if (host && host.indexOf(".") > -1) {
+    document.cookie = "googtrans=" + val + "; path=/; domain=" + host + exp;
+    document.cookie = "googtrans=" + val + "; path=/; domain=." + host.replace(/^www\./, "") + exp;
+  }
+}
+function loadTranslator() {
+  if (window.__gtLoading) return;
+  window.__gtLoading = true;
+  const holder = document.createElement("div");
+  holder.id = "google_translate_element";
+  holder.hidden = true;
+  document.body.appendChild(holder);
+  window.googleTranslateElementInit = () => {
+    new google.translate.TranslateElement({
+      pageLanguage: "en",
+      includedLanguages: LANGUAGES.map(l => l[0]).join(","),
+      autoDisplay: false
+    }, "google_translate_element");
+  };
+  const sc = document.createElement("script");
+  sc.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+  sc.async = true;
+  document.head.appendChild(sc);
+}
+function chooseLanguage(lang) {
+  if (lang === currentLang()) return;
+  setTransCookie(lang);
+  if (lang === "en") { location.reload(); return; }
+  const combo = qs(".goog-te-combo");
+  if (combo) { combo.value = lang; combo.dispatchEvent(new Event("change")); }
+  else { loadTranslator(); setTimeout(() => { const c = qs(".goog-te-combo"); if (c) { c.value = lang; c.dispatchEvent(new Event("change")); } else location.reload(); }, 1500); }
+  syncTools();
+}
+
+function toolsMarkup(id) {
+  return `
+    <label class="site-tool" title="Language">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg>
+      <span class="sr-only">Language</span>
+      <select data-tool="lang" id="lang-${id}" translate="no">${LANGUAGES.map(([c, n]) => `<option value="${c}">${n}</option>`).join("")}</select>
+    </label>
+    <label class="site-tool" title="Currency">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/></svg>
+      <span class="sr-only">Currency</span>
+      <select data-tool="cur" id="cur-${id}" translate="no">${Object.keys(CURRENCIES).map(c => `<option value="${c}" title="${CURRENCIES[c]}">${c}</option>`).join("")}</select>
+    </label>`;
+}
+function syncTools() {
+  const lang = currentLang();
+  qsa('select[data-tool="lang"]').forEach(s => { s.value = LANGUAGES.some(l => l[0] === lang) ? lang : "en"; });
+  qsa('select[data-tool="cur"]').forEach(s => { s.value = currentCurrency; });
+}
+function initSiteTools() {
+  const cta = qs(".header-cta");
+  if (cta) {
+    const box = document.createElement("div");
+    box.className = "site-tools notranslate";
+    box.innerHTML = toolsMarkup("d");
+    cta.prepend(box);
+  }
+  const navList = qs("#primaryNav > ul");
+  if (navList) {
+    const li = document.createElement("li");
+    li.className = "site-tools site-tools--nav notranslate";
+    li.innerHTML = toolsMarkup("m");
+    navList.prepend(li);
+  }
+  qsa('select[data-tool="lang"]').forEach(s => s.addEventListener("change", () => chooseLanguage(s.value)));
+  qsa('select[data-tool="cur"]').forEach(s => s.addEventListener("change", () => {
+    currentCurrency = s.value;
+    store.set("tv_currency", currentCurrency);
+    syncTools();
+    repriceAll();
+  }));
+  syncTools();
+  if (currentLang() !== "en") loadTranslator();
+  if (currentCurrency !== "INR") loadLiveRates();
+  else setTimeout(loadLiveRates, 4000);
 }
 
 /* ---------------------------------------------------- image fallbacks -- */
@@ -144,16 +287,29 @@ function initSiteDetails() {
   qsa("[data-years-running]").forEach(el => { el.textContent = new Date().getFullYear() - SITE.since; });
 }
 
+/* Whole tour card opens the tour; links and buttons inside keep their own behaviour */
+function initCardLinks() {
+  document.addEventListener("click", e => {
+    const card = e.target.closest(".tour-card[data-href]");
+    if (!card || e.target.closest("a, button, input, select, label")) return;
+    if (String(window.getSelection && window.getSelection()).trim()) return;
+    const url = card.dataset.href;
+    if (e.ctrlKey || e.metaKey || e.button === 1) window.open(url, "_blank", "noopener");
+    else window.location.href = url;
+  });
+}
+
 /* --------------------------------------------------------- tour cards -- */
 function tourCard(tour) {
   const book = waLink(`Hello Tajview Holidays, I would like to book the ${tour.title}. Please share availability and the final quotation.`);
   return `
-    <article class="tour-card">
-      <div class="tour-card__media">
+    <article class="tour-card" data-href="tour.html?tour=${tour.slug}">
+      <a class="tour-card__media" href="tour.html?tour=${tour.slug}" aria-label="View the ${esc(tour.title)}">
         ${photo(tour.img, tour.title, "(max-width: 700px) 100vw, 360px")}
         <span class="tour-card__days">${esc(tour.durationLabel)}</span>
         <span class="tour-card__route">${esc(tour.route)}</span>
-      </div>
+        <span class="tour-card__view" aria-hidden="true">View tour</span>
+      </a>
       <div class="tour-card__body">
         <h3><a href="tour.html?tour=${tour.slug}">${esc(tour.title)}</a></h3>
         <p>${esc(tour.summary)}</p>
@@ -163,7 +319,7 @@ function tourCard(tour) {
             <span>per person, private tour</span>
           </div>
           <div class="tour-card__actions">
-            <a class="btn btn--outline btn--sm" href="tour.html?tour=${tour.slug}">Details</a>
+            <a class="btn btn--outline btn--sm" href="tour.html?tour=${tour.slug}">View tour</a>
             <a class="btn btn--rose btn--sm" href="${book}" target="_blank" rel="noopener">Book</a>
           </div>
         </div>
@@ -241,9 +397,10 @@ function renderHomeFaq() {
 function renderPartners() {
   const host = qs("#partnerTrack");
   if (!host) return;
-  const row = PARTNERS.map(p => `<li>${esc(p.name)}</li>`).join("");
-  /* Duplicated so the marquee loops without a gap */
-  host.innerHTML = `<ul>${row}${row}${row}</ul><ul aria-hidden="true">${row}${row}${row}</ul>`;
+  const card = p => `<li class="partner-card"><img src="${esc(p.logo)}" alt="${esc(p.name)}" loading="lazy" decoding="async"></li>`;
+  const row = PARTNERS.map(card).join("");
+  /* Two identical lists side by side, so the marquee loops without a gap */
+  host.innerHTML = `<ul>${row}${row}</ul><ul aria-hidden="true">${row}${row}</ul>`;
 }
 
 /* -------------------------------------------- golden triangle selector -- */
@@ -847,7 +1004,9 @@ function initSmoothAnchors() {
 
 /* --------------------------------------------------------------- boot -- */
 document.addEventListener("DOMContentLoaded", () => {
+  initCardLinks();
   initHeader();
+  initSiteTools();
   initSiteDetails();
   renderCollections();
   renderFeaturedTours();
