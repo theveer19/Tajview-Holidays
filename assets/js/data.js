@@ -86,7 +86,11 @@ const SITE = {
   /* Paste your real profile URLs here and the review buttons appear on the
      home page. Leave a line empty and that button stays hidden. */
   googleReviewUrl: "",
-  tripadvisorUrl: ""
+  tripadvisorUrl: "",
+  /* Paste these when the client has them — tools/build.js adds them to every page */
+  googleVerification: "",   // Google Search Console "HTML tag" code
+  bingVerification: "",     // Bing Webmaster Tools code
+  ga4Id: ""                 // Google Analytics 4 measurement ID, e.g. "G-XXXXXXX"
 };
 
 /* How guests can pay. Edit freely — this drives the contact page. */

@@ -62,6 +62,13 @@ pages and the top tours live in `PAGES` and `TOUR_SEO` at the top of the script.
 Old `tour.html?tour=…` and `blog-post.html?post=…` links forward themselves to
 the new pages, and `.htaccess` sends the old WordPress URLs to them with 301s.
 
+Added a new photo? Run `python tools/make-og.py` once (needs Pillow) to make its
+1200×630 JPG share image for WhatsApp and Facebook previews, then `node tools/build.js`.
+
+`SITE` in `data.js` has three empty fields — `googleVerification`, `bingVerification`
+and `ga4Id`. Paste the Search Console code, Bing code and Google Analytics ID there
+and run the build; they are added to every page automatically.
+
 ### After go-live (needed to actually rank)
 
 1. Add the site to Google Search Console and submit `sitemap.xml`.

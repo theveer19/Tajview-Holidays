@@ -86,6 +86,11 @@ const plain = s => String(s).replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1").replace(/
 const clip = (s, n) => { s = plain(s); return s.length <= n ? s : s.slice(0, s.lastIndexOf(" ", n - 1)).replace(/[,;:—–-]$/, "") + "…"; };
 const abs = p => SITE_URL + p.replace(/^\.?\//, "");
 const imgAbs = base => abs(/\.(svg|png|jpe?g|webp)$/i.test(base) ? base : base + "-1600.webp");
+/* 1200x630 JPG for link previews (WhatsApp does not show WebP) — made by tools/make-og.py */
+const ogImg = base => {
+  const jpg = "assets/img/og/" + path.basename(base) + ".jpg";
+  return fs.existsSync(path.join(ROOT, jpg)) ? abs(jpg) : imgAbs(base);
+};
 const SMALL = new Set(["a", "an", "and", "at", "by", "for", "from", "in", "of", "on", "or", "the", "to", "with", "vs"]);
 const titleCase = s => s.split(" ").map((w, i) =>
   i && SMALL.has(w.toLowerCase()) ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
@@ -94,8 +99,8 @@ const inr = n => "₹" + Number(n).toLocaleString("en-IN");
 /* ------------------------------------------------- keyword copy per page -- */
 const PAGES = {
   "index.html": {
-    title: "Agra Tour Packages & Taj Mahal Tours from Delhi | Tajview Holidays",
-    desc: "Agra-based tour operator since 2000. Same day Agra tours by car, Taj Mahal sunrise and Gatimaan Express tours, Golden Triangle, Rajasthan and wildlife packages with licensed guides and fixed prices.",
+    title: "Agra Tour Packages & Taj Mahal Tours from Delhi | Tajview",
+    desc: "Agra tour operator since 2000: same day Agra tours by car, Taj Mahal sunrise and Gatimaan tours, Golden Triangle and Rajasthan packages with licensed guides.",
     keys: "agra tour packages, taj mahal tour packages, same day agra tour by car, taj mahal tour from delhi, tour operator in agra, travel agency in agra, golden triangle tour packages"
   },
   "taj-mahal-tour-packages.html": {
@@ -120,7 +125,7 @@ const PAGES = {
   },
   "jaipur-tour-packages.html": {
     title: "Jaipur Tour Packages from Delhi | Jaipur Day Tour by Car",
-    desc: "Jaipur tours from Delhi by car or superfast train — Amber Fort, City Palace and Hawa Mahal in a day — plus private sightseeing with a guide, shopping tours and 2 day Jaipur and Taj Mahal packages.",
+    desc: "Jaipur tours from Delhi by car or superfast train: Amber Fort, City Palace and Hawa Mahal in a day, private sightseeing with a guide and 2 day packages.",
     keys: "jaipur tour packages, jaipur day tour from delhi, jaipur sightseeing tour, delhi to jaipur tour by car"
   },
   "rajasthan-tour-packages.html": {
@@ -155,22 +160,22 @@ const PAGES = {
   },
   "car-rent.html": {
     title: "Car Rental in Agra & Delhi with Driver | Taxi for Taj Mahal",
-    desc: "Hire a car with driver in Agra and Delhi — sedans, SUVs, Tempo Travellers and luxury cars for Taj Mahal day trips, Golden Triangle tours and airport transfers. Tolls and driver allowance included.",
+    desc: "Car rental with driver in Agra and Delhi: sedans, SUVs, Tempo Travellers and luxury cars for Taj Mahal trips, Golden Triangle tours and airport transfers.",
     keys: "car rental agra, taxi service in agra, delhi to agra taxi, agra to delhi cab, tempo traveller agra, car hire with driver agra"
   },
   "contact.html": {
     title: "Contact Tajview Holidays | Tour Operator & Travel Agent in Agra",
-    desc: "Plan a private Taj Mahal, Golden Triangle or Rajasthan tour with Tajview Holidays in Agra. WhatsApp +91 84395 55163, email tajviewholidays@gmail.com — replies within a few hours, 24/7 support.",
+    desc: "Contact Tajview Holidays, Agra, for private Taj Mahal, Golden Triangle and Rajasthan tours. WhatsApp +91 84395 55163 or email tajviewholidays@gmail.com.",
     keys: "travel agent in agra, tour operator agra contact, taj mahal tour booking, agra travel agency"
   },
   "about.html": {
     title: "About Tajview Holidays | Agra Tour Operator Since 2000",
-    desc: "Tajview Holidays has run private tours from Agra since 2000: licensed guides, hotels we have stayed in, fixed written prices and 24/7 WhatsApp support from a local team.",
+    desc: "Tajview Holidays has run private tours from Agra since 2000: licensed guides, hotels we know, fixed written prices and 24/7 WhatsApp support.",
     keys: "tajview holidays, agra tour operator, travel agency agra, private tour company india"
   },
   "blog.html": {
     title: "Agra & Taj Mahal Travel Blog | Tickets, Itineraries & Tips",
-    desc: "Practical guides from an Agra tour operator: Taj Mahal ticket prices and timings, same day Agra itineraries, the Gatimaan Express, Fatehpur Sikri, Mathura–Vrindavan, food and safaris.",
+    desc: "Agra travel guides: Taj Mahal ticket price and timings, same day Agra itineraries, Gatimaan Express, Fatehpur Sikri, Mathura–Vrindavan and Agra food.",
     keys: "agra travel blog, taj mahal guide, agra itinerary, taj mahal tips, golden triangle blog"
   },
   "travel-guide.html": {
@@ -206,6 +211,22 @@ const TOUR_SEO = {
     "3 days golden triangle tour, golden triangle tour 3 days, delhi agra jaipur 3 days tour"],
   "3-days-ranthambore-safari-tour": ["3 Days Ranthambore Tiger Safari Tour | Jeep Safaris",
     "ranthambore safari tour, ranthambore tour package, ranthambore tiger safari"]
+};
+
+/* Shorter search titles for long article headlines */
+const POST_SEO = {
+  "taj-mahal-ticket-price-and-timings": "Taj Mahal Ticket Price 2026 & Timings: Complete Guide",
+  "same-day-agra-tour-from-delhi": "Same Day Agra Tour from Delhi: Itinerary, Cost, Car vs Train",
+  "gatimaan-express-delhi-to-agra": "Gatimaan Express Delhi to Agra: Timings & Day Trip Plan",
+  "best-places-to-visit-in-agra": "12 Best Places to Visit in Agra (Local's List)",
+  "taj-mahal-night-viewing": "Taj Mahal Night Viewing: Full Moon Dates, Tickets, Rules",
+  "delhi-to-agra-by-car": "Delhi to Agra by Car: Distance, Time & Yamuna Expressway",
+  "fatehpur-sikri-from-agra": "Fatehpur Sikri from Agra: Tickets, Timings & What to See",
+  "mathura-vrindavan-from-agra": "Mathura Vrindavan Day Trip from Agra: Temples & Timings",
+  "what-to-eat-in-agra": "What to Eat in Agra: Petha, Bedai, Dalmoth & Mughlai Food",
+  "taj-mahal-guide-and-avoiding-touts": "Taj Mahal Guide in Agra: Hire a Licensed Guide, Avoid Touts",
+  "ranthambore-safari-guide": "Ranthambore Safari Guide: Zones, Jeep vs Canter, Booking",
+  "agra-beyond-the-taj-mahal": "Agra Beyond the Taj Mahal: 5 Places Most Visitors Skip"
 };
 
 /* ------------------------------------------------------------ JSON-LD -- */
@@ -247,14 +268,23 @@ const itemList = (tours, name) => ({
 function headBlock(o) {
   const graph = [agency(), ...(o.ld || [])].filter(Boolean);
   if (o.crumbs) graph.push(crumbs(o.crumbs));
-  const image = o.image || abs("assets/img/photos/taj-pool-1600.webp");
+  const image = o.image || ogImg("assets/img/photos/taj-pool");
+  const isJpg = /\.jpg$/.test(image);
   return [
     "<!-- seo:start — generated by tools/build.js -->",
     `<title>${esc(o.title)}</title>`,
-    `<meta name="description" content="${esc(o.desc)}">`,
+    `<meta name="description" content="${esc(clip(o.desc, 160))}">`,
     o.keys ? `<meta name="keywords" content="${esc(o.keys)}">` : "",
     `<meta name="robots" content="${o.noindex ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1"}">`,
     o.url ? `<link rel="canonical" href="${o.url}">` : "",
+    `<link rel="icon" href="favicon.ico" sizes="any">`,
+    `<link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicon-32.png">`,
+    `<link rel="apple-touch-icon" href="assets/img/icons/apple-touch-icon.png">`,
+    `<link rel="manifest" href="site.webmanifest">`,
+    `<meta name="theme-color" content="#332E8A">`,
+    SITE.googleVerification ? `<meta name="google-site-verification" content="${esc(SITE.googleVerification)}">` : "",
+    SITE.bingVerification ? `<meta name="msvalidate.01" content="${esc(SITE.bingVerification)}">` : "",
+    SITE.ga4Id ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(SITE.ga4Id)}"></script>\n<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","${esc(SITE.ga4Id)}");</script>` : "",
     `<meta name="geo.region" content="IN-UP">`,
     `<meta name="geo.placename" content="Agra">`,
     `<meta property="og:site_name" content="Tajview Holidays">`,
@@ -264,6 +294,8 @@ function headBlock(o) {
     `<meta property="og:description" content="${esc(o.desc)}">`,
     o.url ? `<meta property="og:url" content="${o.url}">` : "",
     `<meta property="og:image" content="${image}">`,
+    isJpg ? `<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">` : "",
+    `<meta property="og:image:alt" content="${esc(o.ogTitle || o.title)}">`,
     `<meta name="twitter:card" content="summary_large_image">`,
     `<meta name="twitter:title" content="${esc(o.ogTitle || o.title)}">`,
     `<meta name="twitter:description" content="${esc(o.desc)}">`,
@@ -289,7 +321,7 @@ const current = (html, re) => { const m = re.exec(html); return m ? m[1] : ""; }
 /* ===================================================== 1. root pages ==== */
 const rootPages = fs.readdirSync(ROOT).filter(f => f.endsWith(".html"));
 const sitemap = [];
-const pageImg = key => IMG[key] ? imgAbs(IMG[key]) : undefined;
+const pageImg = key => IMG[key] ? ogImg(IMG[key]) : undefined;
 
 for (const file of rootPages) {
   let html = rd(file);
@@ -311,7 +343,7 @@ for (const file of rootPages) {
     html = setInner(html, "collectionFaq", X.faqBlock(c.faqs));
     o.ld.push(itemList(tours, c.title), faqLd(c.faqs));
     o.crumbs = [["Home", ""], ["Tours", "tours.html"], [c.title, file]];
-    o.image = imgAbs(tours[0].img);
+    o.image = ogImg(tours[0].img);
     if (!PAGES[file]) { o.title = `${titleCase(c.title)} | Private Tours | Tajview Holidays`; o.desc = clip(c.intro, 158); }
   } else if (dur && DURATION_PAGES[dur]) {
     const d = DURATION_PAGES[dur], tours = X.durationTours(dur);
@@ -399,7 +431,7 @@ for (const t of TOURS) {
     keys: (TOUR_SEO[t.slug] || [])[1] || [...new Set([t.title.toLowerCase(), t.catLabel.toLowerCase(),
            ...t.route.toLowerCase().split(" · ").slice(0, 3).map(r => r.replace(/'s$/, "") + " tour")])].join(", "),
     url: abs(url),
-    image: imgAbs(t.img),
+    image: ogImg(t.img),
     crumbs: [["Home", ""], [t.catLabel, cat ? cat.file : "tours.html"], [t.title, url]],
     ld: [{
       "@type": "TouristTrip",
@@ -436,12 +468,12 @@ for (const p of BLOG_POSTS) {
   const faq = (p.body.find(b => b[0] === "faq") || [])[1];
   const o = {
     base: "../",
-    title: p.title.length <= 58 ? `${p.title} | Tajview` : p.title,
+    title: POST_SEO[p.slug] || (p.title.length <= 50 ? `${p.title} | Tajview` : p.title),
     ogTitle: p.title,
     desc: clip(p.excerpt, 160),
     keys: p.keywords,
     url: abs(url),
-    image: imgAbs(img),
+    image: ogImg(img),
     ogType: "article",
     article: p.date,
     crumbs: [["Home", ""], ["Journal", "blog.html"], [p.title, url]],

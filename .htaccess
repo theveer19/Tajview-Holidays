@@ -3,6 +3,16 @@
 
 RewriteEngine On
 
+# ---- Force HTTPS and one host (no www) --------------------------------
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# /index.html -> /  (one URL for the home page)
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [L,R=301]
+
+
 # ---- Pretty URLs -------------------------------------------------------
 # Every tour and article is a real file: /tours/<slug>.html, /journal/<slug>.html
 # (built by tools/build.js). Old ?tour= / ?post= links are forwarded by the page itself.
@@ -107,10 +117,6 @@ ErrorDocument 404 /404.html
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType text/html          "access plus 1 hour"
 </IfModule>
-
-# ---- Force HTTPS -------------------------------------------------------
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # ---- Security headers --------------------------------------------------
 <IfModule mod_headers.c>
