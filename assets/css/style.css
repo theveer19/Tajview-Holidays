@@ -2205,3 +2205,35 @@ a.tour-card__media:focus-visible .tour-card__view { opacity: 1; transform: trans
 .tour-card__days, .tour-card__route { z-index: 2; }
 @media (hover: none) { .tour-card__view { display: none; } }
 @media (prefers-reduced-motion: reduce) { .tour-card__view, .tour-card__media::after { transition: none; } }
+
+/* grouped collection listings (same day / multi-day) */
+.tour-group + .tour-group { margin-top: clamp(3.5rem, 7vw, 5.5rem); padding-top: clamp(2.5rem, 5vw, 3.5rem); border-top: 2px dotted rgba(200, 148, 52, .45); }
+
+/* home collections: even 4 x 2 grid on wide screens */
+@media (min-width: 1000px) { .collection-grid { grid-template-columns: repeat(4, 1fr); gap: 1.4rem; } }
+
+/* ===================================================== journal articles == */
+.article-body h3 { font-size: 1.25rem; margin-top: 1.6rem; }
+.article-body > p a, .article-body li a, .article-tip a, .article-body .acc-body a { color: var(--lapis-700, #332E8A); text-decoration: underline; text-decoration-color: rgba(200, 148, 52, .7); text-underline-offset: 3px; }
+.article-steps { padding-left: 1.3rem; margin: 0 0 1.4rem; }
+.article-steps li { margin-bottom: .55rem; line-height: 1.65; }
+.article-tip {
+  margin: 1.6rem 0; padding: 1rem 1.2rem 1rem 1.3rem;
+  border-left: 4px solid #C89434; border-radius: 0 14px 14px 0;
+  background: linear-gradient(100deg, rgba(246, 201, 184, .35), rgba(232, 213, 168, .25));
+  font-size: 1rem; line-height: 1.65;
+}
+.article-tip::before { content: "Tip — "; font-weight: 700; color: #9A6A1F; }
+.article-tours { margin: 1.8rem 0 2.2rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.article-body details.accordion { max-width: 100%; }
+
+/* ================================================ home: SEO copy block == */
+.seo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.4rem; }
+.seo-grid article {
+  background: #fff; border-radius: 22px; padding: 1.4rem 1.4rem 1.2rem;
+  box-shadow: 0 0 0 1px rgba(200, 148, 52, .3), 0 18px 34px -24px rgba(51, 46, 138, .35);
+}
+.seo-grid h3 { font-size: 1.2rem; margin-bottom: .5rem; }
+.seo-grid p { font-size: var(--fs-sm); color: var(--ink-soft); margin: 0; line-height: 1.7; }
+.seo-copy a:not(.btn) { color: var(--lapis-700, #332E8A); text-decoration: underline; text-decoration-color: rgba(200, 148, 52, .7); text-underline-offset: 3px; }
+.seo-links { margin: 1.8rem auto 0; max-width: 900px; text-align: center; font-size: var(--fs-sm); line-height: 2; color: var(--ink-soft); }

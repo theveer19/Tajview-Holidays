@@ -4,11 +4,9 @@
 RewriteEngine On
 
 # ---- Pretty URLs -------------------------------------------------------
-# /tours/taj-mahal-day-tour-from-delhi  ->  tour.html?tour=...
-RewriteRule ^tours/([a-z0-9-]+)/?$ tour.html?tour=$1 [L,QSA]
-# /journal/best-time-to-visit-taj-mahal  ->  blog-post.html?post=...
-RewriteRule ^journal/([a-z0-9-]+)/?$ blog-post.html?post=$1 [L,QSA]
-# /about  ->  about.html  (works for every page, no .html needed)
+# Every tour and article is a real file: /tours/<slug>.html, /journal/<slug>.html
+# (built by tools/build.js). Old ?tour= / ?post= links are forwarded by the page itself.
+# /about  ->  about.html, /tours/x -> tours/x.html  (no .html needed)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^.]+)/?$ $1.html [L]
@@ -38,45 +36,59 @@ Redirect 301 /varanasi/ /varanasi-tours.html
 Redirect 301 /tour-packages/ /tours.html
 Redirect 301 /tour-by-city/ /tours.html
 Redirect 301 /homepage/ /index.html
-Redirect 301 /taj-mahal-day-tour-from-delhi-by-car/ /tour.html?tour=taj-mahal-day-tour-from-delhi
-Redirect 301 /taj-mahal-sunrise-tour-from-delhi-by-car/ /tour.html?tour=taj-mahal-sunrise-tour-from-delhi
-Redirect 301 /same-day-taj-mahal-tour-from-delhi-by-superfast-train/ /tour.html?tour=taj-mahal-tour-by-gatimaan-express
-Redirect 301 /taj-mahal-private-luxury-car-tour-from-delhi/ /tour.html?tour=taj-mahal-luxury-car-tour-from-delhi
-Redirect 301 /2-days-taj-mahal-overnight-tour-from-delhi/ /tour.html?tour=2-days-taj-mahal-overnight-tour
-Redirect 301 /1-day-delhi-and-1-day-agra-tour-by-car/ /tour.html?tour=delhi-and-agra-2-day-private-tour
-Redirect 301 /7-days-golden-triangle-tour-with-ranthambore/ /tour.html?tour=7-days-golden-triangle-with-ranthambore
-Redirect 301 /8-days-golden-triangle-tour-with-udaipur/ /tour.html?tour=8-days-golden-triangle-with-udaipur
-Redirect 301 /8-days-golden-triangle-tour-with-pushkar-jodhpur/ /tour.html?tour=8-days-golden-triangle-with-pushkar-jodhpur
-Redirect 301 /10-days-golden-triangle-tour-with-jodhpur-udaipur/ /tour.html?tour=10-days-golden-triangle-with-jodhpur-udaipur
-Redirect 301 /12-days-rajasthan-heritage-wildlife-tour/ /tour.html?tour=12-days-rajasthan-heritage-wildlife-tour
-Redirect 301 /13-days-classic-rajasthan-cultural-tour/ /tour.html?tour=13-days-classic-rajasthan-cultural-tour
-Redirect 301 /golden-triangle-tour-2-days/ /tour.html?tour=2-days-golden-triangle-tour
-Redirect 301 /golden-triangle-tour-3-days/ /tour.html?tour=3-days-golden-triangle-private-tour
-Redirect 301 /golden-triangle-tour-4-days/ /tour.html?tour=4-days-golden-triangle-classic-tour
-Redirect 301 /golden-triangle-tour-5-days/ /tour.html?tour=5-days-golden-triangle-discovery-tour
-Redirect 301 /golden-triangle-tour-6-days/ /tour.html?tour=6-days-golden-triangle-heritage-tour
-Redirect 301 /golden-triangle-tour-7-days/ /tour.html?tour=7-days-golden-triangle-tour
-Redirect 301 /old-new-delhi-private-guided-city-tour-8-hours/ /tour.html?tour=new-delhi-private-city-tour
-Redirect 301 /delhi-full-day-tour/ /tour.html?tour=new-delhi-private-city-tour
-Redirect 301 /half-day-delhi-city-tour-4-to-6-hours/ /tour.html?tour=half-day-delhi-city-tour
-Redirect 301 /evening-delhi-city-tour-4-hours-old-delhi/ /tour.html?tour=evening-delhi-city-tour
-Redirect 301 /delhi-temples-and-spiritual-sites-tour-8-hours/ /tour.html?tour=delhi-temples-and-spiritual-sites-tour
-Redirect 301 /old-delhi-food-tasting-tour-with-chandni-chowk-4-hours/ /tour.html?tour=old-delhi-food-tasting-tour
-Redirect 301 /2-days-old-delhi-new-delhi-city-tour-in-48-hours/ /tour.html?tour=delhi-2-days-city-tour
-Redirect 301 /jaipur-city-tour-by-car-from-delhi/ /tour.html?tour=jaipur-day-tour-from-delhi-by-car
-Redirect 301 /jaipur-city-private-day-tour-by-superfast-train/ /tour.html?tour=jaipur-day-tour-by-superfast-train
-Redirect 301 /jaipur-private-sightseeing-with-professional-guide/ /tour.html?tour=jaipur-private-sightseeing-tour
-Redirect 301 /jaipur-sightseeing-tour/ /tour.html?tour=jaipur-private-sightseeing-tour
-Redirect 301 /private-jaipur-shoppingtour/ /tour.html?tour=jaipur-shopping-tour
-Redirect 301 /jaipur-luxury-privatetour/ /tour.html?tour=jaipur-luxury-private-tour
-Redirect 301 /overnight-jaipur-tour-package/ /tour.html?tour=jaipur-luxury-private-tour
-Redirect 301 /jaipur-tour-package/ /tour.html?tour=jaipur-private-sightseeing-tour
-Redirect 301 /2-days-taj-mahal-and-jaipur-tour-by-car/ /tour.html?tour=2-days-taj-mahal-and-jaipur-tour
-Redirect 301 /taj-mahal-sunrise-tour-with-elephant-conservation-from-delhi/ /tour.html?tour=taj-mahal-sunrise-with-elephant-conservation
+Redirect 301 /taj-mahal-day-tour-from-delhi-by-car/ /tours/taj-mahal-day-tour-from-delhi.html
+Redirect 301 /taj-mahal-sunrise-tour-from-delhi-by-car/ /tours/taj-mahal-sunrise-tour-from-delhi.html
+Redirect 301 /same-day-taj-mahal-tour-from-delhi-by-superfast-train/ /tours/taj-mahal-tour-by-gatimaan-express.html
+Redirect 301 /taj-mahal-private-luxury-car-tour-from-delhi/ /tours/taj-mahal-luxury-car-tour-from-delhi.html
+Redirect 301 /2-days-taj-mahal-overnight-tour-from-delhi/ /tours/2-days-taj-mahal-overnight-tour.html
+Redirect 301 /1-day-delhi-and-1-day-agra-tour-by-car/ /tours/delhi-and-agra-2-day-private-tour.html
+Redirect 301 /7-days-golden-triangle-tour-with-ranthambore/ /tours/7-days-golden-triangle-with-ranthambore.html
+Redirect 301 /8-days-golden-triangle-tour-with-udaipur/ /tours/8-days-golden-triangle-with-udaipur.html
+Redirect 301 /8-days-golden-triangle-tour-with-pushkar-jodhpur/ /tours/8-days-golden-triangle-with-pushkar-jodhpur.html
+Redirect 301 /10-days-golden-triangle-tour-with-jodhpur-udaipur/ /tours/10-days-golden-triangle-with-jodhpur-udaipur.html
+Redirect 301 /12-days-rajasthan-heritage-wildlife-tour/ /tours/12-days-rajasthan-heritage-wildlife-tour.html
+Redirect 301 /13-days-classic-rajasthan-cultural-tour/ /tours/13-days-classic-rajasthan-cultural-tour.html
+Redirect 301 /golden-triangle-tour-2-days/ /tours/2-days-golden-triangle-tour.html
+Redirect 301 /golden-triangle-tour-3-days/ /tours/3-days-golden-triangle-private-tour.html
+Redirect 301 /golden-triangle-tour-4-days/ /tours/4-days-golden-triangle-classic-tour.html
+Redirect 301 /golden-triangle-tour-5-days/ /tours/5-days-golden-triangle-discovery-tour.html
+Redirect 301 /golden-triangle-tour-6-days/ /tours/6-days-golden-triangle-heritage-tour.html
+Redirect 301 /golden-triangle-tour-7-days/ /tours/7-days-golden-triangle-tour.html
+Redirect 301 /old-new-delhi-private-guided-city-tour-8-hours/ /tours/new-delhi-private-city-tour.html
+Redirect 301 /delhi-full-day-tour/ /tours/new-delhi-private-city-tour.html
+Redirect 301 /half-day-delhi-city-tour-4-to-6-hours/ /tours/half-day-delhi-city-tour.html
+Redirect 301 /evening-delhi-city-tour-4-hours-old-delhi/ /tours/evening-delhi-city-tour.html
+Redirect 301 /delhi-temples-and-spiritual-sites-tour-8-hours/ /tours/delhi-temples-and-spiritual-sites-tour.html
+Redirect 301 /old-delhi-food-tasting-tour-with-chandni-chowk-4-hours/ /tours/old-delhi-food-tasting-tour.html
+Redirect 301 /2-days-old-delhi-new-delhi-city-tour-in-48-hours/ /tours/delhi-2-days-city-tour.html
+Redirect 301 /jaipur-city-tour-by-car-from-delhi/ /tours/jaipur-day-tour-from-delhi-by-car.html
+Redirect 301 /jaipur-city-private-day-tour-by-superfast-train/ /tours/jaipur-day-tour-by-superfast-train.html
+Redirect 301 /jaipur-private-sightseeing-with-professional-guide/ /tours/jaipur-private-sightseeing-tour.html
+Redirect 301 /jaipur-sightseeing-tour/ /tours/jaipur-private-sightseeing-tour.html
+Redirect 301 /private-jaipur-shoppingtour/ /tours/jaipur-shopping-tour.html
+Redirect 301 /jaipur-luxury-privatetour/ /tours/jaipur-luxury-private-tour.html
+Redirect 301 /overnight-jaipur-tour-package/ /tours/jaipur-luxury-private-tour.html
+Redirect 301 /jaipur-tour-package/ /tours/jaipur-private-sightseeing-tour.html
+Redirect 301 /2-days-taj-mahal-and-jaipur-tour-by-car/ /tours/2-days-taj-mahal-and-jaipur-tour.html
+Redirect 301 /taj-mahal-sunrise-tour-with-elephant-conservation-from-delhi/ /tours/taj-mahal-sunrise-with-elephant-conservation.html
 Redirect 301 /taj-mahal-guide-tour/ /taj-mahal-tour-packages.html
 Redirect 301 /taj-mahal-transport-tour/ /taj-mahal-tour-packages.html
 Redirect 301 /taj-mahal-transport-guide-tour/ /taj-mahal-tour-packages.html
 Redirect 301 /taj-mahal-honeymoon-tour/ /taj-mahal-tour-packages.html
+Redirect 301 /taj-mahal-sunrise-tour/ /tours/taj-mahal-sunrise-tour-from-delhi.html
+Redirect 301 /taj-mahal-tour-by-train/ /tours/taj-mahal-tour-by-gatimaan-express.html
+Redirect 301 /2-days-taj-mahal-overnight-tour/ /tours/2-days-taj-mahal-overnight-tour.html
+Redirect 301 /same-day-taj-mahal-tour/ /same-day-tour-packages.html
+Redirect 301 /golden-triangle-private-tour/ /golden-triangle-tour-packages.html
+Redirect 301 /rajasthan-private-tour/ /rajasthan-tour-packages.html
+Redirect 301 /ranthambore-wildlife-tour/ /wildlife-tour-packages.html
+Redirect 301 /varanasi-spiritual-tour/ /tours/varanasi-2-days-spiritual-tour.html
+Redirect 301 /custom-india-tour/ /contact.html
+Redirect 301 /new-delhi-full-day-city-tour-by-car/ /tours/new-delhi-private-city-tour.html
+Redirect 301 /old-delhi-heritage-tour-by-rickshaw-car/ /tours/old-delhi-heritage-tour-by-rickshaw.html
+Redirect 301 /new-delhi-sunrise-city-tour-by-car/ /tours/new-delhi-sunrise-city-tour.html
+Redirect 301 /new-delhi-luxury-car-tour/ /tours/new-delhi-luxury-car-tour.html
+Redirect 301 /2-days-delhi-sightseeing-tour/ /tours/delhi-2-days-city-tour.html
 
 # ---- Error pages -------------------------------------------------------
 ErrorDocument 404 /404.html

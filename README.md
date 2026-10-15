@@ -38,6 +38,38 @@ tajview-holidays/
 └── README.md
 ```
 
+## SEO build — run after every content change
+
+Every tour and journal article now has its own static page, so search engines
+see the full itinerary, price and FAQ without running JavaScript:
+
+- `tours/<slug>.html` — one page per tour (62)
+- `journal/<slug>.html` — one page per article (16)
+
+After editing `assets/js/data.js` (a tour, a price, a new article), run:
+
+```
+node tools/build.js
+```
+
+It rebuilds the tour and article pages, pre-renders the tour lists on every
+collection, city and duration page, rewrites each page's `<head>` (keyword
+title, description, canonical, Open Graph, Twitter and schema.org JSON-LD:
+TravelAgency, BreadcrumbList, FAQPage, TouristTrip, BlogPosting, ItemList) and
+regenerates `sitemap.xml`. No npm install needed. Keyword titles for the main
+pages and the top tours live in `PAGES` and `TOUR_SEO` at the top of the script.
+
+Old `tour.html?tour=…` and `blog-post.html?post=…` links forward themselves to
+the new pages, and `.htaccess` sends the old WordPress URLs to them with 301s.
+
+### After go-live (needed to actually rank)
+
+1. Add the site to Google Search Console and submit `sitemap.xml`.
+2. Create or claim the Google Business Profile for Tajview Holidays in Agra,
+   with the same name, phone and address as the website, and collect reviews.
+3. Put the Google review and TripAdvisor links in `SITE` in `data.js`.
+4. Keep publishing — one useful article a month on an Agra or Taj Mahal topic.
+
 ## Run it locally
 
 Open `index.html` in a browser, or serve the folder:

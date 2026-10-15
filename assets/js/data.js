@@ -61,7 +61,15 @@ const IMG = {
   mysorePalace:  "assets/img/photos/mysore-palace",
   ranthambore:   "assets/img/photos/tiger-ranthambore",
   wildElephant:  "assets/img/photos/wild-elephant",
-  mumbai:        "assets/img/photos/gateway-of-india"
+  mumbai:        "assets/img/photos/gateway-of-india",
+  tigerGrass:    "assets/img/photos/tiger-dry-grass",
+  tigerForest:   "assets/img/photos/tiger-forest",
+  tigerPortrait: "assets/img/photos/tiger-portrait",
+  jungleSafari:  "assets/img/photos/jungle-safari",
+  leopard:       "assets/img/photos/leopard",
+  corbettElephant: "assets/img/photos/corbett-elephant",
+  khajuraho:     "assets/img/photos/khajuraho",
+  premMandir:    "assets/img/photos/prem-mandir"
 };
 
 const SITE = {
@@ -113,7 +121,9 @@ const COLLECTIONS = [
   { title: "Golden Triangle tour packages", note: "Delhi, Agra and Jaipur",     img: IMG.amber,      cat: "golden-triangle" },
   { title: "New Delhi tour packages", note: "Old city to New Delhi",      img: IMG.indiaGate,  cat: "delhi" },
   { title: "Jaipur tour packages", note: "Forts, palaces, bazaars",    img: IMG.hawaMahal,  cat: "jaipur" },
-  { title: "Rajasthan tour packages", note: "Desert cities and havelis",  img: IMG.mehrangarh, cat: "rajasthan" }
+  { title: "Rajasthan tour packages", note: "Desert cities and havelis",  img: IMG.mehrangarh, cat: "rajasthan" },
+  { title: "South India tour packages", note: "Temples, backwaters, tea hills", img: IMG.kerala, cat: "south-india" },
+  { title: "Wildlife tour packages", note: "Tigers, leopards and jungle safaris", img: IMG.leopard, cat: "wildlife" }
 ];
 
 const CITIES = [
@@ -132,6 +142,8 @@ const HOME_FAQS = [
   ["What is the best time of year to visit?", "October to March is the comfortable season. December and January bring morning fog around Delhi and Agra. April to June is hot, which makes sunrise starts essential rather than optional."],
   ["Is the Taj Mahal closed on any day?", "Yes, every Friday. We plan itineraries around it, and if your dates are fixed we will tell you before you book rather than after."],
   ["Can you handle dietary needs and mobility limits?", "Usually, with notice. Tell us at the enquiry stage — most things can be arranged in advance and very few can be fixed on the day."],
+  ["How much does a same day Agra tour from Delhi cost?", "Our private same day Agra tour by car starts from ₹7,900 per person, including the car, driver, a licensed guide, tolls and parking. The Gatimaan Express train tour starts from ₹11,500. Every quote is fixed before you pay."],
+  ["Do you offer Agra local sightseeing if we are already in Agra?", "Yes. Our Agra local sightseeing tour picks you up from any Agra hotel or railway station and covers the Taj Mahal, Agra Fort, the Baby Taj and sunset at Mehtab Bagh with a licensed guide."],
   ["What happens if a flight is delayed?", "Tell us and we reshape the day. The driver and guide are ours, not a subcontracted agency, so changing the plan is a phone call rather than a renegotiation."]
 ];
 
@@ -185,6 +197,10 @@ const PACKAGE_TERMS = {
 const COLLECTION_PAGES = {
   "taj-mahal": {
     file: "taj-mahal-tour-packages.html",
+    also: ["taj-mahal-tour-by-gatimaan-express", "taj-mahal-sunrise-with-elephant-conservation", "same-day-agra-tour-from-jaipur"],
+    order: ["taj-mahal-day-tour-from-delhi", "taj-mahal-tour-by-gatimaan-express", "taj-mahal-sunrise-tour-from-delhi",
+            "taj-mahal-sunrise-with-elephant-conservation", "taj-mahal-luxury-car-tour-from-delhi", "taj-mahal-sunrise-and-old-delhi-tour",
+            "same-day-agra-tour-from-jaipur"],
     title: "Taj Mahal tour packages",
     lead: "Taj Mahal private tour packages",
     intro: "Taj Mahal tours from Delhi, run by a team based in Agra. Same-day tours by car, Gatimaan Express train tours, sunrise visits, private guided days and overnight stays — one for every kind of schedule.",
@@ -199,6 +215,13 @@ const COLLECTION_PAGES = {
   },
   "same-day": {
     file: "same-day-tour-packages.html",
+    also: ["taj-mahal-day-tour-from-delhi", "taj-mahal-sunrise-tour-from-delhi", "taj-mahal-luxury-car-tour-from-delhi",
+           "jaipur-day-tour-from-delhi-by-car", "taj-mahal-sunrise-and-old-delhi-tour",
+           "agra-local-sightseeing-tour"],
+    order: ["taj-mahal-day-tour-from-delhi", "taj-mahal-tour-by-gatimaan-express", "taj-mahal-sunrise-tour-from-delhi",
+            "taj-mahal-sunrise-with-elephant-conservation", "jaipur-day-tour-from-delhi-by-car", "taj-mahal-luxury-car-tour-from-delhi",
+            "taj-mahal-sunrise-and-old-delhi-tour", "same-day-agra-tour-from-jaipur", "agra-local-sightseeing-tour",
+            "mathura-vrindavan-day-tour-from-agra"],
     title: "Same day tour packages",
     lead: "Same day private tour packages",
     intro: "For travellers who want to see more in less time. Taj Mahal tours from Delhi, Old and New Delhi sightseeing, and Jaipur day tours — private cars, local guides, flexible timings.",
@@ -291,6 +314,23 @@ const COLLECTION_PAGES = {
       ["Is a private car and driver included?", "Yes, for the whole route — the same driver stays with you across all the cities."],
       ["Can Rajasthan be added to a Golden Triangle tour?", "Yes. The eight and ten day routes do exactly that, adding Jodhpur, Pushkar or Udaipur to Delhi, Agra and Jaipur."],
       ["When should I travel?", "October to March. Desert nights in December and January get genuinely cold, so pack for it."]
+    ]
+  },
+  "wildlife": {
+    file: "wildlife-tour-packages.html",
+    title: "Wildlife tour packages",
+    place: "wildlife",
+    lead: "Wildlife tour packages in India",
+    intro: "Jungle safaris in India's great tiger reserves — Ranthambore, Corbett, Bandhavgarh, Kanha and Pench — with naturalists, lodges beside the parks and the Taj Mahal never far away.",
+    note: "Two or three safaris in each park is what gives you a real chance of a tiger. October to June is the season; the core zones close for the monsoon.",
+    also: ["3-days-ranthambore-safari-tour", "7-days-golden-triangle-with-ranthambore", "12-days-rajasthan-heritage-wildlife-tour",
+           "15-days-royal-rajasthan-wildlife-camel-safari", "6-days-south-india-wildlife-safari-from-bangalore", "14-days-kerala-karnataka-wildlife-tour"],
+    faqs: [
+      ["Which park is best for seeing tigers?", "Bandhavgarh and Ranthambore have the best sighting records, followed by Kanha, Pench and Corbett. Spending two or three safaris in a park matters more than which park you pick."],
+      ["When is the safari season?", "October to June. Most core zones close from July to mid-October for the monsoon. March to May is hot but the best time for tigers, as animals come to the water."],
+      ["Jeep or canter — which is better?", "A six-seat jeep (gypsy) is quieter and gets closer. Canters carry twenty people and are cheaper. All our tours use jeeps, and a private jeep can be booked for your group."],
+      ["Do I need to book safaris in advance?", "Yes. Park permits are released online by the forest department, usually 90 to 120 days ahead, and popular zones sell out. We book them as soon as your dates are confirmed."],
+      ["Are wildlife tours suitable for children?", "Yes, for most children over five. Each safari lasts three to four hours in an open vehicle, so bring layers for cold winter mornings."]
     ]
   }
 };
@@ -429,6 +469,444 @@ const FLEET = [
 
 /* ---------------------------------------------------------------- blog -- */
 const BLOG_POSTS = [
+  {
+    slug: "taj-mahal-ticket-price-and-timings",
+    title: "Taj Mahal ticket price and timings: the complete guide for 2026",
+    date: "2026-10-14", readMins: 7, img: "taj",
+    excerpt: "Entry fees for Indians, SAARC visitors and foreigners, the extra mausoleum ticket, opening hours, the Friday closure and what you can and cannot take inside.",
+    keywords: "taj mahal ticket price, taj mahal timings, taj mahal entry fee for foreigners, taj mahal ticket online, taj mahal closed on friday",
+    body: [
+      ["p", "Most people plan a Taj Mahal visit around one question: how much does it cost to get in, and when is it open? The answers are simple, but there are a few details — the separate mausoleum ticket, the Friday closure, the cut-off time at the ticket window — that catch visitors out every day. This guide covers all of it, as we explain it to our own guests before every [Taj Mahal tour](taj-mahal-tour-packages.html)."],
+      ["h2", "Taj Mahal ticket price"],
+      ["p", "Entry fees are set by the Archaeological Survey of India (ASI). At the time of writing the published rates are:"],
+      ["ul", [
+        "Indian citizens: ₹50 for the Taj Mahal complex",
+        "SAARC and BIMSTEC nationals: ₹540",
+        "Foreign nationals and NRIs: ₹1,100",
+        "Main mausoleum (the inner tomb chamber): an extra ₹200 for every visitor who wants to go inside",
+        "Children under 15: free, whether Indian or foreign"
+      ]],
+      ["p", "The mausoleum ticket is the one people forget. Without it you can walk the gardens, the great gate and the platform, but you cannot enter the white marble tomb where Shah Jahan and Mumtaz Mahal lie. If you have come this far, buy it."],
+      ["tip", "Fees are revised from time to time. On our tours we buy the tickets for you at the current rate, so the price you are quoted already covers them."],
+      ["h2", "Taj Mahal opening hours"],
+      ["p", "The Taj Mahal opens about thirty minutes before sunrise and closes about thirty minutes before sunset. In practice that means roughly 6 am to 6:30 pm in summer and 6:45 am to 5:30 pm in the depth of winter. Ticket windows open an hour before sunrise and stop selling 45 minutes before sunset — arrive later than that and you will not get in, even with daylight left."],
+      ["p", "The single most important rule: the Taj Mahal is closed every Friday for afternoon prayers at the mosque inside the complex. Agra Fort, Fatehpur Sikri and the other monuments stay open on Fridays, so if your only day in Agra is a Friday, see those and save the Taj for another day — or see it from [Mehtab Bagh](journal/taj-mahal-night-viewing.html) across the river."],
+      ["h2", "Buying tickets online"],
+      ["p", "Tickets can be booked on the ASI's official online portal, and paying online usually lets you use a faster entry line. Ticket counters at the East and West gates also sell on the day. Avoid anyone outside the gates offering to sell you tickets or telling you the online system is down — that is the most common scam in Agra."],
+      ["h2", "Which gate should you use?"],
+      ["p", "There are three gates. The East Gate, near the five-star hotels on Fatehabad Road, is usually the calmest. The West Gate is closer to the old city and gets the coach groups. The South Gate is the smallest and is often used for exit. Electric golf carts run from the parking areas to the East and West gates, since petrol vehicles are not allowed near the monument."],
+      ["h2", "What you can and cannot take inside"],
+      ["ul", [
+        "Allowed: mobile phones, cameras, a small bag, a water bottle, passport or ID",
+        "Not allowed: food, tripods, drones, large bags, tobacco and lighters, and anything sharp",
+        "Photography is fine in the gardens but not inside the tomb chamber",
+        "There is a free locker at each gate if you arrive with something you cannot take in"
+      ]],
+      ["h2", "The best time to go"],
+      ["p", "Sunrise is the best hour in almost every season — softer light, thinner crowds and cooler air. We wrote a whole piece on [the best time to visit the Taj Mahal](journal/best-time-to-visit-taj-mahal.html). If getting up at 3 am in Delhi sounds unreasonable, our [Taj Mahal sunrise tour](tours/taj-mahal-sunrise-tour-from-delhi.html) handles the driving, the tickets and the queue while you sleep in the car."],
+      ["tours", ["taj-mahal-sunrise-tour-from-delhi", "taj-mahal-day-tour-from-delhi", "taj-mahal-tour-by-gatimaan-express"]],
+      ["faq", [
+        ["What is the Taj Mahal ticket price for foreigners?", "₹1,100 for the complex, plus ₹200 if you want to enter the main mausoleum — ₹1,300 in total. Children under 15 enter free."],
+        ["What is the Taj Mahal ticket price for Indians?", "₹50 for the complex and ₹200 extra for the main mausoleum."],
+        ["Is the Taj Mahal open on Friday?", "No. It is closed every Friday. Night viewing is also closed on Fridays."],
+        ["What time does the Taj Mahal open?", "About 30 minutes before sunrise, and it closes about 30 minutes before sunset."],
+        ["Do I need a guide inside the Taj Mahal?", "It is not compulsory, but a licensed guide turns a beautiful building into a story — and speeds you through the queues. All our Taj Mahal tours include one."]
+      ]]
+    ]
+  },
+  {
+    slug: "same-day-agra-tour-from-delhi",
+    title: "Same day Agra tour from Delhi: itinerary, cost and car vs train",
+    date: "2026-10-10", readMins: 8, img: "tajGarden",
+    excerpt: "Yes, you can see the Taj Mahal and Agra Fort and be back in Delhi for dinner. Here is how the day actually runs, what it costs and whether to go by car or by the Gatimaan Express.",
+    keywords: "same day agra tour by car, same day agra tour from delhi, taj mahal day trip from delhi, agra day trip, delhi to agra one day tour",
+    body: [
+      ["p", "A same day Agra tour is the most popular trip we run. Delhi to Agra is about 230 km, and since the Yamuna Expressway opened the drive takes three to three and a half hours each way. That leaves five or six hours in Agra — enough for the Taj Mahal, Agra Fort and lunch without rushing, provided the day is planned properly."],
+      ["h2", "A typical same day Agra itinerary"],
+      ["ol", [
+        "6:00–7:00 am — pickup from your hotel or the airport in Delhi, Noida or Gurgaon",
+        "10:00 am — meet your guide in Agra and enter the Taj Mahal",
+        "1:00 pm — lunch, at a five-star hotel buffet or a local restaurant",
+        "2:00 pm — Agra Fort, the Mughal emperors' red sandstone palace-fortress",
+        "3:30 pm — the Baby Taj (Itimad-ud-Daulah) or a marble inlay workshop, if time allows",
+        "4:00 pm — start back on the expressway",
+        "7:30 pm — drop-off at your Delhi hotel"
+      ]],
+      ["p", "If you can face an earlier start, the [Taj Mahal sunrise tour](tours/taj-mahal-sunrise-tour-from-delhi.html) leaves Delhi at 3 am and puts you at the gate as it opens. It is the better experience — fewer people, softer light — and you are back in Delhi by mid-afternoon."],
+      ["h2", "By car or by train?"],
+      ["h3", "Private car"],
+      ["p", "A private car picks you up at your door and drops you back at it. You choose when to leave, when to stop and how long to linger. It suits families, people with luggage, anyone flying in or out that day, and groups of three or more, where a car costs less per head than train tickets. See our [same day Agra tour by car](tours/taj-mahal-day-tour-from-delhi.html)."],
+      ["h3", "Gatimaan Express"],
+      ["p", "The Gatimaan Express leaves Hazrat Nizamuddin at 8:10 am and reaches Agra Cantt in about 100 minutes. You skip the expressway, get breakfast on board, and a car and guide meet you at the station. It does not run on Fridays — which does not matter, since the Taj is closed then anyway. Read our full [Gatimaan Express guide](journal/gatimaan-express-delhi-to-agra.html) or book the [Taj Mahal tour by Gatimaan Express](tours/taj-mahal-tour-by-gatimaan-express.html)."],
+      ["h2", "How much does a same day Agra tour cost?"],
+      ["p", "The price depends on the car, the group size and what is included. As a guide, our private tours with car, driver, licensed guide and monument tickets start at:"],
+      ["ul", [
+        "Same day Agra tour by car: from ₹7,900 per person",
+        "Taj Mahal sunrise tour: from ₹9,400 per person",
+        "Taj Mahal tour by Gatimaan Express: from ₹11,500 per person",
+        "Luxury car tour with a five-star lunch: from ₹16,500 per person"
+      ]],
+      ["p", "Every quote we send is fixed before you pay — tolls, parking, driver allowance and taxes included. Compare like with like: a cheap quote that leaves out monument tickets, the guide or tolls is not cheaper by the end of the day."],
+      ["h2", "Five things that make the day go well"],
+      ["ul", [
+        "Never plan it for a Friday — the Taj Mahal is closed",
+        "Carry your passport or ID; it is checked at the gate",
+        "Wear comfortable shoes and clothes that cover shoulders and knees",
+        "Keep the day bag small — large bags, food and tripods are not allowed inside",
+        "Say no to anyone who approaches you at the parking area offering tickets or 'faster entry'"
+      ]],
+      ["tours", ["taj-mahal-day-tour-from-delhi", "taj-mahal-sunrise-tour-from-delhi", "taj-mahal-tour-by-gatimaan-express", "taj-mahal-luxury-car-tour-from-delhi"]],
+      ["faq", [
+        ["Can I visit Agra from Delhi in one day?", "Yes. With the Yamuna Expressway or the Gatimaan Express, a day trip comfortably covers the Taj Mahal and Agra Fort and gets you back to Delhi in the evening."],
+        ["How long is the drive from Delhi to Agra?", "About three to three and a half hours each way on the Yamuna Expressway, depending on where in Delhi you start."],
+        ["Is a same day tour too tiring?", "It is a long day — twelve to thirteen hours — but most of it is spent sitting in an air-conditioned car. If you can spare it, our [2 days Taj Mahal overnight tour](tours/2-days-taj-mahal-overnight-tour.html) is gentler."],
+        ["Can the tour start from the airport?", "Yes. Many guests come straight off an overnight flight. Tell us the flight number and we will be waiting at arrivals."]
+      ]]
+    ]
+  },
+  {
+    slug: "gatimaan-express-delhi-to-agra",
+    title: "Gatimaan Express from Delhi to Agra: timings, booking and a day plan",
+    date: "2026-10-06", readMins: 6, img: "agraFort",
+    excerpt: "India's first semi-high-speed train gets you from Delhi to Agra in about 100 minutes. Timings, classes, the Friday rule and how to fit the Taj Mahal and Agra Fort into the day.",
+    keywords: "gatimaan express timings, gatimaan express delhi to agra, taj mahal tour by train, delhi to agra train, gatiman express",
+    body: [
+      ["p", "The Gatimaan Express was India's first semi-high-speed train when it started running in 2016, and it is still the quickest way from Delhi to Agra. It turns a long road day into a short train ride, which is why our [Taj Mahal tour by Gatimaan Express](tours/taj-mahal-tour-by-gatimaan-express.html) is one of the most booked trips on this site."],
+      ["h2", "Gatimaan Express timings"],
+      ["ul", [
+        "Delhi to Agra (train 12050): leaves Hazrat Nizamuddin at 8:10 am, reaches Agra Cantt at about 9:50 am",
+        "Agra to Delhi (train 12049): leaves Agra Cantt at about 5:35 pm, reaches Hazrat Nizamuddin at 7:30 pm",
+        "Runs six days a week — not on Fridays",
+        "Journey time: roughly 1 hour 40 minutes each way"
+      ]],
+      ["tip", "Railway timetables change. We check the current timings on IRCTC when we book your tickets, and plan the day around them."],
+      ["h2", "Which station in Delhi?"],
+      ["p", "The train starts from Hazrat Nizamuddin, not New Delhi station. It is in south-east Delhi, about 30–45 minutes from Connaught Place in early-morning traffic and a little more from Gurgaon or the airport. On our tours a driver collects you around 7 am and walks you to your coach."],
+      ["h2", "Classes and meals"],
+      ["p", "There are two classes, both air-conditioned: Chair Car (CC) and Executive Class (EC). Executive has wider seats with more legroom. A meal or snack is served on board in both, so breakfast on the way out and a snack on the way back are taken care of."],
+      ["h2", "How the day runs"],
+      ["ol", [
+        "7:00 am — hotel pickup and transfer to Hazrat Nizamuddin",
+        "8:10 am — the Gatimaan Express leaves Delhi; breakfast on board",
+        "9:50 am — your guide meets you at the coach in Agra Cantt",
+        "10:00 am — the Taj Mahal, with time for photographs",
+        "1:00 pm — lunch",
+        "2:00 pm — Agra Fort, then the Baby Taj if time allows",
+        "5:35 pm — the evening train back to Delhi",
+        "7:30 pm — your driver meets you at Nizamuddin and drops you at your hotel"
+      ]],
+      ["h2", "Train or car — which is better?"],
+      ["p", "The train is faster and more interesting, and you avoid six hours on the road. The car is more flexible — you can leave earlier for sunrise, stop at Mathura or Sikandra, and travel door to door. For couples and solo travellers the train is usually our recommendation; for families and groups of four or more, the [same day tour by car](journal/same-day-agra-tour-from-delhi.html) works out better value."],
+      ["tours", ["taj-mahal-tour-by-gatimaan-express", "taj-mahal-day-tour-from-delhi"]],
+      ["faq", [
+        ["Does the Gatimaan Express run on Fridays?", "No. It runs six days a week and rests on Fridays — the same day the Taj Mahal is closed."],
+        ["How long does the Gatimaan Express take from Delhi to Agra?", "About 100 minutes from Hazrat Nizamuddin to Agra Cantt."],
+        ["How do I book Gatimaan Express tickets?", "Through IRCTC, Indian Railways' booking site, or let us book them as part of the tour so tickets, transfers and the guide are all lined up."],
+        ["Is food included on the Gatimaan Express?", "Yes, a meal or snack is served on board in both classes."]
+      ]]
+    ]
+  },
+  {
+    slug: "best-places-to-visit-in-agra",
+    title: "12 best places to visit in Agra, from the Taj Mahal to the quiet tombs",
+    date: "2026-10-02", readMins: 9, img: "babyTaj",
+    excerpt: "Agra is more than one monument. Here is our local list — what each place is, how long to give it and how to fit it around the Taj Mahal.",
+    keywords: "places to visit in agra, agra sightseeing, things to do in agra, agra tourist places, agra local sightseeing",
+    body: [
+      ["p", "Agra was the capital of the Mughal empire for most of the 16th and 17th centuries, and the city is full of what the emperors left behind. Most visitors see two places and leave. If you have a full day, or better two, this is the order we would put them in. Our [Agra tours](agra-tours.html) page lists every trip that covers the city."],
+      ["h2", "1. The Taj Mahal"],
+      ["p", "Built by Shah Jahan between 1631 and 1648 for his wife Mumtaz Mahal, and one of the most recognised buildings on earth. Give it at least two to three hours, and go at sunrise if you possibly can. Before you go, read our guide to [Taj Mahal ticket prices and timings](journal/taj-mahal-ticket-price-and-timings.html). Closed on Fridays."],
+      ["h2", "2. Agra Fort"],
+      ["p", "A UNESCO World Heritage Site in its own right: a mile and a half of red sandstone walls enclosing the palaces of Akbar, Jahangir and Shah Jahan. Look for the Musamman Burj, the octagonal tower where Shah Jahan spent his last years looking across the river at the Taj. Allow 90 minutes."],
+      ["h2", "3. Itimad-ud-Daulah (the Baby Taj)"],
+      ["p", "A small marble tomb on the far bank of the Yamuna, built by Empress Nur Jahan for her father. Its inlay work came before the Taj Mahal's and is just as fine. It is rarely crowded — one of our favourite hours in Agra."],
+      ["h2", "4. Mehtab Bagh"],
+      ["p", "The 'moonlight garden' directly across the river from the Taj Mahal. Come for sunset, when the marble turns gold and the crowds are on the other side. It is also the best place to see the Taj on a Friday."],
+      ["h2", "5. Akbar's Tomb, Sikandra"],
+      ["p", "On the Delhi road, ten kilometres from the centre. A vast gateway, a five-storey tomb mixing Hindu, Islamic and Christian motifs, and gardens full of blackbuck and peacocks. It is an easy stop on the way in from Delhi."],
+      ["h2", "6. Fatehpur Sikri"],
+      ["p", "Akbar's abandoned red sandstone capital, 40 km west of Agra. It deserves half a day; we wrote a separate guide on [visiting Fatehpur Sikri from Agra](journal/fatehpur-sikri-from-agra.html)."],
+      ["h2", "7. Jama Masjid, Agra"],
+      ["p", "Built in 1648 by Shah Jahan's daughter Jahanara, facing the Agra Fort across the old city. Step inside for the courtyard, then walk out into the bazaars around it."],
+      ["h2", "8. Kinari Bazaar and the old city"],
+      ["p", "Lanes of wedding trims, spices, shoes and sweets. Go with someone who knows the way and try the petha and dalmoth Agra is known for — more in our [Agra food guide](journal/what-to-eat-in-agra.html)."],
+      ["h2", "9. Chini ka Rauza"],
+      ["p", "A tomb covered in glazed Persian tiles, rare in India and mostly overlooked. Ten minutes from the Baby Taj."],
+      ["h2", "10. Ram Bagh"],
+      ["p", "Thought to be the oldest Mughal garden in India, laid out by Babur in the 1520s. Quiet, green and a glimpse of where the Mughal garden idea began."],
+      ["h2", "11. A marble inlay workshop"],
+      ["p", "The descendants of the craftsmen who decorated the Taj still practise pietra dura in Agra. Watching a piece being cut and set takes twenty minutes and explains a great deal about what you have just seen."],
+      ["h2", "12. The elephant and bear rescue centres"],
+      ["p", "Wildlife SOS runs an elephant conservation centre near Mathura and a sloth bear rescue facility near Agra, both open to visitors by booking. Our [Taj Mahal sunrise tour with elephant conservation](tours/taj-mahal-sunrise-with-elephant-conservation.html) pairs the Taj with an afternoon there."],
+      ["h2", "How many days do you need in Agra?"],
+      ["p", "One day covers the Taj Mahal, Agra Fort and one more stop. Two days lets you see the Taj at sunrise, add the Baby Taj and Mehtab Bagh, and give Fatehpur Sikri a proper morning. Our [2 days Taj Mahal overnight tour](tours/2-days-taj-mahal-overnight-tour.html) is built exactly that way."],
+      ["tours", ["agra-local-sightseeing-tour", "2-days-taj-mahal-overnight-tour", "taj-mahal-sunrise-with-elephant-conservation"]],
+      ["faq", [
+        ["What are the top places to visit in Agra?", "The Taj Mahal, Agra Fort, Itimad-ud-Daulah (the Baby Taj), Mehtab Bagh, Akbar's Tomb at Sikandra and Fatehpur Sikri."],
+        ["Can I see Agra in one day?", "Yes — the Taj Mahal, Agra Fort and one smaller monument fit comfortably into a day."],
+        ["What is open in Agra on a Friday?", "Everything except the Taj Mahal: Agra Fort, Fatehpur Sikri, the Baby Taj, Sikandra and Mehtab Bagh are all open."]
+      ]]
+    ]
+  },
+  {
+    slug: "taj-mahal-night-viewing",
+    title: "Taj Mahal night viewing: full moon dates, tickets and rules",
+    date: "2026-09-28", readMins: 5, img: "mehtabBagh",
+    excerpt: "The Taj Mahal opens at night for five nights around each full moon. How the slots work, what tickets cost, and the best alternatives if you cannot get one.",
+    keywords: "taj mahal night view, taj mahal full moon, taj mahal night viewing ticket, taj mahal moonlight",
+    body: [
+      ["p", "On five nights a month the Taj Mahal opens after dark: the night of the full moon and the two nights either side of it. Seeing the white marble under moonlight is something people travel a long way for — but it is tightly controlled, and the details matter."],
+      ["h2", "How night viewing works"],
+      ["ul", [
+        "Five nights a month: full moon night, plus two nights before and two after",
+        "Between 8:00 pm and midnight, in eight half-hour batches of up to 50 people",
+        "You view the Taj from the Red Sandstone platform at the main gate — you do not go up to the mausoleum",
+        "Report to Shilpgram, near the East Gate, half an hour before your slot for the security check",
+        "Closed on Fridays and throughout the month of Ramzan"
+      ]],
+      ["h2", "Night viewing ticket price"],
+      ["ul", [
+        "Indian adults: ₹510",
+        "Foreign adults: ₹750",
+        "Children aged 3 to 15: ₹500"
+      ]],
+      ["p", "Tickets are sold online through the ASI's official portal and usually go a day or so before the date. Carry the same ID you booked with — it is checked."],
+      ["h2", "Is it worth it?"],
+      ["p", "Honestly, it depends on the sky. On a clear night the dome glows; on a hazy winter night you may see a pale outline at a distance. Because you stay at the gate, it is a view rather than a visit. Most of our guests who do it love it — but we always pair it with a daytime or sunrise visit, never instead of one."],
+      ["h2", "Three alternatives"],
+      ["ul", [
+        "Sunset from Mehtab Bagh, across the river — golden light and almost nobody else",
+        "A rooftop restaurant near the East Gate for a view of the dome after dark",
+        "The [Taj Mahal sunrise tour](tours/taj-mahal-sunrise-tour-from-delhi.html) — the most beautiful hour of all, every day except Friday"
+      ]],
+      ["tours", ["2-days-taj-mahal-overnight-tour", "taj-mahal-sunrise-tour-from-delhi"]],
+      ["faq", [
+        ["Can you see the Taj Mahal at night?", "Yes, on five nights around each full moon, between 8 pm and midnight, except on Fridays and during Ramzan."],
+        ["How much is the Taj Mahal night ticket?", "₹510 for Indian adults, ₹750 for foreign adults and ₹500 for children aged 3 to 15."],
+        ["Can you go inside the mausoleum at night?", "No. Night viewing is from the platform near the main gate only."]
+      ]]
+    ]
+  },
+  {
+    slug: "delhi-to-agra-by-car",
+    title: "Delhi to Agra by car: distance, time, the Yamuna Expressway and stops",
+    date: "2026-09-24", readMins: 6, img: "privateCar",
+    excerpt: "How long the drive really takes, what the expressway is like, where to stop on the way and why a private car with a local driver beats self-drive.",
+    keywords: "delhi to agra by car, delhi to agra distance, yamuna expressway, delhi to agra taxi, agra cab from delhi",
+    body: [
+      ["p", "Delhi to Agra is about 230 km by road. Most of it is the Yamuna Expressway, a six-lane, access-controlled highway that runs 165 km from Greater Noida to the edge of Agra. On a normal morning the whole drive takes three to three and a half hours."],
+      ["h2", "The route"],
+      ["ol", [
+        "Central Delhi to the DND Flyway or Kalindi Kunj, then onto the Noida–Greater Noida Expressway",
+        "Join the Yamuna Expressway at Pari Chowk, Greater Noida",
+        "165 km of expressway past Jewar and Mathura",
+        "Exit at Agra and into the city via the inner ring road — 20 to 30 minutes to the Taj Mahal's East Gate"
+      ]],
+      ["p", "From Gurgaon, the route goes via the Faridabad–Noida link or the KMP Expressway, adding thirty to forty minutes."],
+      ["h2", "How long does it take?"],
+      ["p", "Leaving central Delhi at 6 am, you are usually at the Taj Mahal before 10. Leave at 8 and city traffic can add an hour. Coming back, the evening rush into Delhi is the slowest part of the day. That is why our [same day tours](same-day-tour-packages.html) leave early."],
+      ["h2", "Tolls, speed and safety"],
+      ["ul", [
+        "There are toll plazas on the expressway and the Noida approach — FASTag is mandatory on Indian highways",
+        "Speed limits are enforced by cameras along the expressway",
+        "Fog in December and January can slow early-morning drives sharply; a good driver knows when to wait",
+        "Food courts and fuel stations sit at regular intervals along the expressway"
+      ]],
+      ["h2", "Worth stopping on the way"],
+      ["ul", [
+        "Mathura and Vrindavan, the birthplace and childhood home of Krishna — see our [Mathura Vrindavan guide](journal/mathura-vrindavan-from-agra.html)",
+        "Akbar's Tomb at Sikandra, on the edge of Agra",
+        "The Wildlife SOS elephant conservation centre near Mathura"
+      ]],
+      ["h2", "Self-drive or a car with driver?"],
+      ["p", "We would always say a car with a driver. North Indian traffic is its own language, parking at the Taj is controlled and confusing for first-timers, and a driver who does this road every week knows where the fog sits and which dhaba is clean. Our [car rental with driver](car-rent.html) covers sedans, SUVs, Tempo Travellers and luxury cars, with tolls, parking and driver allowance included."],
+      ["tours", ["taj-mahal-day-tour-from-delhi", "delhi-and-agra-2-day-private-tour"]],
+      ["faq", [
+        ["What is the distance from Delhi to Agra by road?", "About 230 km from central Delhi, most of it on the Yamuna Expressway."],
+        ["How long does Delhi to Agra take by car?", "Three to three and a half hours in normal conditions, longer in rush hour or winter fog."],
+        ["Is there a taxi from Delhi to Agra and back in one day?", "Yes. Our same day tours include the car, driver, tolls and parking, with a guide in Agra."]
+      ]]
+    ]
+  },
+  {
+    slug: "fatehpur-sikri-from-agra",
+    title: "Fatehpur Sikri from Agra: how to visit Akbar's abandoned city",
+    date: "2026-09-20", readMins: 6, img: "fatehpurSikri",
+    excerpt: "A whole Mughal capital in red sandstone, built and left within a generation. Distance from Agra, tickets, what to see and how to fit it into a day.",
+    keywords: "fatehpur sikri, fatehpur sikri from agra, buland darwaza, fatehpur sikri ticket price, agra to fatehpur sikri distance",
+    body: [
+      ["p", "Fatehpur Sikri is 37 km west of Agra — about an hour by car. The emperor Akbar built it in the 1570s as his new capital, in thanks for the birth of a son foretold by the Sufi saint Salim Chishti. Within fifteen years the court had moved on. What remains is a complete royal city in red sandstone, now a UNESCO World Heritage Site and one of the best-preserved Mughal sites in India."],
+      ["h2", "Two halves: the palace and the mosque"],
+      ["p", "The site has two parts. The royal complex — the palaces, courts and audience halls — is ticketed. The Jama Masjid and the tomb of Salim Chishti, next door, are a living place of worship and free to enter."],
+      ["h3", "In the royal complex"],
+      ["ul", [
+        "Diwan-i-Aam, the hall of public audience",
+        "Diwan-i-Khas, with its single carved pillar where Akbar is said to have debated with scholars of every faith",
+        "Panch Mahal, a five-storey open pavilion stepping up like a wedding cake",
+        "Jodha Bai's palace, the largest of the residences, mixing Hindu and Islamic design",
+        "The Anup Talao pool and the Pachisi court, laid out like a giant game board"
+      ]],
+      ["h3", "In the mosque complex"],
+      ["ul", [
+        "Buland Darwaza, the 54-metre victory gate — one of the tallest gateways in the world",
+        "The white marble tomb of Salim Chishti, where visitors tie threads to the screens with a wish",
+        "The Jama Masjid courtyard, one of the largest in India"
+      ]],
+      ["h2", "Fatehpur Sikri ticket price and timings"],
+      ["p", "The ASI's published rate for the royal complex is ₹50 for Indians and ₹610 for foreign visitors, with children under 15 free. It is open from sunrise to sunset every day, including Fridays — which makes it a good Friday plan when the Taj Mahal is closed."],
+      ["tip", "Unofficial 'guides' gather at the Buland Darwaza steps. If you are not with a licensed guide, a polite and firm no is enough."],
+      ["h2", "How to fit it in"],
+      ["p", "Most people see Fatehpur Sikri on the road between Agra and Jaipur — it sits right on the route, so it costs very little extra time. Our [Golden Triangle tours](golden-triangle-tour-packages.html) and the [same day Agra tour from Jaipur](tours/same-day-agra-tour-from-jaipur.html) stop here. From Agra itself, a half-day trip works well in the morning before the heat."],
+      ["tours", ["3-days-golden-triangle-private-tour", "same-day-agra-tour-from-jaipur", "agra-local-sightseeing-tour"]],
+      ["faq", [
+        ["How far is Fatehpur Sikri from Agra?", "About 37 km — an hour by car."],
+        ["How much time do I need at Fatehpur Sikri?", "Two hours covers both the royal complex and the mosque with a guide."],
+        ["Is Fatehpur Sikri open on Friday?", "Yes. It is open every day from sunrise to sunset."]
+      ]]
+    ]
+  },
+  {
+    slug: "mathura-vrindavan-from-agra",
+    title: "Mathura and Vrindavan day trip from Agra: temples, timings and tips",
+    date: "2026-09-16", readMins: 7, img: "premMandir",
+    excerpt: "Krishna's birthplace and the town where he grew up, an hour from Agra. Which temples to see, when they open, and how to combine them with the Taj Mahal.",
+    keywords: "mathura vrindavan tour, agra to mathura vrindavan, mathura vrindavan day trip, prem mandir, banke bihari temple, agra mathura vrindavan tour package",
+    body: [
+      ["p", "Mathura is about 55 km from Agra on the Delhi road, and Vrindavan is 12 km beyond it. Together they are the heart of Braj, the land of Krishna's childhood, and one of the most loved pilgrimage regions in India. A day trip from Agra — or a stop on the way from Delhi — fits both in comfortably."],
+      ["h2", "In Mathura"],
+      ["ul", [
+        "Shri Krishna Janmabhoomi, built over the site held to be Krishna's birthplace",
+        "Dwarkadhish Temple, in the old city, famous for its painted ceilings and swing festival",
+        "Vishram Ghat on the Yamuna, where an evening aarti is held with lamps and bells"
+      ]],
+      ["h2", "In Vrindavan"],
+      ["ul", [
+        "Banke Bihari Temple, the most revered shrine in Vrindavan and usually packed with devotees",
+        "Prem Mandir, a white marble temple that lights up in changing colours every evening",
+        "ISKCON's Krishna Balaram Mandir, calm and welcoming to visitors from abroad",
+        "Radha Raman and Nidhivan, among the oldest and most atmospheric sites in town"
+      ]],
+      ["h2", "Temple timings: plan around the midday break"],
+      ["p", "Most Vrindavan temples close in the middle of the day — usually from about noon until 4 or 5 pm — and timings shift between summer and winter. Banke Bihari in particular keeps short opening windows. The best plan is to arrive by 9 am or after 4:30 pm, and to see Prem Mandir as the lights come on after dark."],
+      ["tip", "Phones and cameras are not allowed inside some temples, including the Krishna Janmabhoomi complex. Leave them in the car with your driver."],
+      ["h2", "Holi in Braj"],
+      ["p", "Holi here is celebrated for a week or more, from the Lathmar Holi of Barsana and Nandgaon to the flower Holi at Banke Bihari. It is unforgettable and very crowded — book cars and hotels well ahead and ask us about the safest way to see it."],
+      ["h2", "How to combine it with the Taj Mahal"],
+      ["ul", [
+        "From Agra: a full day — Mathura in the morning, Vrindavan in the afternoon, back by 9 pm after Prem Mandir",
+        "From Delhi to Agra: stop in Vrindavan and Mathura on the way, reaching Agra in the evening",
+        "With the elephants: the Wildlife SOS elephant centre is just outside Mathura — see our [sunrise tour with elephant conservation](tours/taj-mahal-sunrise-with-elephant-conservation.html)"
+      ]],
+      ["tours", ["mathura-vrindavan-day-tour-from-agra", "taj-mahal-sunrise-with-elephant-conservation"]],
+      ["faq", [
+        ["How far is Mathura from Agra?", "About 55 km, roughly an hour and a quarter by car. Vrindavan is another 12 km."],
+        ["Can I do Agra, Mathura and Vrindavan in one day?", "From Delhi it is a very long day. We recommend Mathura and Vrindavan on the way to Agra, with an overnight stay and the Taj Mahal at sunrise the next morning."],
+        ["What is the dress code for the temples?", "Modest clothing covering shoulders and knees. Shoes are left outside, so wear something easy to slip off."]
+      ]]
+    ]
+  },
+  {
+    slug: "what-to-eat-in-agra",
+    title: "What to eat in Agra: petha, bedai, dalmoth and Mughlai food",
+    date: "2026-09-12", readMins: 5, img: "craftsShop",
+    excerpt: "The sweets, breakfasts and Mughlai dishes Agra is known for, where locals eat them and how to eat street food safely on a short visit.",
+    keywords: "agra food, famous food of agra, agra petha, bedai jalebi agra, street food agra, where to eat in agra",
+    body: [
+      ["p", "Agra's food is as Mughal as its monuments. The kitchens that fed the emperors left rich, slow-cooked dishes behind, and the old city has kept its own breakfasts and sweets for centuries. Here is what to look for."],
+      ["h2", "Petha"],
+      ["p", "Agra's most famous sweet: translucent pieces of ash gourd cooked in sugar syrup. The plain white one is the classic; kesar (saffron), paan and chocolate versions are everywhere now. Boxes of petha are the standard gift to take home, and the shops along the main roads near the Taj sell little else."],
+      ["h2", "Bedai and jalebi"],
+      ["p", "The old-city breakfast: bedai, a crisp fried bread stuffed with spiced lentils, served with a sharp potato curry, followed by hot jalebi straight from the oil. It is eaten standing up before 10 am, and it is the best rupee-for-flavour meal in Agra."],
+      ["h2", "Dalmoth"],
+      ["p", "A spiced, crunchy mix of fried lentils and nuts, Agra's savoury answer to petha. It keeps well and travels well."],
+      ["h2", "Mughlai food"],
+      ["p", "Korma, biryani, kebabs and breads cooked in tandoors — Agra does them in the old style. For a special evening, the five-star hotels near the Taj's East Gate serve excellent Mughlai menus, some with a view of the dome."],
+      ["h2", "Eating street food safely"],
+      ["ul", [
+        "Choose stalls that are busy with locals and cook to order in front of you",
+        "Eat food that is hot, fried or freshly cooked; skip cut fruit and salads on the street",
+        "Drink sealed bottled water; our cars carry it for you all day",
+        "Ask your guide — on our tours they will happily point you to the places they eat themselves"
+      ]],
+      ["tours", ["agra-local-sightseeing-tour", "2-days-taj-mahal-overnight-tour"]],
+      ["faq", [
+        ["What is Agra famous for in food?", "Petha (an ash gourd sweet), dalmoth, the bedai and jalebi breakfast, and Mughlai dishes like korma and kebabs."],
+        ["Where can I buy petha in Agra?", "Sweet shops across the city and along the roads leading to the Taj Mahal sell petha in gift boxes."]
+      ]]
+    ]
+  },
+  {
+    slug: "taj-mahal-guide-and-avoiding-touts",
+    title: "Hiring a Taj Mahal guide in Agra, and how to avoid the touts",
+    date: "2026-09-08", readMins: 6, img: "tajSunrise",
+    excerpt: "How to tell a licensed guide from a tout, the five scams we see most often at the Taj Mahal, and what a good guide actually adds to your visit.",
+    keywords: "taj mahal guide, agra tour guide, licensed guide agra, taj mahal scams, agra touts, government approved guide agra",
+    body: [
+      ["p", "A good guide turns the Taj Mahal from a beautiful building into a story — about a grieving emperor, twenty thousand craftsmen, a river that moved and an optical trick at the main gate. A bad one, or a fake one, can turn your day into a sequence of shops. Here is how to get the first and avoid the second."],
+      ["h2", "How to recognise a licensed guide"],
+      ["ul", [
+        "Licensed guides carry a photo identity card issued by the Ministry of Tourism or the state tourism department, and will show it without being asked twice",
+        "They meet you at an agreed place — not by approaching you in the car park",
+        "They agree the fee and the duration before the visit starts",
+        "They do not need to 'quickly show you a workshop' before the monument"
+      ]],
+      ["h2", "Five scams we see most often"],
+      ["ol", [
+        "'The online tickets are not working today' — they are; buy at the counter or online yourself",
+        "'The Taj is closed this morning, but I can take you to a viewpoint' — it is only closed on Fridays",
+        "Fake guides who walk with you uninvited and ask for money at the end",
+        "Auto-rickshaws and 'helpers' who insist the parking is far and you need their ride",
+        "Long detours to marble and carpet showrooms that pay commission on whatever you buy"
+      ]],
+      ["tip", "Nobody inside the Taj Mahal complex is allowed to sell you anything. If someone offers tickets, guides or shortcuts at the gate, walk on."],
+      ["h2", "What a good guide adds"],
+      ["ul", [
+        "Faster, calmer entry: the right gate, the right queue, the right time",
+        "The history — Shah Jahan, Mumtaz Mahal, the Mughal garden plan and the river front",
+        "The details most people miss: the calligraphy that grows larger as it rises, the inlay up close, the deliberate asymmetry of Shah Jahan's tomb",
+        "The best photo spots, and the patience to take the photo for you"
+      ]],
+      ["h2", "Why book through a local company"],
+      ["p", "We have been running tours from Agra since 2000. Every guide we use is licensed and known to us personally, and every [Taj Mahal tour](taj-mahal-tour-packages.html) includes one, along with tickets, transport and a fixed price agreed in writing before you pay. If shopping is not on your list, it is not on ours."],
+      ["tours", ["agra-local-sightseeing-tour", "taj-mahal-day-tour-from-delhi", "taj-mahal-sunrise-tour-from-delhi"]],
+      ["faq", [
+        ["Is a guide compulsory at the Taj Mahal?", "No, but a licensed guide makes the visit far richer and quicker."],
+        ["How long does a guided Taj Mahal tour take?", "Two to three hours is the usual length, including time for photographs."],
+        ["Will the guide take us shopping?", "Not on our tours unless you ask. Shopping stops are never added without your agreement."]
+      ]]
+    ]
+  },
+  {
+    slug: "ranthambore-safari-guide",
+    title: "Ranthambore safari guide: zones, jeep vs canter, season and booking",
+    date: "2026-09-04", readMins: 7, img: "ranthambore",
+    excerpt: "How Ranthambore's safari zones work, whether to book a jeep or a canter, the best months for tigers and how to fit the park between Agra and Jaipur.",
+    keywords: "ranthambore safari, ranthambore safari booking, ranthambore zones, ranthambore tiger safari, ranthambore jeep safari",
+    body: [
+      ["p", "Ranthambore National Park in Rajasthan is one of the best places in the world to see a wild Bengal tiger. It is also an easy addition to a Golden Triangle trip: Sawai Madhopur, the town beside the park, is about five to six hours from Agra and three and a half from Jaipur."],
+      ["h2", "How the safari zones work"],
+      ["p", "The park is divided into numbered zones, and each safari vehicle is assigned to one. The central zones around the lakes and the old fort are the most famous for sightings; the outer zones are quieter and can be just as rewarding. You cannot choose to wander between zones once inside, so the zone allotted with your permit matters."],
+      ["h2", "Jeep (gypsy) or canter?"],
+      ["ul", [
+        "Gypsy: an open six-seat jeep — quieter, more manoeuvrable and better for photography",
+        "Canter: an open bus for about twenty people — cheaper and fine for a first look",
+        "A private gypsy for your own group can be booked, subject to the forest department's daily quota"
+      ]],
+      ["h2", "Safari timings"],
+      ["p", "There are two safaris a day, each lasting about three hours: one starting at first light and one in the afternoon. Exact times shift with the season. Two or three safaris give you a far better chance of a tiger than one."],
+      ["h2", "The best time to visit"],
+      ["p", "The park's core zones close for the monsoon, roughly July to September, and reopen in October. October to March is pleasant and green; April to June is very hot, but the best time for tiger sightings as the animals come to the water."],
+      ["h2", "Booking safaris"],
+      ["p", "Permits are released online by the Rajasthan forest department well in advance and the popular zones sell out, especially in winter and over Indian holidays. Send us your dates early and we book the permits along with your lodge and transfers."],
+      ["tip", "Bring a warm layer for winter mornings — an open jeep at 7 am in January is cold — and a scarf for the dust."],
+      ["tours", ["3-days-ranthambore-safari-tour", "7-days-golden-triangle-with-ranthambore", "8-days-north-india-wildlife-tour"]],
+      ["faq", [
+        ["How far is Ranthambore from Agra?", "About 5 to 6 hours by road. Many guests travel Agra – Ranthambore – Jaipur as part of a Golden Triangle tour."],
+        ["Is a tiger sighting guaranteed?", "No — they are wild animals in a large park. Two to four safaris give you a good chance."],
+        ["Which is better, a gypsy or a canter?", "A gypsy, if your budget allows. It is quieter, holds fewer people and can get into narrower tracks."]
+      ]]
+    ]
+  },
   {
     slug: "best-time-to-visit-taj-mahal",
     title: "The best time to visit the Taj Mahal, hour by hour",
@@ -2989,6 +3467,399 @@ const TOURS = [
            ["When does Ranthambore close?", "The core zones close from July to September for the monsoon. Book October to June."],
            ["Is it too much for 15 days?", "It is full but not rushed — the longest drives are six hours and every big city gets two nights."]],
     gallery: ["ranthambore", "jaisalmerCity", "udaipurLake"]
+  }
+  ,
+  {
+    slug: "8-days-north-india-wildlife-tour",
+    title: "8 days North India wildlife tour",
+    cat: "wildlife", catLabel: "Wildlife tour packages",
+    route: "Delhi · Jaipur · Ranthambore · Bharatpur · Agra",
+    days: 8, nights: 7, durationLabel: "8 days",
+    price: 104000,
+    img: IMG.tigerPortrait,
+    summary: "Tigers in Ranthambore, migratory birds at Bharatpur and the Taj Mahal at the end — North India's best wildlife and its best-known sights in one private week.",
+    facts: [["Duration", "8 days, 7 nights"], ["Start / end", "Delhi / Delhi"], ["Parks", "Ranthambore, Keoladeo (Bharatpur)"],
+            ["Safaris", "Two jeep safaris in Ranthambore"], ["Transport", "Private AC car throughout"], ["Tour type", "Private"],
+            ["Best season", "October to April"]],
+    highlights: [
+      "Morning and afternoon jungle safaris in Ranthambore, home of the Bengal tiger",
+      "Keoladeo bird sanctuary at Bharatpur with a naturalist — over 350 species in winter",
+      "Amber Fort, City Palace and Hawa Mahal in Jaipur",
+      "Fatehpur Sikri, the Taj Mahal and Agra Fort",
+      "Mathura and Vrindavan on the way back to Delhi"
+    ],
+    itinerary: [
+      { time: "Day 1", title: "Arrive in Delhi, city sightseeing",
+        text: "Airport pickup and hotel check-in. Guided sightseeing of Raj Ghat, India Gate, the President's House, Humayun's Tomb, the Lotus Temple, Qutub Minar and Chhatarpur Temple." },
+      { time: "Day 2", title: "Delhi to Jaipur",
+        text: "About five hours to Jaipur. Check in, then an evening at Chokhi Dhani for Rajasthani folk music, dance and a village-style dinner." },
+      { time: "Day 3", title: "Jaipur sightseeing",
+        text: "Amber Fort on the hill, then the City Palace, Jantar Mantar, Birla Temple and a photo stop at Hawa Mahal." },
+      { time: "Day 4", title: "Jaipur to Ranthambore",
+        text: "About three and a half hours to Sawai Madhopur. Check in at a jungle resort beside the park and spend a quiet evening there." },
+      { time: "Day 5", title: "Ranthambore safari day",
+        text: "A morning and an afternoon jeep safari into the national park — Bengal tigers, leopards, sloth bears, sambar and a ruined thousand-year-old fort above the lakes." },
+      { time: "Day 6", title: "Ranthambore to Bharatpur",
+        text: "About four and a half hours to Bharatpur. In the afternoon, explore Keoladeo bird sanctuary with a naturalist by cycle-rickshaw — painted storks, sarus cranes and winter migrants." },
+      { time: "Day 7", title: "Bharatpur to Agra via Fatehpur Sikri",
+        text: "Early birding if you want it, then the deserted Mughal capital of Fatehpur Sikri on the way to Agra. Evening free." },
+      { time: "Day 8", title: "Taj Mahal, Mathura, Vrindavan and Delhi",
+        text: "The Taj Mahal and Agra Fort, a stop at Akbar's tomb at Sikandra, then Mathura and Vrindavan before the drive to Delhi and drop-off at your hotel or the airport." }
+    ],
+    includes: ["7 nights hotel with daily breakfast", "Private AC car and driver from Delhi and back",
+               "Licensed English-speaking guides for sightseeing", "Two jeep safaris in Ranthambore with park permits",
+               "Naturalist and rickshaw at Bharatpur", "Tolls, parking, fuel, driver allowance and taxes"],
+    excludes: ["Flights", "Monument entry tickets", "Lunch and dinner", "Camera fees in the parks", "Tips and personal expenses"],
+    faqs: [["Is a tiger sighting guaranteed?", "No one can promise it, but Ranthambore is one of the best parks in India for tigers, and two safaris give you real chances."],
+           ["When is Bharatpur best?", "November to February, when the migratory birds are in. The resident birds are there year-round."],
+           ["Can we add more safaris?", "Yes. An extra night in Ranthambore adds two more drives — tell us when you enquire."],
+           ["Is it suitable for children?", "Yes. The safaris are three hours each and the drives between parks are four to five hours at most."]],
+    gallery: ["ranthambore", "jungleSafari", "taj"]
+  },
+  {
+    slug: "11-days-central-india-wildlife-tour",
+    title: "11 days Central India wildlife tour",
+    cat: "wildlife", catLabel: "Wildlife tour packages",
+    route: "Delhi · Pench · Kanha · Bandhavgarh · Khajuraho · Agra",
+    days: 11, nights: 10, durationLabel: "11 days",
+    price: 168000,
+    img: IMG.tigerGrass,
+    summary: "Three of India's great tiger reserves — Pench, Kanha and Bandhavgarh — back to back, then the temples of Khajuraho and the Taj Mahal at sunrise.",
+    facts: [["Duration", "11 days, 10 nights"], ["Start / end", "Delhi / Delhi"], ["Parks", "Pench, Kanha, Bandhavgarh"],
+            ["Safaris", "Up to nine jeep safaris"], ["Transport", "Private AC car, flight to Nagpur, train to Agra"], ["Tour type", "Private"],
+            ["Best season", "October to June; best tiger sightings March to May"]],
+    highlights: [
+      "Pench, Kanha and Bandhavgarh — the country that inspired The Jungle Book",
+      "Bandhavgarh, with one of the highest densities of tigers in India",
+      "Barasingha, the rare hard-ground swamp deer, in Kanha's meadows",
+      "Leopards, sloth bears, wild dogs, gaur and over 250 bird species",
+      "Khajuraho's UNESCO-listed temples and the Taj Mahal at sunrise"
+    ],
+    itinerary: [
+      { time: "Day 1", title: "Arrive in Delhi",
+        text: "Our representative meets you at the airport and drives you to your hotel. The rest of the day is yours." },
+      { time: "Day 2", title: "Old and New Delhi",
+        text: "A full day with your guide: Raj Ghat, Jama Masjid and the Red Fort in the old city, then Humayun's Tomb, Qutub Minar, India Gate and the government buildings of Lutyens' Delhi." },
+      { time: "Day 3", title: "Fly to Nagpur, first safari in Pench",
+        text: "Morning flight to Nagpur and about two hours by road to Pench Tiger Reserve. Check in and head out on your first evening jeep safari." },
+      { time: "Day 4", title: "Pench safaris",
+        text: "Morning and evening jeep safaris along the teak forests of the Pench river — tigers, leopards, wild dogs and rich birdlife." },
+      { time: "Day 5", title: "Pench to Kanha",
+        text: "A last morning safari in Pench, then about five hours to Kanha National Park. Evening at the lodge." },
+      { time: "Day 6", title: "Kanha safaris",
+        text: "Morning and evening safaris through Kanha's sal forests and open meadows, where the barasingha herds graze and tigers hunt." },
+      { time: "Day 7", title: "Kanha to Bandhavgarh",
+        text: "A final morning drive in Kanha, then about five hours to Bandhavgarh Tiger Reserve." },
+      { time: "Day 8", title: "Bandhavgarh safaris",
+        text: "Morning and evening jeep safaris in Bandhavgarh, below the old hill fort — the park best known for tiger sightings in Central India." },
+      { time: "Day 9", title: "Bandhavgarh to Khajuraho",
+        text: "About five hours to Khajuraho. The afternoon is free to rest after the early safari starts." },
+      { time: "Day 10", title: "Khajuraho temples, train to Agra",
+        text: "A guided morning at the Western and Eastern group of temples, famous for their carving. Drive to Jhansi and take the afternoon train to Agra." },
+      { time: "Day 11", title: "Taj Mahal at sunrise, back to Delhi",
+        text: "The Taj Mahal at first light and Agra Fort with your guide, then the expressway back to Delhi for your onward flight." }
+    ],
+    includes: ["10 nights in hotels and jungle lodges with daily breakfast", "Private AC car and driver for all transfers and road journeys",
+               "Up to nine jeep safaris with park permits and a naturalist", "Licensed English-speaking guides for sightseeing",
+               "Jhansi to Agra train tickets", "Tolls, parking, fuel, driver allowance and taxes"],
+    excludes: ["Delhi to Nagpur flight (we book it at cost)", "Monument entry tickets", "Lunch and dinner", "Camera fees in the parks", "Tips"],
+    faqs: [["When are the parks closed?", "The core zones close for the monsoon, from July to mid-October. March to May gives the best tiger sightings as animals gather at water."],
+           ["How many safaris are included?", "Up to nine — evening on arrival in Pench, then morning and evening drives in each park."],
+           ["Is the flight included?", "We book the Delhi to Nagpur flight at cost so you can choose the timing. Everything on the ground is included."],
+           ["Can we add Satpura or Panna?", "Yes. Both fit into this route with an extra two nights."]],
+    gallery: ["jungleSafari", "khajuraho", "tajSunrise"]
+  },
+  {
+    slug: "11-days-golden-triangle-with-jim-corbett",
+    title: "11 days Golden Triangle with Jim Corbett tour",
+    cat: "wildlife", catLabel: "Wildlife tour packages",
+    route: "Delhi · Jaipur · Agra · Jim Corbett",
+    days: 11, nights: 10, durationLabel: "11 days",
+    price: 138000,
+    img: IMG.corbettElephant,
+    summary: "Delhi, Jaipur and Agra at an easy pace, then four days in the foothills of the Himalaya at Jim Corbett — India's oldest national park, with tigers, wild elephants and river forests.",
+    facts: [["Duration", "11 days, 10 nights"], ["Start / end", "Delhi / Delhi"], ["Park", "Jim Corbett National Park"],
+            ["Safaris", "Two jeep safaris and an elephant safari"], ["Transport", "Private AC car throughout"], ["Tour type", "Private"],
+            ["Best season", "November to June"]],
+    highlights: [
+      "The full Golden Triangle — Delhi, Jaipur and Agra — with a guide in each city",
+      "Jim Corbett, India's first national park, in the Himalayan foothills",
+      "Jeep and elephant safaris for tigers, wild elephants, deer and crocodiles",
+      "Over 600 species of birds along the Ramganga river",
+      "The Taj Mahal at sunrise and Fatehpur Sikri on the way"
+    ],
+    itinerary: [
+      { time: "Day 1", title: "Arrive in Delhi",
+        text: "Airport pickup and transfer to your hotel. The evening is free." },
+      { time: "Day 2", title: "Delhi sightseeing",
+        text: "Chandni Chowk, the Red Fort and Jama Masjid in Old Delhi, then Qutub Minar, the Lotus Temple and Akshardham." },
+      { time: "Day 3", title: "Delhi to Jaipur",
+        text: "About five hours to Jaipur. Check in and spend the evening at leisure." },
+      { time: "Day 4", title: "Jaipur sightseeing",
+        text: "Up to Amber Fort, then the City Palace, Jantar Mantar, Hawa Mahal and Birla Temple." },
+      { time: "Day 5", title: "Jaipur to Agra via Fatehpur Sikri",
+        text: "On the way to Agra, the abandoned Mughal city of Fatehpur Sikri — Salim Chishti's tomb and the Panch Mahal." },
+      { time: "Day 6", title: "Taj Mahal and Agra",
+        text: "The Taj Mahal at sunrise, Agra Fort and the Baby Taj with your guide." },
+      { time: "Day 7", title: "Agra to Jim Corbett",
+        text: "A long drive north to the foothills — about seven hours. Check in at your wildlife resort and rest." },
+      { time: "Day 8", title: "Jeep safaris in Corbett",
+        text: "Morning and afternoon jeep safaris through sal forest and grassland — tigers, elephants, spotted deer and the gharial in the Ramganga river." },
+      { time: "Day 9", title: "Elephant safari and the outdoors",
+        text: "An elephant safari, then a free afternoon for river walks, Corbett Falls or the Garjia temple on its rock in the Kosi river." },
+      { time: "Day 10", title: "Corbett to Delhi",
+        text: "A morning nature walk with a naturalist, then about six hours back to Delhi." },
+      { time: "Day 11", title: "Departure",
+        text: "Breakfast and transfer to the airport or station for your onward journey." }
+    ],
+    includes: ["10 nights in hotels and a wildlife resort with daily breakfast", "Private AC car and driver throughout",
+               "Licensed English-speaking guides in Delhi, Jaipur and Agra", "Two jeep safaris and one elephant safari with permits",
+               "Naturalist for the nature walk", "Tolls, parking, fuel, driver allowance and taxes"],
+    excludes: ["Flights", "Monument entry tickets", "Lunch and dinner", "Camera fees in the park", "Adventure activities in Corbett", "Tips"],
+    faqs: [["Which zone of Corbett will we visit?", "Bijrani or Jhirna for day safaris, or Dhikala if you want to stay inside the park — Dhikala permits open 45 days ahead and go fast."],
+           ["When is Corbett open?", "Dhikala and Bijrani close for the monsoon, roughly mid-June to mid-October. Jhirna stays open year-round."],
+           ["Is the drive from Agra too long?", "It is the longest leg of the tour, about seven hours. We can break it with a night in Delhi if you prefer."],
+           ["Can we skip Jaipur?", "Yes. A shorter seven-day version keeps Delhi, Agra and Corbett."]],
+    gallery: ["tigerForest", "amber", "taj"]
+  },
+  {
+    slug: "16-days-india-wildlife-tour",
+    title: "16 days India wildlife tour, Corbett to Kanha",
+    cat: "wildlife", catLabel: "Wildlife tour packages",
+    route: "Delhi · Corbett · Ranthambore · Bharatpur · Agra · Khajuraho · Bandhavgarh · Kanha · Mumbai",
+    days: 16, nights: 15, durationLabel: "16 days",
+    price: 228000,
+    img: IMG.tigerForest,
+    summary: "The great wildlife journey of North and Central India — five national parks from the Himalayan foothills to the sal forests of Kanha, with the Taj Mahal and Khajuraho between them.",
+    facts: [["Duration", "16 days, 15 nights"], ["Start / end", "Delhi / Mumbai"], ["Parks", "Corbett, Ranthambore, Bharatpur, Bandhavgarh, Kanha"],
+            ["Safaris", "Jeep safaris in every tiger reserve"], ["Transport", "Private AC car, AC train, flight to Mumbai"], ["Tour type", "Private"],
+            ["Best season", "November to May"]],
+    highlights: [
+      "Five parks: Corbett, Ranthambore, Bharatpur, Bandhavgarh and Kanha",
+      "Bengal tigers, leopards, wild elephants, sloth bears and wild dogs",
+      "Birding at Keoladeo, a UNESCO World Heritage wetland",
+      "The Taj Mahal, Agra Fort and Akbar's tomb at Sikandra",
+      "Khajuraho's Chandela temples on the way into Central India"
+    ],
+    itinerary: [
+      { time: "Day 1", title: "Arrive in Delhi, city tour",
+        text: "Airport pickup and check-in, then Old and New Delhi: Qutub Minar, Humayun's Tomb, the Red Fort, India Gate, Raj Ghat, Jama Masjid and Chandni Chowk." },
+      { time: "Day 2", title: "Delhi to Corbett",
+        text: "About six hours north to Corbett National Park. Evening at the resort." },
+      { time: "Day 3", title: "Corbett safaris",
+        text: "Jeep safaris through the Himalayan foothill forests — tigers, elephants and the birds of the Ramganga." },
+      { time: "Day 4", title: "Another day in Corbett",
+        text: "More time in the park for tigers, leopards, wild dogs, sloth bears and porcupines." },
+      { time: "Day 5", title: "Corbett to Delhi",
+        text: "Back to Delhi by road. Evening free." },
+      { time: "Day 6", title: "Train to Ranthambore",
+        text: "AC train from Delhi to Sawai Madhopur and a short drive to your lodge beside Ranthambore Tiger Reserve." },
+      { time: "Day 7", title: "Ranthambore safaris",
+        text: "A full day of game drives in Ranthambore, among lakes, ruins and the old fort." },
+      { time: "Day 8", title: "Ranthambore to Bharatpur",
+        text: "About four and a half hours to Bharatpur and an afternoon of birdwatching with a naturalist in Keoladeo National Park." },
+      { time: "Day 9", title: "Bharatpur to Agra",
+        text: "Early birding, then on to Agra for the Taj Mahal, Agra Fort and Sikandra." },
+      { time: "Day 10", title: "Agra to Khajuraho",
+        text: "A long drive south into Bundelkhand to Khajuraho. Evening free." },
+      { time: "Day 11", title: "Khajuraho temples, on to Bandhavgarh",
+        text: "The Western and Eastern temple groups in the morning, then about five hours to Bandhavgarh National Park." },
+      { time: "Day 12", title: "Bandhavgarh safaris",
+        text: "A full day of jeep safaris in one of the best parks in India for tiger sightings." },
+      { time: "Day 13", title: "Bandhavgarh to Kanha",
+        text: "About five hours to Kanha, the 1,945 square kilometre tiger reserve of the Maikal hills." },
+      { time: "Day 14", title: "Kanha safaris",
+        text: "Morning and evening drives through sal forest and meadows — tigers, barasingha, gaur and wild dogs." },
+      { time: "Day 15", title: "Kanha to Nagpur, fly to Mumbai",
+        text: "Drive to Nagpur and an evening flight to Mumbai. Transfer to your hotel." },
+      { time: "Day 16", title: "Depart from Mumbai",
+        text: "A free morning, then transfer to Mumbai airport for your flight home or back to Delhi." }
+    ],
+    includes: ["15 nights in hotels and jungle lodges with daily breakfast", "Private AC car and driver for all road journeys",
+               "Jeep safaris in Corbett, Ranthambore, Bandhavgarh and Kanha with permits", "Naturalist at Bharatpur",
+               "Delhi to Sawai Madhopur AC train tickets", "Licensed guides in Delhi, Agra and Khajuraho",
+               "Tolls, parking, fuel, driver allowance and taxes"],
+    excludes: ["Nagpur to Mumbai flight (booked at cost)", "International flights", "Monument entry tickets",
+               "Lunch and dinner", "Camera fees in the parks", "Tips"],
+    faqs: [["Is sixteen days too long?", "It is a big trip, but the parks are spaced so there is never more than one long drive in a row, and each reserve gets at least one full day."],
+           ["Can it end in Delhi instead of Mumbai?", "Yes. We change the last flight from Nagpur to Delhi."],
+           ["When should we go?", "November to May. Central Indian parks close from July to mid-October, Corbett from mid-June."],
+           ["Can we shorten it?", "Yes — the North India half (Corbett, Ranthambore, Bharatpur, Agra) or the Central India half both work on their own."]],
+    gallery: ["leopard", "corbettElephant", "khajuraho"]
+  }
+  ,
+  {
+    slug: "old-delhi-heritage-tour-by-rickshaw",
+    title: "Old Delhi heritage tour by rickshaw and car",
+    cat: "delhi", catLabel: "New Delhi tour packages",
+    route: "Red Fort · Jama Masjid · Chandni Chowk · Raj Ghat",
+    days: 1, nights: 0, durationLabel: "5 hours",
+    price: 3900,
+    img: IMG.redFort,
+    summary: "Shah Jahan's walled city up close — the Red Fort, Jama Masjid, a cycle-rickshaw through the lanes of Chandni Chowk and the spice market, with a private car waiting at each end.",
+    facts: [["Duration", "About 5 hours"], ["Start", "Your hotel in Delhi, Noida or Gurgaon"], ["Transport", "Private AC car and cycle-rickshaw"],
+            ["Tour type", "Private"], ["Guide", "Licensed, English speaking"], ["Best time", "8:30 am start, before the lanes fill"]],
+    highlights: [
+      "Cycle-rickshaw ride through Chandni Chowk, Delhi's oldest market",
+      "Jama Masjid, India's largest mosque, built by Shah Jahan",
+      "The Red Fort, a UNESCO World Heritage Site",
+      "Khari Baoli spice market and the lanes of Kinari Bazaar",
+      "Raj Ghat, the memorial to Mahatma Gandhi"
+    ],
+    itinerary: [
+      { time: "8:30 AM", title: "Pickup from your hotel",
+        text: "Your driver and guide collect you from your hotel in an air-conditioned car." },
+      { time: "9:15 AM", title: "Red Fort",
+        text: "A guided walk through the Lahori Gate, the Diwan-i-Am and the Diwan-i-Khas of the Mughal emperors' palace-fortress." },
+      { time: "10:30 AM", title: "Rickshaw through Chandni Chowk",
+        text: "Swap the car for a cycle-rickshaw: Chandni Chowk, Kinari Bazaar's wedding stalls and the spice sacks of Khari Baoli." },
+      { time: "11:30 AM", title: "Jama Masjid",
+        text: "The great Friday mosque of Shah Jahan, with views over the old city from its courtyard." },
+      { time: "12:30 PM", title: "Raj Ghat, then back to your hotel",
+        text: "A quiet stop at Gandhi's memorial on the Yamuna, then the drive back to your hotel." }
+    ],
+    includes: ["Private AC car and driver", "Licensed English-speaking guide", "Cycle-rickshaw ride in Old Delhi",
+               "Bottled water", "Parking, fuel and taxes"],
+    excludes: ["Monument entry tickets", "Food and drinks", "Camera fees", "Tips"],
+    faqs: [["Is the Red Fort open every day?", "It is closed on Mondays. On Mondays we swap it for Humayun's Tomb."],
+           ["Is the rickshaw ride safe?", "Yes. The rickshaw pullers work with us regularly and your guide rides alongside you."],
+           ["What should we wear to Jama Masjid?", "Covered shoulders and knees. Robes are provided at the gate if needed, and shoes are left at the entrance."]],
+    gallery: ["redFort", "humayun", "craftsShop"]
+  },
+  {
+    slug: "new-delhi-sunrise-city-tour",
+    title: "New Delhi sunrise city tour by car",
+    cat: "delhi", catLabel: "New Delhi tour packages",
+    route: "India Gate · Humayun's Tomb · Qutub Minar · Lodhi Garden",
+    days: 1, nights: 0, durationLabel: "6 hours",
+    price: 4500,
+    img: IMG.humayun,
+    summary: "Delhi before the traffic: India Gate in the first light, a quiet walk in Lodhi Garden, and Humayun's Tomb and Qutub Minar as the gates open — back at your hotel by lunch.",
+    facts: [["Duration", "About 6 hours"], ["Start", "5:30 am from your hotel"], ["Transport", "Private AC car"],
+            ["Tour type", "Private"], ["Guide", "Licensed, English speaking"], ["Return", "Around noon"]],
+    highlights: [
+      "India Gate and Rajpath at sunrise, almost empty",
+      "Morning walk in Lodhi Garden among the 15th-century tombs",
+      "Humayun's Tomb, the Mughal garden tomb that inspired the Taj Mahal",
+      "Qutub Minar, the 73-metre victory tower",
+      "Breakfast stop and back at your hotel by midday"
+    ],
+    itinerary: [
+      { time: "5:30 AM", title: "Pickup from your hotel", text: "An early start to beat Delhi's traffic and heat." },
+      { time: "6:00 AM", title: "India Gate and Kartavya Path",
+        text: "Sunrise at India Gate, with a drive past Rashtrapati Bhavan and the government buildings of Lutyens' Delhi." },
+      { time: "7:00 AM", title: "Lodhi Garden", text: "A walk among the tombs of the Sayyid and Lodi sultans, with Delhi's morning walkers." },
+      { time: "8:00 AM", title: "Breakfast and Humayun's Tomb",
+        text: "A breakfast stop, then Humayun's Tomb as it opens — red sandstone, white marble and the first great Mughal garden." },
+      { time: "10:00 AM", title: "Qutub Minar", text: "The tower, the iron pillar and the ruins of Delhi's first mosque." },
+      { time: "12:00 PM", title: "Back to your hotel", text: "Drop-off at your hotel or anywhere in Delhi NCR." }
+    ],
+    includes: ["Private AC car and driver", "Licensed English-speaking guide", "Bottled water", "Parking, fuel and taxes"],
+    excludes: ["Monument entry tickets", "Breakfast", "Camera fees", "Tips"],
+    faqs: [["Why start so early?", "Delhi's roads are empty at dawn, the light is best for photographs, and you are done before the midday heat."],
+           ["Can we add Old Delhi?", "Yes. Add the Red Fort and a rickshaw through Chandni Chowk and the tour becomes a full day."]],
+    gallery: ["indiaGate", "humayun", "qutub"]
+  },
+  {
+    slug: "new-delhi-luxury-car-tour",
+    title: "New Delhi luxury car city tour",
+    cat: "delhi", catLabel: "New Delhi tour packages",
+    route: "Old and New Delhi · Full day",
+    days: 1, nights: 0, durationLabel: "8 hours",
+    price: 12500,
+    img: IMG.lotusTemple,
+    summary: "A full day of Old and New Delhi in a chauffeur-driven luxury car, with a senior guide, lunch at a five-star hotel and a pace set entirely by you.",
+    facts: [["Duration", "About 8 hours"], ["Car", "Mercedes E-Class, BMW 5 Series or similar"], ["Tour type", "Private"],
+            ["Guide", "Senior licensed guide"], ["Lunch", "Five-star hotel restaurant"], ["Pickup", "Hotel or airport in Delhi NCR"]],
+    highlights: [
+      "Chauffeur-driven Mercedes, BMW or similar for the whole day",
+      "Red Fort, Jama Masjid and Chandni Chowk in Old Delhi",
+      "Humayun's Tomb, Qutub Minar, the Lotus Temple and India Gate",
+      "Lunch at a five-star hotel",
+      "Senior guide and a flexible, unhurried schedule"
+    ],
+    itinerary: [
+      { time: "9:00 AM", title: "Pickup in your luxury car", text: "Your chauffeur and senior guide meet you at your hotel." },
+      { time: "9:30 AM", title: "Old Delhi", text: "The Red Fort, Jama Masjid and a short rickshaw through Chandni Chowk if you would like it." },
+      { time: "12:00 PM", title: "Raj Ghat and India Gate", text: "Gandhi's memorial, then a drive down Kartavya Path past the President's House." },
+      { time: "1:00 PM", title: "Lunch at a five-star hotel", text: "An unhurried lunch at one of New Delhi's leading hotels." },
+      { time: "2:30 PM", title: "Humayun's Tomb and the Lotus Temple", text: "The Mughal garden tomb, then the Bahá'í Lotus Temple." },
+      { time: "4:00 PM", title: "Qutub Minar and back", text: "The Qutub complex, then back to your hotel by about 5:30 pm." }
+    ],
+    includes: ["Luxury car with chauffeur for 8 hours", "Senior licensed guide", "Lunch at a five-star hotel",
+               "Monument entry tickets", "Bottled water, parking and taxes"],
+    excludes: ["Camera fees", "Shopping", "Tips"],
+    faqs: [["Which cars do you use?", "Mercedes E-Class, BMW 5 Series, Audi A6 or similar, depending on availability. Tell us if you have a preference."],
+           ["Can the tour start from the airport?", "Yes. Many guests do this on a long layover — we meet you at arrivals."]],
+    gallery: ["lotusTemple", "redFort", "indiaGate"]
+  }
+  ,
+  {
+    slug: "agra-local-sightseeing-tour",
+    title: "Agra local sightseeing tour by car with guide",
+    cat: "taj-mahal", catLabel: "Taj Mahal tour packages",
+    route: "Taj Mahal · Agra Fort · Baby Taj · Mehtab Bagh",
+    days: 1, nights: 0, durationLabel: "8 hours",
+    price: 3500,
+    img: IMG.agraFort,
+    summary: "A full day of Agra sightseeing from your Agra hotel or the railway station: the Taj Mahal, Agra Fort, the Baby Taj and sunset at Mehtab Bagh, with a private car and a licensed local guide.",
+    facts: [["Duration", "About 8 hours"], ["Start", "Your Agra hotel, Agra Cantt or Agra Fort station"], ["Transport", "Private AC car"],
+            ["Tour type", "Private"], ["Guide", "Licensed, English speaking"], ["Closed", "Taj Mahal closed on Fridays"]],
+    highlights: [
+      "The Taj Mahal with a licensed local guide",
+      "Agra Fort and the Musamman Burj, where Shah Jahan spent his last years",
+      "Itimad-ud-Daulah, the 'Baby Taj', with inlay that came before the Taj Mahal's",
+      "Sunset over the Taj from Mehtab Bagh across the river",
+      "Pickup from any Agra hotel or railway station"
+    ],
+    itinerary: [
+      { time: "7:00 AM", title: "Pickup in Agra", text: "Your driver and guide collect you from your hotel or the railway station." },
+      { time: "7:30 AM", title: "The Taj Mahal", text: "Up to three hours inside the Taj Mahal — the story, the inlay, the best photograph points." },
+      { time: "10:30 AM", title: "Breakfast break", text: "A break at your hotel or a local café." },
+      { time: "11:30 AM", title: "Agra Fort", text: "The palaces of Akbar, Jahangir and Shah Jahan, and the view of the Taj from the Musamman Burj." },
+      { time: "1:30 PM", title: "Lunch and a marble inlay workshop", text: "Lunch, then an optional twenty minutes with the inlay craftsmen — there is no obligation to buy." },
+      { time: "3:30 PM", title: "The Baby Taj", text: "Itimad-ud-Daulah, the quiet marble tomb on the far bank of the Yamuna." },
+      { time: "5:00 PM", title: "Sunset at Mehtab Bagh", text: "The Taj Mahal from the moonlight garden across the river, then back to your hotel or station." }
+    ],
+    includes: ["Private AC car and driver for the day", "Licensed English-speaking guide", "Bottled water", "Parking, fuel and taxes"],
+    excludes: ["Monument entry tickets", "Meals", "Camera fees", "Tips"],
+    faqs: [["Is this tour for people already staying in Agra?", "Yes — it starts and ends in Agra. If you are coming from Delhi, see our same day Agra tour by car."],
+           ["Can you pick us up from the railway station?", "Yes, from Agra Cantt, Agra Fort or Raja ki Mandi station. Send us your train number."],
+           ["What if we are in Agra on a Friday?", "The Taj Mahal is closed, so we swap it for Fatehpur Sikri and Akbar's Tomb, and see the Taj from Mehtab Bagh."]],
+    gallery: ["taj", "agraFortPalace", "babyTaj"]
+  },
+  {
+    slug: "mathura-vrindavan-day-tour-from-agra",
+    title: "Mathura Vrindavan day tour from Agra",
+    cat: "same-day", catLabel: "Same day tour packages",
+    route: "Agra · Mathura · Vrindavan · Agra",
+    days: 1, nights: 0, durationLabel: "10 hours",
+    price: 4200,
+    img: IMG.premMandir,
+    summary: "Krishna's birthplace and the temple town where he grew up, in one private day from Agra — Krishna Janmabhoomi, Dwarkadhish, Banke Bihari, ISKCON and Prem Mandir lit up after dark.",
+    facts: [["Duration", "About 10 hours"], ["Start", "Your Agra hotel or railway station"], ["Transport", "Private AC car"],
+            ["Tour type", "Private"], ["Guide", "Local guide in Mathura and Vrindavan"], ["Distance", "About 55 km to Mathura"]],
+    highlights: [
+      "Shri Krishna Janmabhoomi, the birthplace of Lord Krishna",
+      "Dwarkadhish Temple and Vishram Ghat in old Mathura",
+      "Banke Bihari Temple, the most revered shrine in Vrindavan",
+      "ISKCON's Krishna Balaram Mandir",
+      "Prem Mandir lit up in colour after dark"
+    ],
+    itinerary: [
+      { time: "8:00 AM", title: "Leave Agra", text: "About an hour and a quarter to Mathura by the expressway." },
+      { time: "9:30 AM", title: "Krishna Janmabhoomi and Dwarkadhish", text: "The birthplace temple, then Dwarkadhish Temple and Vishram Ghat in the old city." },
+      { time: "12:00 PM", title: "Lunch", text: "A vegetarian lunch — Braj is a vegetarian region." },
+      { time: "1:30 PM", title: "Vrindavan", text: "ISKCON's Krishna Balaram Mandir and a walk through the old lanes while the bigger temples rest." },
+      { time: "4:30 PM", title: "Banke Bihari", text: "Banke Bihari as it reopens for the evening darshan." },
+      { time: "6:30 PM", title: "Prem Mandir", text: "The white marble temple as the evening lights come on, then the drive back to Agra." }
+    ],
+    includes: ["Private AC car and driver", "Local guide in Mathura and Vrindavan", "Bottled water", "Tolls, parking, fuel and taxes"],
+    excludes: ["Meals", "Temple donations", "Tips"],
+    faqs: [["Can this tour start from Delhi?", "Yes. From Delhi we usually stop in Vrindavan and Mathura on the way and continue to Agra for the night."],
+           ["Can we take phones into the temples?", "Not into all of them — the Krishna Janmabhoomi complex does not allow phones or cameras. Leave them in the car."],
+           ["Can we add the elephant conservation centre?", "Yes. The Wildlife SOS elephant centre is just outside Mathura; it needs to be booked in advance."]],
+    gallery: ["premMandir", "jaliScreen", "taj"]
   }
 ];
 

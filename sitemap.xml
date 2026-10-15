@@ -1,368 +1,548 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tajviewholidays.com/</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/tours.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/taj-mahal-tour-packages.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/same-day-tour-packages.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/golden-triangle-tour-packages.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/new-delhi-tour-packages.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/jaipur-tour-packages.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/varanasi-tour-packages.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/south-india-tour-packages.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/rajasthan-tour-packages.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/agra-tours.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/delhi-tours.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/jaipur-tours.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/jodhpur-tours.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/udaipur-tours.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/varanasi-tours.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/amritsar-tours.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/ranthambore-tours.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/jaisalmer-tours.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://tajviewholidays.com/1-2-days-tour-packages.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/3-5-days-tour-packages.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/6-10-days-tour-packages.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tajviewholidays.com/11-15-days-tour-packages.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tajviewholidays.com/travel-guide.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/blog.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/3-5-days-tour-packages.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/car-rent.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/6-10-days-tour-packages.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tajviewholidays.com/about.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/agra-tours.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/amritsar-tours.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/blog.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/car-rent.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tajviewholidays.com/contact.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/delhi-tours.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/golden-triangle-tour-packages.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/jaipur-tour-packages.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/jaipur-tours.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/jaisalmer-tours.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/jodhpur-tours.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/new-delhi-tour-packages.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://tajviewholidays.com/privacy.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.3</priority>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/rajasthan-tour-packages.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/ranthambore-tours.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/same-day-tour-packages.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/south-india-tour-packages.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/taj-mahal-tour-packages.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://tajviewholidays.com/terms.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.3</priority>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=taj-mahal-day-tour-from-delhi</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/travel-guide.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/udaipur-tours.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/varanasi-tour-packages.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/varanasi-tours.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/wildlife-tour-packages.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/taj-mahal-day-tour-from-delhi.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=taj-mahal-sunrise-tour-from-delhi</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/taj-mahal-sunrise-tour-from-delhi.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=taj-mahal-tour-by-gatimaan-express</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/taj-mahal-tour-by-gatimaan-express.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=2-days-taj-mahal-overnight-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/2-days-taj-mahal-overnight-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=3-days-golden-triangle-private-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/3-days-golden-triangle-private-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=4-days-golden-triangle-classic-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/4-days-golden-triangle-classic-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=5-days-golden-triangle-discovery-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/5-days-golden-triangle-discovery-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=6-days-golden-triangle-heritage-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/6-days-golden-triangle-heritage-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=new-delhi-private-city-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/new-delhi-private-city-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=jaipur-luxury-private-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/jaipur-luxury-private-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=same-day-agra-tour-from-jaipur</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/same-day-agra-tour-from-jaipur.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=taj-mahal-luxury-car-tour-from-delhi</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/taj-mahal-luxury-car-tour-from-delhi.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=delhi-and-agra-2-day-private-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/delhi-and-agra-2-day-private-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=7-days-golden-triangle-with-ranthambore</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/7-days-golden-triangle-with-ranthambore.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=8-days-golden-triangle-with-udaipur</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/8-days-golden-triangle-with-udaipur.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=8-days-golden-triangle-with-pushkar-jodhpur</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/8-days-golden-triangle-with-pushkar-jodhpur.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=10-days-golden-triangle-with-jodhpur-udaipur</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/10-days-golden-triangle-with-jodhpur-udaipur.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=12-days-rajasthan-heritage-wildlife-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/12-days-rajasthan-heritage-wildlife-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=13-days-classic-rajasthan-cultural-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/13-days-classic-rajasthan-cultural-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=2-days-golden-triangle-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/2-days-golden-triangle-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=7-days-golden-triangle-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/7-days-golden-triangle-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=half-day-delhi-city-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/half-day-delhi-city-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=evening-delhi-city-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/evening-delhi-city-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=delhi-temples-and-spiritual-sites-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/delhi-temples-and-spiritual-sites-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=old-delhi-food-tasting-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/private-delhi-shopping-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=delhi-2-days-city-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/delhi-luxury-tour-2-days.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=jaipur-day-tour-from-delhi-by-car</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/old-delhi-food-tasting-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=jaipur-day-tour-by-superfast-train</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/delhi-2-days-city-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=jaipur-private-sightseeing-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/jaipur-day-tour-from-delhi-by-car.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=jaipur-shopping-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/jaipur-day-tour-by-superfast-train.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=2-days-taj-mahal-and-jaipur-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/jaipur-private-sightseeing-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=taj-mahal-sunrise-with-elephant-conservation</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/jaipur-shopping-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=8-days-golden-triangle-with-varanasi</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/2-days-taj-mahal-and-jaipur-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=varanasi-2-days-spiritual-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/taj-mahal-sunrise-with-elephant-conservation.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=8-days-golden-triangle-with-amritsar</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/8-days-golden-triangle-with-varanasi.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=3-days-ranthambore-safari-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/varanasi-2-days-spiritual-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=7-days-kerala-backwaters-tour</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/8-days-golden-triangle-with-amritsar.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/tour.html?tour=10-days-south-india-temples-and-backwaters</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://tajviewholidays.com/tours/3-days-ranthambore-safari-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/blog-post.html?post=best-time-to-visit-taj-mahal</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.6</priority>
+    <loc>https://tajviewholidays.com/tours/7-days-kerala-backwaters-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/blog-post.html?post=golden-triangle-how-many-days</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.6</priority>
+    <loc>https://tajviewholidays.com/tours/10-days-south-india-temples-and-backwaters.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/blog-post.html?post=india-tour-scams-to-avoid</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.6</priority>
+    <loc>https://tajviewholidays.com/tours/taj-mahal-sunrise-and-old-delhi-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/blog-post.html?post=what-to-pack-for-north-india</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.6</priority>
+    <loc>https://tajviewholidays.com/tours/varanasi-day-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tajviewholidays.com/blog-post.html?post=agra-beyond-the-taj-mahal</loc>
-    <lastmod>2026-10-03</lastmod>
-    <priority>0.6</priority>
+    <loc>https://tajviewholidays.com/tours/3-days-varanasi-tour-from-delhi.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/2-days-jaipur-tour-from-delhi.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/5-days-kerala-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/6-days-kerala-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/6-days-south-india-wildlife-safari-from-bangalore.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/9-days-best-of-kerala-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/10-days-luxury-kerala-heritage-hotels.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/13-days-south-india-temple-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/14-days-kerala-karnataka-wildlife-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/14-days-rajasthan-tour-with-mumbai.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/15-days-royal-rajasthan-wildlife-camel-safari.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/8-days-north-india-wildlife-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/11-days-central-india-wildlife-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/11-days-golden-triangle-with-jim-corbett.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/16-days-india-wildlife-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/old-delhi-heritage-tour-by-rickshaw.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/new-delhi-sunrise-city-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/new-delhi-luxury-car-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/agra-local-sightseeing-tour.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/tours/mathura-vrindavan-day-tour-from-agra.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/taj-mahal-ticket-price-and-timings.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/same-day-agra-tour-from-delhi.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/gatimaan-express-delhi-to-agra.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/best-places-to-visit-in-agra.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/taj-mahal-night-viewing.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/delhi-to-agra-by-car.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/fatehpur-sikri-from-agra.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/mathura-vrindavan-from-agra.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/what-to-eat-in-agra.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/taj-mahal-guide-and-avoiding-touts.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/ranthambore-safari-guide.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/best-time-to-visit-taj-mahal.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/golden-triangle-how-many-days.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/india-tour-scams-to-avoid.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/what-to-pack-for-north-india.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tajviewholidays.com/journal/agra-beyond-the-taj-mahal.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>

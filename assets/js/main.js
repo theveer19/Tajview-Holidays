@@ -10,6 +10,14 @@ const qs  = (sel, ctx = document) => ctx.querySelector(sel);
 const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 const esc = str => String(str).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
+/* Every tour and article has its own static, search-friendly page
+   (built by tools/build.js). Pages in sub-folders carry <base href="../">,
+   so these root-relative paths work from anywhere on the site. */
+const tourUrl = slug => "tours/" + slug + ".html";
+const postUrl = slug => "journal/" + slug + ".html";
+/* [link text](url) inside article paragraphs */
+const inline = str => esc(str).replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>');
+
 /* ------------------------------------------------- responsive images -- */
 /* Every photo exists at 800w and 1600w. This builds the <img> so the browser
    picks the smaller file on a phone and the larger one on a wide screen. */
@@ -303,15 +311,15 @@ function initCardLinks() {
 function tourCard(tour) {
   const book = waLink(`Hello Tajview Holidays, I would like to book the ${tour.title}. Please share availability and the final quotation.`);
   return `
-    <article class="tour-card" data-href="tour.html?tour=${tour.slug}">
-      <a class="tour-card__media" href="tour.html?tour=${tour.slug}" aria-label="View the ${esc(tour.title)}">
+    <article class="tour-card" data-href="${tourUrl(tour.slug)}">
+      <a class="tour-card__media" href="${tourUrl(tour.slug)}" aria-label="View the ${esc(tour.title)}">
         ${photo(tour.img, tour.title, "(max-width: 700px) 100vw, 360px")}
         <span class="tour-card__days">${esc(tour.durationLabel)}</span>
         <span class="tour-card__route">${esc(tour.route)}</span>
         <span class="tour-card__view" aria-hidden="true">View tour</span>
       </a>
       <div class="tour-card__body">
-        <h3><a href="tour.html?tour=${tour.slug}">${esc(tour.title)}</a></h3>
+        <h3><a href="${tourUrl(tour.slug)}">${esc(tour.title)}</a></h3>
         <p>${esc(tour.summary)}</p>
         <div class="tour-card__meta">
           <div class="tour-card__price">
@@ -319,7 +327,7 @@ function tourCard(tour) {
             <span>per person, private tour</span>
           </div>
           <div class="tour-card__actions">
-            <a class="btn btn--outline btn--sm" href="tour.html?tour=${tour.slug}">View tour</a>
+            <a class="btn btn--outline btn--sm" href="${tourUrl(tour.slug)}">View tour</a>
             <a class="btn btn--rose btn--sm" href="${book}" target="_blank" rel="noopener">Book</a>
           </div>
         </div>
@@ -327,26 +335,30 @@ function tourCard(tour) {
     </article>`;
 }
 
+const FEATURED = ["taj-mahal-day-tour-from-delhi", "taj-mahal-sunrise-tour-from-delhi", "taj-mahal-tour-by-gatimaan-express",
+                  "3-days-golden-triangle-private-tour", "taj-mahal-luxury-car-tour-from-delhi",
+                  "13-days-classic-rajasthan-cultural-tour"];
+const featuredToursHTML = () => FEATURED.map(s => TOURS.find(t => t.slug === s)).filter(Boolean).map(tourCard).join("");
+const gtToursHTML = () => TOURS.filter(t => t.cat === "golden-triangle").map(tourCard).join("");
+
 function renderFeaturedTours() {
   const host = qs("#featuredTours");
-  if (!host) return;
-  const picks = ["taj-mahal-day-tour-from-delhi", "taj-mahal-sunrise-tour-from-delhi", "taj-mahal-tour-by-gatimaan-express",
-                 "3-days-golden-triangle-private-tour", "taj-mahal-luxury-car-tour-from-delhi",
-                 "13-days-classic-rajasthan-cultural-tour"];
-  host.innerHTML = picks.map(s => tourCard(TOURS.find(t => t.slug === s))).join("");
+  if (host) host.innerHTML = featuredToursHTML();
 }
 
 function renderGoldenTriangle() {
   const host = qs("#gtTours");
   if (!host) return;
-  host.innerHTML = TOURS.filter(t => t.cat === "golden-triangle").map(tourCard).join("");
+  host.innerHTML = gtToursHTML();
 }
 
 /* -------------------------------------------------- home page sections -- */
 function renderCollections() {
   const host = qs("#collections");
-  if (!host) return;
-  host.innerHTML = COLLECTIONS.map(c => `
+  if (host) host.innerHTML = collectionsHTML();
+}
+function collectionsHTML() {
+  return COLLECTIONS.map(c => `
     <a class="collection" href="${(COLLECTION_PAGES[c.cat] || {}).file || ("tours.html?cat=" + c.cat)}">
       ${photo(c.img, c.title, "(max-width: 700px) 50vw, 220px")}
       <figcaption>
@@ -364,8 +376,10 @@ function cityHref(name) {
 
 function renderCities() {
   const host = qs("#cities");
-  if (!host) return;
-  host.innerHTML = CITIES.map(c => `
+  if (host) host.innerHTML = citiesHTML();
+}
+function citiesHTML() {
+  return CITIES.map(c => `
     <a class="city" href="${cityHref(c.name)}">
       ${photo(c.img, "Tours in " + c.name, "(max-width: 700px) 50vw, 260px")}
       <span>${esc(c.name)}</span>
@@ -375,17 +389,21 @@ function renderCities() {
 function renderReviews() {
   const rail = qs("#reviewRail");
   if (!rail) return;
-  rail.innerHTML = REVIEWS.map(r => `
-    <blockquote class="review">
-      <div class="stars" aria-label="5 out of 5">★★★★★</div>
-      <p>${esc(r.text)}</p>
-      <footer><b>${esc(r.name)}</b><span>${esc(r.from)}</span></footer>
-    </blockquote>`).join("");
+  rail.innerHTML = reviewsHTML();
 
   const step = () => rail.firstElementChild ? rail.firstElementChild.getBoundingClientRect().width + 20 : 320;
   const prev = qs("#railPrev"), next = qs("#railNext");
   if (prev) prev.addEventListener("click", () => rail.scrollBy({ left: -step(), behavior: "smooth" }));
   if (next) next.addEventListener("click", () => rail.scrollBy({ left:  step(), behavior: "smooth" }));
+}
+
+function reviewsHTML() {
+  return REVIEWS.map(r => `
+    <blockquote class="review">
+      <div class="stars" aria-label="5 out of 5">★★★★★</div>
+      <p>${esc(r.text)}</p>
+      <footer><b>${esc(r.name)}</b><span>${esc(r.from)}</span></footer>
+    </blockquote>`).join("");
 }
 
 function renderHomeFaq() {
@@ -432,7 +450,7 @@ function initDurationTabs() {
       <ol class="day-list">
         ${tour.itinerary.map(d => `<li><span class="day-no">${esc(d.time.replace(/^Day /, ""))}</span><span><b>${esc(d.title)}</b><br>${esc(d.text)}</span></li>`).join("")}
       </ol>
-      <a class="btn btn--gold" href="tour.html?tour=${tour.slug}">See the full itinerary</a>`;
+      <a class="btn btn--gold" href="${tourUrl(tour.slug)}">See the full itinerary</a>`;
   };
 
   tabs.innerHTML = gt.map((t, i) =>
@@ -547,17 +565,78 @@ function faqBlock(faqs) {
     </details>`).join("");
 }
 
+/* Collection pages: same day tours and multi-day tours under their own headings,
+   so "same day" only ever appears above tours that really finish the same day. */
+const SAME_DAY_NOTE = "Out in the morning, back at your hotel the same evening — no overnight stay needed.";
+const MULTI_DAY_NOTE = "Tours with hotel nights built in, so every stop gets proper time instead of a rush.";
+const NOTE_GOES_WITH = { varanasi: "multi" };
+
+const collectionTours = key => {
+  const c = COLLECTION_PAGES[key];
+  return TOURS.filter(t => t.cat === key || (c.also || []).includes(t.slug));
+};
+const durationTours = key => {
+  const d = DURATION_PAGES[key];
+  return TOURS.filter(t => t.days >= d.min && t.days <= d.max).sort((a, b) => a.days - b.days);
+};
+const cityTours = key => {
+  const c = CITY_PAGES[key];
+  return TOURS.filter(t =>
+    c.match.some(m => (t.route + " " + t.title + " " + t.summary).toLowerCase().includes(m.toLowerCase())));
+};
+const cityToursHTML = key => {
+  const c = CITY_PAGES[key], tours = cityTours(key);
+  return tours.length ? tours.map(tourCard).join("")
+    : `<div class="empty-state"><p>No set tour covers ${esc(c.name)} on its own yet — we build these to order.</p>
+       <a class="btn btn--gold" href="contact.html">Ask for a ${esc(c.name)} itinerary</a></div>`;
+};
+
+function renderCollectionGroups(key, c, tours) {
+  (qs("#collectionShell") || qs("#collectionTours").closest(".shell")).innerHTML = collectionGroupsHTML(key, c, tours);
+}
+
+function collectionGroupsHTML(key, c, tours) {
+  const place = key === "same-day" ? "" : c.place || c.title.replace(/\s*tour packages?$/i, "").trim();
+  const rank = t => { const i = (c.order || []).indexOf(t.slug); return i < 0 ? 999 : i; };
+  const same = tours.filter(t => t.days <= 1).sort((a, b) => rank(a) - rank(b));
+  const multi = tours.filter(t => t.days > 1).sort((a, b) => a.days - b.days);
+  const both = same.length && multi.length;
+  const noteFor = NOTE_GOES_WITH[key] || "same";
+  const groups = [];
+  if (same.length) groups.push({
+    kind: "same",
+    title: place ? `Choose your same day ${place} tour package` : "Choose your same day tour package",
+    note: !both || noteFor === "same" ? c.note : SAME_DAY_NOTE,
+    tours: same,
+  });
+  if (multi.length) groups.push({
+    kind: "multi",
+    title: both ? `Choose your multi-day ${place} tour package` : `Choose your ${place} tour package`,
+    note: !both || noteFor === "multi" ? c.note : MULTI_DAY_NOTE,
+    tours: multi,
+  });
+  const count = n => n === 1 ? "1 tour" : n + " tours";
+  return groups.map((g, i) => `
+    <div class="tour-group tour-group--${g.kind}"${i ? "" : ' id="collectionGroups"'}>
+      <div class="section-head">
+        <div class="inlay-rule"><i></i></div>
+        <h2>${esc(g.title)}</h2>
+        <p${i ? "" : ' id="collectionNote"'}>${esc(g.note)}</p>
+      </div>
+      <p class="filter-count"${i ? "" : ' id="collectionCount"'}>${count(g.tours.length)}</p>
+      <div class="tour-grid"${i ? "" : ' id="collectionTours"'}>${g.tours.map(tourCard).join("")}</div>
+    </div>`).join("");
+}
+
 function initCollectionPage() {
   const key = document.body.dataset.collection;
   if (!key || !COLLECTION_PAGES[key]) return;
   const c = COLLECTION_PAGES[key];
-  const tours = TOURS.filter(t => t.cat === key);
+  const tours = collectionTours(key);
 
   qs("#pageLead").textContent = c.lead;
   qs("#pageIntro").textContent = c.intro;
-  qs("#collectionNote").textContent = c.note;
-  qs("#collectionTours").innerHTML = tours.map(tourCard).join("");
-  qs("#collectionCount").textContent = tours.length === 1 ? "1 tour" : tours.length + " tours";
+  renderCollectionGroups(key, c, tours);
   qs("#collectionTerms").innerHTML = termsBlock();
   qs("#collectionFaq").innerHTML = faqBlock(c.faqs);
   initSiteDetails();
@@ -567,7 +646,7 @@ function initDurationPage() {
   const key = document.body.dataset.duration;
   if (!key || !DURATION_PAGES[key]) return;
   const d = DURATION_PAGES[key];
-  const tours = TOURS.filter(t => t.days >= d.min && t.days <= d.max).sort((a, b) => a.days - b.days);
+  const tours = durationTours(key);
 
   qs("#pageLead").textContent = d.lead;
   qs("#pageIntro").textContent = d.intro;
@@ -582,16 +661,12 @@ function initCityPage() {
   const key = document.body.dataset.city;
   if (!key || !CITY_PAGES[key]) return;
   const c = CITY_PAGES[key];
-  const tours = TOURS.filter(t =>
-    c.match.some(m => (t.route + " " + t.title + " " + t.summary).toLowerCase().includes(m.toLowerCase())));
+  const tours = cityTours(key);
 
   qs("#pageLead").textContent = c.lead;
   qs("#pageIntro").textContent = c.intro;
   qs("#cityWelcome").innerHTML = c.welcome.map(para => `<p>${esc(para)}</p>`).join("");
-  qs("#cityTours").innerHTML = tours.length
-    ? tours.map(tourCard).join("")
-    : `<div class="empty-state"><p>No set tour covers ${esc(c.name)} on its own yet — we build these to order.</p>
-       <a class="btn btn--gold" href="contact.html">Ask for a ${esc(c.name)} itinerary</a></div>`;
+  qs("#cityTours").innerHTML = cityToursHTML(key);
   qs("#cityCount").textContent = tours.length === 1 ? "1 tour includes " + c.name : tours.length + " tours include " + c.name;
   qs("#cityFaq").innerHTML = faqBlock(c.faqs);
   const hero = qs("#cityHeroImg");
@@ -602,40 +677,10 @@ function initCityPage() {
 }
 
 /* -------------------------------------------------------- tour detail -- */
-function initTourDetail() {
-  const root = qs("#tourDetail");
-  if (!root) return;
-
-  const slug = new URLSearchParams(location.search).get("tour");
-  const tour = TOURS.find(t => t.slug === slug);
-
-  if (!tour) {
-    root.innerHTML = `<div class="empty-state"><h2>We could not find that tour</h2>
-      <p>It may have been renamed. Browse the full collection instead.</p>
-      <a class="btn btn--gold" href="tours.html">See all tours</a></div>`;
-    return;
-  }
-
-  document.title = tour.title + " — Tajview Holidays";
-  const hero = qs("#tourHero");
-  if (hero) {
-    const heroImg = qs("#tourHeroImg");
-    const isFile = /\.(svg|png|jpe?g|webp)$/i.test(tour.img);
-    heroImg.src = isFile ? tour.img : tour.img + "-1600.webp";
-    if (!isFile) {
-      heroImg.srcset = `${tour.img}-800.webp 800w, ${tour.img}-1600.webp 1600w`;
-      heroImg.sizes = "100vw";
-    }
-    heroImg.alt = tour.title;
-    qs("#tourHeroTitle").textContent = tour.title;
-    qs("#tourHeroRoute").textContent = tour.route + " · " + tour.durationLabel;
-    qs("#tourCrumb").textContent = tour.catLabel;
-    qs("#tourCrumb").href = "tours.html?cat=" + tour.cat;
-  }
-
+/* Pure template: also used by tools/build.js to pre-render each tour page */
+function tourDetailHTML(tour) {
   const book = waLink(`Hello Tajview Holidays, I would like to book the ${tour.title} (${tour.durationLabel}). Please share availability and the final quotation.`);
-
-  root.innerHTML = `
+  return `
     <div class="detail-layout">
       <div class="detail-body">
         <div class="chip-row">
@@ -709,7 +754,48 @@ function initTourDetail() {
         <p class="form-note">Prices move with the season and your hotel choice. We confirm a fixed figure before you pay anything.</p>
       </aside>
     </div>`;
+}
 
+function tourHeroImg(tour) {
+  const isFile = /\.(svg|png|jpe?g|webp)$/i.test(tour.img);
+  return isFile ? { src: tour.img, srcset: "" } :
+    { src: tour.img + "-1600.webp", srcset: `${tour.img}-800.webp 800w, ${tour.img}-1600.webp 1600w` };
+}
+
+function catPage(cat) {
+  return (COLLECTION_PAGES[cat] || {}).file || ("tours.html?cat=" + cat);
+}
+
+function initTourDetail() {
+  const root = qs("#tourDetail");
+  if (!root) return;
+
+  const fixed = document.body.dataset.tour;
+  const slug = fixed || new URLSearchParams(location.search).get("tour");
+  const tour = TOURS.find(t => t.slug === slug);
+
+  /* old ?tour= links move to the tour's own page */
+  if (tour && !fixed) { location.replace(tourUrl(tour.slug)); return; }
+
+  if (!tour) {
+    root.innerHTML = `<div class="empty-state"><h2>We could not find that tour</h2>
+      <p>It may have been renamed. Browse the full collection instead.</p>
+      <a class="btn btn--gold" href="tours.html">See all tours</a></div>`;
+    return;
+  }
+
+  if (qs("#tourHero")) {
+    const heroImg = qs("#tourHeroImg"), img = tourHeroImg(tour);
+    heroImg.src = img.src;
+    if (img.srcset) { heroImg.srcset = img.srcset; heroImg.sizes = "100vw"; }
+    heroImg.alt = tour.title;
+    qs("#tourHeroTitle").textContent = tour.title;
+    qs("#tourHeroRoute").textContent = tour.route + " · " + tour.durationLabel;
+    qs("#tourCrumb").textContent = tour.catLabel;
+    qs("#tourCrumb").href = catPage(tour.cat);
+  }
+
+  root.innerHTML = tourDetailHTML(tour);
   initSiteDetails();
 }
 
@@ -720,28 +806,64 @@ function fmtDate(iso) {
     { day: "numeric", month: "long", year: "numeric" });
 }
 
+function postCardHTML(post, sizes, withExcerpt) {
+  return `
+    <article class="post-card">
+      <a class="post-card__media" href="${postUrl(post.slug)}">
+        ${photo(IMG[post.img], post.title, sizes)}
+      </a>
+      <div class="post-card__body">
+        <p class="post-meta">${fmtDate(post.date)}${withExcerpt ? " · " + post.readMins + " min read" : ""}</p>
+        <h3><a href="${postUrl(post.slug)}">${esc(post.title)}</a></h3>
+        ${withExcerpt ? `<p>${esc(post.excerpt)}</p>
+        <a class="link-more" href="${postUrl(post.slug)}">Read it</a>` : ""}
+      </div>
+    </article>`;
+}
+
+const blogListHTML = () => BLOG_POSTS.slice().sort((a, b) => b.date.localeCompare(a.date))
+  .map(p => postCardHTML(p, "(max-width: 700px) 100vw, 380px", true)).join("");
+
+/* Article body blocks: ["p", text] ["h2", text] ["h3", text] ["ul", [..]] ["ol", [..]]
+   ["tip", text] ["faq", [[q, a], ..]] ["tours", [slug, ..]] — text may hold [links](url) */
+function postBodyHTML(post) {
+  return post.body.map(([tag, val]) => {
+    if (tag === "ul") return `<ul class="tick-list">${val.map(li => `<li>${inline(li)}</li>`).join("")}</ul>`;
+    if (tag === "ol") return `<ol class="article-steps">${val.map(li => `<li>${inline(li)}</li>`).join("")}</ol>`;
+    if (tag === "h2") return `<h2>${esc(val)}</h2>`;
+    if (tag === "h3") return `<h3>${esc(val)}</h3>`;
+    if (tag === "tip") return `<aside class="article-tip">${inline(val)}</aside>`;
+    if (tag === "faq") return `<h2>Frequently asked questions</h2>` + val.map(([q, a]) => `
+      <details class="accordion">
+        <summary>${esc(q)}</summary>
+        <div class="acc-body acc-body--flush">${inline(a)}</div>
+      </details>`).join("");
+    if (tag === "tours") return `<div class="tour-grid article-tours">${val.map(sl => TOURS.find(t => t.slug === sl)).filter(Boolean).map(tourCard).join("")}</div>`;
+    return `<p>${inline(val)}</p>`;
+  }).join("");
+}
+
+function morePostsHTML(post) {
+  const pool = BLOG_POSTS.filter(p => p.slug !== post.slug);
+  const i = BLOG_POSTS.findIndex(p => p.slug === post.slug);
+  const picks = [1, 2, 3].map(k => pool[(i + k - 1 + pool.length) % pool.length]).filter(Boolean);
+  return picks.map(p => postCardHTML(p, "(max-width: 700px) 100vw, 300px", false)).join("");
+}
+
 function initBlogList() {
   const host = qs("#blogList");
   if (!host) return;
-  host.innerHTML = BLOG_POSTS.map(post => `
-    <article class="post-card">
-      <a class="post-card__media" href="blog-post.html?post=${post.slug}">
-        ${photo(IMG[post.img], post.title, "(max-width: 700px) 100vw, 380px")}
-      </a>
-      <div class="post-card__body">
-        <p class="post-meta">${fmtDate(post.date)} · ${post.readMins} min read</p>
-        <h3><a href="blog-post.html?post=${post.slug}">${esc(post.title)}</a></h3>
-        <p>${esc(post.excerpt)}</p>
-        <a class="link-more" href="blog-post.html?post=${post.slug}">Read it</a>
-      </div>
-    </article>`).join("");
+  host.innerHTML = blogListHTML();
 }
 
 function initBlogPost() {
   const root = qs("#blogPost");
   if (!root) return;
-  const slug = new URLSearchParams(location.search).get("post");
+  const fixed = document.body.dataset.post;
+  const slug = fixed || new URLSearchParams(location.search).get("post");
   const post = BLOG_POSTS.find(p => p.slug === slug);
+
+  if (post && !fixed) { location.replace(postUrl(post.slug)); return; }
 
   if (!post) {
     root.innerHTML = `<div class="empty-state"><h2>We could not find that article</h2>
@@ -749,7 +871,6 @@ function initBlogPost() {
     return;
   }
 
-  document.title = post.title + " — Tajview Holidays";
   qs("#postTitle").textContent = post.title;
   qs("#postMeta").textContent = fmtDate(post.date) + " · " + post.readMins + " min read";
   const hero = qs("#postHeroImg");
@@ -758,24 +879,9 @@ function initBlogPost() {
     hero.src = /\.(svg|png|jpe?g|webp)$/i.test(src) ? src : src + "-1600.webp";
     hero.alt = post.title;
   }
-
-  root.innerHTML = post.body.map(([tag, val]) => {
-    if (tag === "ul") return `<ul class="tick-list">${val.map(li => `<li>${esc(li)}</li>`).join("")}</ul>`;
-    if (tag === "h2") return `<h2>${esc(val)}</h2>`;
-    return `<p>${esc(val)}</p>`;
-  }).join("");
-
-  const others = BLOG_POSTS.filter(p => p.slug !== post.slug).slice(0, 3);
-  qs("#postMore").innerHTML = others.map(p => `
-    <article class="post-card">
-      <a class="post-card__media" href="blog-post.html?post=${p.slug}">
-        ${photo(IMG[p.img], p.title, "(max-width: 700px) 100vw, 300px")}
-      </a>
-      <div class="post-card__body">
-        <p class="post-meta">${fmtDate(p.date)}</p>
-        <h3><a href="blog-post.html?post=${p.slug}">${esc(p.title)}</a></h3>
-      </div>
-    </article>`).join("");
+  root.innerHTML = postBodyHTML(post);
+  qs("#postMore").innerHTML = morePostsHTML(post);
+  initSiteDetails();
 }
 
 /* --------------------------------------------------------------- fleet -- */
@@ -831,7 +937,7 @@ function initForms() {
     if (tourSel) {
       tourSel.innerHTML = `<option value="">Not sure yet — suggest something</option>` +
         TOURS.map(t => `<option value="${esc(t.title)}">${esc(t.title)}</option>`).join("");
-      const pre = new URLSearchParams(location.search).get("tour");
+      const pre = document.body.dataset.tour || new URLSearchParams(location.search).get("tour");
       if (pre) {
         const match = TOURS.find(t => t.slug === pre);
         if (match) tourSel.value = match.title;
