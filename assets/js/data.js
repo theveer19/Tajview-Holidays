@@ -223,7 +223,7 @@ const COLLECTION_PAGES = {
             "taj-mahal-sunrise-and-old-delhi-tour", "same-day-agra-tour-from-jaipur", "agra-local-sightseeing-tour",
             "mathura-vrindavan-day-tour-from-agra"],
     title: "Same day tour packages",
-    lead: "Same day private tour packages",
+    lead: "Same day Agra and Taj Mahal tour packages",
     intro: "For travellers who want to see more in less time. Taj Mahal tours from Delhi, Old and New Delhi sightseeing, and Jaipur day tours — private cars, local guides, flexible timings.",
     note: "Every tour here starts and finishes on the same day, so you keep your hotel room and your onward plans.",
     faqs: [
@@ -338,7 +338,7 @@ const COLLECTION_PAGES = {
 const CITY_PAGES = {
   agra: {
     file: "agra-tours.html", name: "Agra", match: ["Agra"], img: "tajGarden",
-    lead: "Tours in Agra",
+    lead: "Agra tours and local sightseeing",
     intro: "Agra tours covering the Taj Mahal, the Mughal forts and the quieter monuments most day trips skip — private guided tours, sightseeing by car and flexible day plans.",
     welcome: ["Agra is world-famous for one building, and the Taj Mahal deserves it. But the city also holds Agra Fort, Itimad-ud-Daulah, Mehtab Bagh and Akbar's tomb at Sikandra, all within half an hour of each other.",
               "A day is enough for the headlines. Two days lets you see the Taj at sunrise and sunset, and still have an afternoon for the marble inlay workshops."],
@@ -352,7 +352,7 @@ const CITY_PAGES = {
   },
   delhi: {
     file: "delhi-tours.html", name: "Delhi", match: ["Delhi"], img: "humayun",
-    lead: "Tours in Delhi",
+    lead: "Delhi tours and sightseeing",
     intro: "Delhi tours across the historic old city and the monuments of New Delhi — private guided tours, sightseeing by car and day plans built around your schedule.",
     welcome: ["Delhi is really two cities. Old Delhi is the Red Fort, Jama Masjid and the lanes of Chandni Chowk, best seen on foot and by rickshaw. New Delhi is India Gate, Humayun's Tomb and Qutub Minar, spread out and better by car.",
               "Most visitors have one day. That is enough for both halves if the morning goes to the old city and the afternoon to the new."],
@@ -365,7 +365,7 @@ const CITY_PAGES = {
   },
   jaipur: {
     file: "jaipur-tours.html", name: "Jaipur", match: ["Jaipur"], img: "hawaMahal",
-    lead: "Tours in Jaipur",
+    lead: "Jaipur tours and sightseeing",
     intro: "Jaipur tours through the forts, royal palaces and bazaars of the Pink City — private guided tours, sightseeing by car and flexible day plans.",
     welcome: ["Jaipur is the Pink City: Amber Fort on the ridge above Maota Lake, the City Palace still partly lived in, Hawa Mahal's honeycomb facade and Jantar Mantar's enormous stone instruments.",
               "The city rewards early starts. Amber Fort at opening and Hawa Mahal at first light are almost empty; by eleven both are full."],
@@ -378,7 +378,7 @@ const CITY_PAGES = {
   },
   jodhpur: {
     file: "jodhpur-tours.html", name: "Jodhpur", match: ["Jodhpur"], img: "mehrangarh",
-    lead: "Tours in Jodhpur",
+    lead: "Jodhpur tours and sightseeing",
     intro: "Jodhpur tours through Mehrangarh Fort, the royal palaces and the blue streets of the old city, with private guides and comfortable transport.",
     welcome: ["Jodhpur is the Blue City, and Mehrangarh Fort above it is among the best-preserved forts in India — still owned by the family that built it, with its museum and audio guide genuinely worth the time.",
               "Below the walls, Jaswant Thada, Umaid Bhawan Palace and the Clock Tower market fill out a full day."],
@@ -390,7 +390,7 @@ const CITY_PAGES = {
   },
   udaipur: {
     file: "udaipur-tours.html", name: "Udaipur", match: ["Udaipur"], img: "udaipur",
-    lead: "Tours in Udaipur",
+    lead: "Udaipur tours and sightseeing",
     intro: "Udaipur tours around the lakes and palaces of Rajasthan's most relaxed city — City Palace, Lake Pichola, Jagdish Temple and the gardens, at a gentle pace.",
     welcome: ["Udaipur sits among lakes with the Aravalli Hills behind it, and feels slower than anywhere else in Rajasthan. The City Palace complex is enormous; Lake Pichola carries the Taj Lake Palace and Jag Mandir.",
               "A boat ride at sunset is the thing everyone remembers, and it is worth planning the day around the light."],
@@ -402,7 +402,7 @@ const CITY_PAGES = {
   },
   varanasi: {
     file: "varanasi-tours.html", name: "Varanasi", match: ["Varanasi"], img: "varanasi",
-    lead: "Tours in Varanasi",
+    lead: "Varanasi tours and sightseeing",
     intro: "Varanasi tours along the ghats and through the old city — sunrise on the Ganga, the evening aarti, and Sarnath where Buddhism began.",
     welcome: ["Varanasi is the oldest continuously inhabited city in India and makes no effort to be comfortable. Pilgrims bathe at dawn, bodies burn at Manikarnika, and the lanes behind the ghats are too narrow for a car.",
               "A boat at first light is the thing to plan around. The city faces the river, so the only way to see it properly is from the water."],
@@ -413,7 +413,7 @@ const CITY_PAGES = {
   },
   amritsar: {
     file: "amritsar-tours.html", name: "Amritsar", match: ["Amritsar"], img: "amritsar",
-    lead: "Tours in Amritsar",
+    lead: "Amritsar tours and sightseeing",
     intro: "Amritsar tours around the Golden Temple, the Jallianwala Bagh memorial and the evening ceremony at the Wagah border.",
     welcome: ["The Golden Temple is open to everyone, serves a free meal to anyone who sits down, and feeds roughly a hundred thousand people a day from a kitchen run almost entirely by volunteers.",
               "Jallianwala Bagh is a five-minute walk away, and the contrast between the two is the point of a day here."],
@@ -435,7 +435,7 @@ const CITY_PAGES = {
   },
   jaisalmer: {
     file: "jaisalmer-tours.html", name: "Jaisalmer", match: ["Jaisalmer", "desert"], img: "jaisalmer",
-    lead: "Tours in Jaisalmer",
+    lead: "Jaisalmer tours and sightseeing",
     intro: "Jaisalmer tours through the golden city, its living fort and the Thar Desert — havelis, dunes, camel rides and a night under the desert sky.",
     welcome: ["Jaisalmer Fort is one of very few forts anywhere that people still live inside. Around it, the Patwon Ki Haveli and Salim Singh Haveli carry some of the finest stone carving in Rajasthan.",
               "The desert is the other half. An afternoon out at the Khuri dunes, a camel ride at sunset, folk music and dinner at a camp, and a night out where the sky is properly dark."],
