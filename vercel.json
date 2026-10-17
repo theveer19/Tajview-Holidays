@@ -1,0 +1,120 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+
+    { "source": "/taj-mahal-tour-packages", "destination": "/taj-mahal-tour-packages.html", "permanent": true },
+    { "source": "/new-delhi-tour-packages", "destination": "/new-delhi-tour-packages.html", "permanent": true },
+    { "source": "/same-day-tour-packages", "destination": "/same-day-tour-packages.html", "permanent": true },
+    { "source": "/jaipur-tour-packages", "destination": "/jaipur-tour-packages.html", "permanent": true },
+    { "source": "/golden-triangle-tour-packages", "destination": "/golden-triangle-tour-packages.html", "permanent": true },
+    { "source": "/rajasthan-tour-packages", "destination": "/rajasthan-tour-packages.html", "permanent": true },
+    { "source": "/agra-tours", "destination": "/agra-tours.html", "permanent": true },
+    { "source": "/delhi-tours", "destination": "/delhi-tours.html", "permanent": true },
+    { "source": "/jaipur-tours", "destination": "/jaipur-tours.html", "permanent": true },
+    { "source": "/jodhpur-tours", "destination": "/jodhpur-tours.html", "permanent": true },
+    { "source": "/udaipur-tours", "destination": "/udaipur-tours.html", "permanent": true },
+    { "source": "/jaisalmer-tours", "destination": "/jaisalmer-tours.html", "permanent": true },
+    { "source": "/ranthambore-tours", "destination": "/ranthambore-tours.html", "permanent": true },
+    { "source": "/about-us", "destination": "/about.html", "permanent": true },
+    { "source": "/contact-us", "destination": "/contact.html", "permanent": true },
+    { "source": "/plan-my-tour", "destination": "/contact.html", "permanent": true },
+    { "source": "/blogs-plan-my-tour", "destination": "/contact.html", "permanent": true },
+    { "source": "/privacy-policy", "destination": "/privacy.html", "permanent": true },
+    { "source": "/blog", "destination": "/blog.html", "permanent": true },
+    { "source": "/car-rent", "destination": "/car-rent.html", "permanent": true },
+    { "source": "/varanasi", "destination": "/varanasi-tours.html", "permanent": true },
+    { "source": "/tour-packages", "destination": "/tours.html", "permanent": true },
+    { "source": "/tour-by-city", "destination": "/tours.html", "permanent": true },
+    { "source": "/homepage", "destination": "/", "permanent": true },
+
+    { "source": "/taj-mahal-day-tour-from-delhi-by-car", "destination": "/tours/taj-mahal-day-tour-from-delhi.html", "permanent": true },
+    { "source": "/taj-mahal-sunrise-tour-from-delhi-by-car", "destination": "/tours/taj-mahal-sunrise-tour-from-delhi.html", "permanent": true },
+    { "source": "/same-day-taj-mahal-tour-from-delhi-by-superfast-train", "destination": "/tours/taj-mahal-tour-by-gatimaan-express.html", "permanent": true },
+    { "source": "/taj-mahal-private-luxury-car-tour-from-delhi", "destination": "/tours/taj-mahal-luxury-car-tour-from-delhi.html", "permanent": true },
+    { "source": "/2-days-taj-mahal-overnight-tour-from-delhi", "destination": "/tours/2-days-taj-mahal-overnight-tour.html", "permanent": true },
+    { "source": "/1-day-delhi-and-1-day-agra-tour-by-car", "destination": "/tours/delhi-and-agra-2-day-private-tour.html", "permanent": true },
+    { "source": "/7-days-golden-triangle-tour-with-ranthambore", "destination": "/tours/7-days-golden-triangle-with-ranthambore.html", "permanent": true },
+    { "source": "/8-days-golden-triangle-tour-with-udaipur", "destination": "/tours/8-days-golden-triangle-with-udaipur.html", "permanent": true },
+    { "source": "/8-days-golden-triangle-tour-with-pushkar-jodhpur", "destination": "/tours/8-days-golden-triangle-with-pushkar-jodhpur.html", "permanent": true },
+    { "source": "/10-days-golden-triangle-tour-with-jodhpur-udaipur", "destination": "/tours/10-days-golden-triangle-with-jodhpur-udaipur.html", "permanent": true },
+    { "source": "/12-days-rajasthan-heritage-wildlife-tour", "destination": "/tours/12-days-rajasthan-heritage-wildlife-tour.html", "permanent": true },
+    { "source": "/13-days-classic-rajasthan-cultural-tour", "destination": "/tours/13-days-classic-rajasthan-cultural-tour.html", "permanent": true },
+
+    { "source": "/golden-triangle-tour-2-days", "destination": "/tours/2-days-golden-triangle-tour.html", "permanent": true },
+    { "source": "/golden-triangle-tour-3-days", "destination": "/tours/3-days-golden-triangle-private-tour.html", "permanent": true },
+    { "source": "/golden-triangle-tour-4-days", "destination": "/tours/4-days-golden-triangle-classic-tour.html", "permanent": true },
+    { "source": "/golden-triangle-tour-5-days", "destination": "/tours/5-days-golden-triangle-discovery-tour.html", "permanent": true },
+    { "source": "/golden-triangle-tour-6-days", "destination": "/tours/6-days-golden-triangle-heritage-tour.html", "permanent": true },
+    { "source": "/golden-triangle-tour-7-days", "destination": "/tours/7-days-golden-triangle-tour.html", "permanent": true },
+
+    { "source": "/old-new-delhi-private-guided-city-tour-8-hours", "destination": "/tours/new-delhi-private-city-tour.html", "permanent": true },
+    { "source": "/delhi-full-day-tour", "destination": "/tours/new-delhi-private-city-tour.html", "permanent": true },
+    { "source": "/half-day-delhi-city-tour-4-to-6-hours", "destination": "/tours/half-day-delhi-city-tour.html", "permanent": true },
+    { "source": "/evening-delhi-city-tour-4-hours-old-delhi", "destination": "/tours/evening-delhi-city-tour.html", "permanent": true },
+    { "source": "/delhi-temples-and-spiritual-sites-tour-8-hours", "destination": "/tours/delhi-temples-and-spiritual-sites-tour.html", "permanent": true },
+    { "source": "/old-delhi-food-tasting-tour-with-chandni-chowk-4-hours", "destination": "/tours/old-delhi-food-tasting-tour.html", "permanent": true },
+    { "source": "/2-days-old-delhi-new-delhi-city-tour-in-48-hours", "destination": "/tours/delhi-2-days-city-tour.html", "permanent": true },
+
+    { "source": "/jaipur-city-tour-by-car-from-delhi", "destination": "/tours/jaipur-day-tour-from-delhi-by-car.html", "permanent": true },
+    { "source": "/jaipur-city-private-day-tour-by-superfast-train", "destination": "/tours/jaipur-day-tour-by-superfast-train.html", "permanent": true },
+    { "source": "/jaipur-private-sightseeing-with-professional-guide", "destination": "/tours/jaipur-private-sightseeing-tour.html", "permanent": true },
+    { "source": "/jaipur-sightseeing-tour", "destination": "/tours/jaipur-private-sightseeing-tour.html", "permanent": true },
+    { "source": "/private-jaipur-shoppingtour", "destination": "/tours/jaipur-shopping-tour.html", "permanent": true },
+    { "source": "/jaipur-luxury-privatetour", "destination": "/tours/jaipur-luxury-private-tour.html", "permanent": true },
+    { "source": "/overnight-jaipur-tour-package", "destination": "/tours/jaipur-luxury-private-tour.html", "permanent": true },
+    { "source": "/jaipur-tour-package", "destination": "/tours/jaipur-private-sightseeing-tour.html", "permanent": true },
+    { "source": "/2-days-taj-mahal-and-jaipur-tour-by-car", "destination": "/tours/2-days-taj-mahal-and-jaipur-tour.html", "permanent": true },
+
+    { "source": "/taj-mahal-sunrise-tour-with-elephant-conservation-from-delhi", "destination": "/tours/taj-mahal-sunrise-with-elephant-conservation.html", "permanent": true },
+    { "source": "/taj-mahal-guide-tour", "destination": "/taj-mahal-tour-packages.html", "permanent": true },
+    { "source": "/taj-mahal-transport-tour", "destination": "/taj-mahal-tour-packages.html", "permanent": true },
+    { "source": "/taj-mahal-transport-guide-tour", "destination": "/taj-mahal-tour-packages.html", "permanent": true },
+    { "source": "/taj-mahal-honeymoon-tour", "destination": "/taj-mahal-tour-packages.html", "permanent": true },
+    { "source": "/taj-mahal-sunrise-tour", "destination": "/tours/taj-mahal-sunrise-tour-from-delhi.html", "permanent": true },
+    { "source": "/taj-mahal-tour-by-train", "destination": "/tours/taj-mahal-tour-by-gatimaan-express.html", "permanent": true },
+    { "source": "/2-days-taj-mahal-overnight-tour", "destination": "/tours/2-days-taj-mahal-overnight-tour.html", "permanent": true },
+    { "source": "/same-day-taj-mahal-tour", "destination": "/same-day-tour-packages.html", "permanent": true },
+    { "source": "/golden-triangle-private-tour", "destination": "/golden-triangle-tour-packages.html", "permanent": true },
+    { "source": "/rajasthan-private-tour", "destination": "/rajasthan-tour-packages.html", "permanent": true },
+    { "source": "/ranthambore-wildlife-tour", "destination": "/wildlife-tour-packages.html", "permanent": true },
+    { "source": "/varanasi-spiritual-tour", "destination": "/tours/varanasi-2-days-spiritual-tour.html", "permanent": true },
+    { "source": "/custom-india-tour", "destination": "/contact.html", "permanent": true },
+
+    { "source": "/new-delhi-full-day-city-tour-by-car", "destination": "/tours/new-delhi-private-city-tour.html", "permanent": true },
+    { "source": "/old-delhi-heritage-tour-by-rickshaw-car", "destination": "/tours/old-delhi-heritage-tour-by-rickshaw.html", "permanent": true },
+    { "source": "/new-delhi-sunrise-city-tour-by-car", "destination": "/tours/new-delhi-sunrise-city-tour.html", "permanent": true },
+    { "source": "/new-delhi-luxury-car-tour", "destination": "/tours/new-delhi-luxury-car-tour.html", "permanent": true },
+    { "source": "/2-days-delhi-sightseeing-tour", "destination": "/tours/delhi-2-days-city-tour.html", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/assets/img/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/assets/(.*).css",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000" }
+      ]
+    },
+    {
+      "source": "/assets/(.*).js",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000" }
+      ]
+    }
+  ]
+}
