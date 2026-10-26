@@ -319,7 +319,7 @@ function applyHead(html, o) {
 const current = (html, re) => { const m = re.exec(html); return m ? m[1] : ""; };
 
 /* ===================================================== 1. root pages ==== */
-const rootPages = fs.readdirSync(ROOT).filter(f => f.endsWith(".html"));
+const rootPages = fs.readdirSync(ROOT).filter(f => f.endsWith(".html") && !/^google[0-9a-f]+\.html$/.test(f));
 const sitemap = [];
 const pageImg = key => IMG[key] ? ogImg(IMG[key]) : undefined;
 
