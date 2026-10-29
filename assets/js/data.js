@@ -214,7 +214,11 @@ const COLLECTION_PAGES = {
       ["Can I customize the itinerary?", "Yes. Travel dates, interests, pace, hotel location and any special requirements all shape the plan."],
       ["When is the best time to visit the Taj Mahal?", "October to March is cooler and more comfortable. Early morning visits are popular for thinner crowds and softer light."],
       ["Do you run same-day tours from Delhi?", "Yes, by private AC car and by Gatimaan Express train, both with pickup and return arranged."],
-      ["How do I book?", "Send your date, number of guests and preferred tour. We confirm availability, inclusions and the total price before you pay anything."]
+      ["How do I book?", "Send your date, number of guests and preferred tour. We confirm availability, inclusions and the total price before you pay anything."],
+      ["Is the Taj Mahal open on Friday?", "No. The Taj Mahal is closed to visitors every Friday, so we plan Taj tours for any other day of the week and can fill a Friday with Agra Fort, Fatehpur Sikri or Mehtab Bagh instead."],
+      ["Which gate of the Taj Mahal is best to enter from?", "The East Gate usually has the shortest queues and is closest to most of the better hotels, so we use it on most tours. The West Gate is the busiest because it serves the city side and the tour coaches."],
+      ["How much time do I need at the Taj Mahal?", "Two to three hours is comfortable for the gardens, the main mausoleum, the mosque and the riverside terrace. With an early start you still have plenty of the day left for Agra Fort and lunch."],
+      ["Can I see the Taj Mahal at night?", "Yes, on five nights around each full moon, but not on Fridays or during Ramzan. Tickets are limited and sold a day in advance, and you view the Taj from a distance in a timed half-hour slot."]
     ]
   },
   "same-day": {
@@ -235,7 +239,11 @@ const COLLECTION_PAGES = {
       ["Can I see the Taj Mahal and be back in Delhi the same day?", "Yes. The day tour covers the Taj Mahal, Agra Fort and the other highlights, and returns to Delhi the same evening."],
       ["Are same-day tours private?", "Yes — a private AC car, a professional driver and a local guide. You are never added to a group."],
       ["Is a luxury car available?", "Yes. The Taj Mahal luxury car tour runs the same route with a premium vehicle and a 5-star lunch."],
-      ["How long does a same-day tour take?", "Usually the full day, 12 to 14 hours door to door depending on the destination and traffic."]
+      ["How long does a same-day tour take?", "Usually the full day, 12 to 14 hours door to door depending on the destination and traffic."],
+      ["Is the car or the train better for a Taj Mahal day trip?", "The Gatimaan Express is quicker, leaving Hazrat Nizamuddin at 8:10 am and reaching Agra in about 100 minutes. The private car is more flexible, with door-to-door pickup and the Yamuna Expressway drive taking about three to three and a half hours."],
+      ["Can I do a Taj Mahal day trip from Delhi on a Friday?", "Not to the Taj itself, because it is closed every Friday and the Gatimaan Express does not run that day. On a Friday we suggest the Delhi city tour or the Jaipur day tour instead."],
+      ["What time does the Taj Mahal sunrise tour leave Delhi?", "It leaves in the very early hours, usually around 3 am, so you reach the gate before it opens at sunrise. You get the softest light and the thinnest crowds of the day in return."],
+      ["Can you pick me up from Gurgaon, Noida or the airport?", "Yes. Pickup and drop can be from any hotel or address in Delhi, Gurgaon or Noida, or from the airport, and we confirm the timing with you before the day."]
     ]
   },
   "golden-triangle": {
@@ -250,7 +258,10 @@ const COLLECTION_PAGES = {
       ["Can the tour be private?", "Every Golden Triangle tour here is private: your own AC car, driver and local guides."],
       ["Is the Taj Mahal included?", "Yes, on every version of the route, along with Agra Fort."],
       ["Can I change the itinerary?", "Yes. Dates, number of days, hotel category and which attractions to keep or drop are all adjustable."],
-      ["What is the best way to travel between the three cities?", "A private car. It gives you the transfers plus the freedom to stop at Fatehpur Sikri or Chand Baori on the way."]
+      ["What is the best way to travel between the three cities?", "A private car. It gives you the transfers plus the freedom to stop at Fatehpur Sikri or Chand Baori on the way."],
+      ["Which order is best for the Golden Triangle?", "Most routes run Delhi, Agra, Jaipur and back to Delhi, which keeps every drive to around four to five hours and puts Fatehpur Sikri on the road between Agra and Jaipur. The order can be reversed if your dates fall on a Friday in Agra, when the Taj Mahal is closed."],
+      ["Can the Golden Triangle tour start in Agra?", "Yes. Since we are based in Agra, starting here is easy: we can collect you from an Agra hotel or station, go on to Jaipur and finish in Delhi for your flight."],
+      ["What is the best time of year for a Golden Triangle tour?", "October to March, when the days are pleasant for sightseeing. April to June is very hot, and July to September brings monsoon rain, though the monuments stay open and the route is still very doable."]
     ]
   },
   "delhi": {
@@ -263,7 +274,12 @@ const COLLECTION_PAGES = {
       ["What is included in a New Delhi tour package?", "Private air-conditioned transport, an English-speaking guide, hotel pickup and the sightseeing. Monument tickets and meals depend on the package and are listed before you book."],
       ["Do you run full-day city tours?", "Yes, both full-day and half-day private tours by AC car, with hotel pickup and drop."],
       ["When is the best time to visit Delhi?", "October to March. Early-morning starts are better for the major monuments."],
-      ["Can I customize the itinerary?", "Yes — around your dates, interests, pace and hotel location."]
+      ["Can I customize the itinerary?", "Yes — around your dates, interests, pace and hotel location."],
+      ["What are the must-see places in Delhi in one day?", "Red Fort, Jama Masjid and a rickshaw ride through Chandni Chowk in the morning, then India Gate, Humayun's Tomb and Qutub Minar in the afternoon. Your guide adjusts the list to your pace and interests."],
+      ["Is the Red Fort open every day?", "No, the Red Fort is closed on Mondays. On a Monday we view it from outside and spend more time at Humayun's Tomb, Qutub Minar and the other monuments that are open."],
+      ["What should I wear for Jama Masjid and the temples?", "Clothes that cover shoulders and knees, and shoes that slip off easily, since footwear is removed at mosques, temples and gurdwaras. Robes are usually available at Jama Masjid if needed."],
+      ["Can I do a Delhi tour during an airport layover?", "Yes, if you have around eight hours or more between flights and the right visa to leave the airport. We pick you up at arrivals, cover the highlights and have you back in good time for check-in."],
+      ["Is Delhi safe for tourists?", "Yes, for travellers who take ordinary city precautions. With a private car and your own guide you avoid most hassles, and the guide steers you away from touts and commission shops."]
     ]
   },
   "jaipur": {
@@ -277,7 +293,11 @@ const COLLECTION_PAGES = {
       ["How long is the drive from Delhi to Jaipur?", "Four to five hours each way, depending on traffic."],
       ["What will I see on a Jaipur day tour?", "Amber Fort, City Palace, Hawa Mahal, Jantar Mantar and Jal Mahal, depending on how the day is arranged."],
       ["Is the tour private?", "Yes — a private AC car, a professional driver and a local guide."],
-      ["Can I cancel the day before?", "Yes, cancellation is free up to 24 hours before the tour."]
+      ["Can I cancel the day before?", "Yes, cancellation is free up to 24 hours before the tour."],
+      ["What is the best time of year to visit Jaipur?", "October to March is the most comfortable, with mild days and cool evenings. Summer afternoons get very hot, so tours then start early and break in the middle of the day."],
+      ["Can I go from Agra to Jaipur by car?", "Yes, it is about four to five hours by road. Most tours stop at Fatehpur Sikri on the way, and the Chand Baori stepwell at Abhaneri can be added too."],
+      ["How do you get up to Amber Fort?", "By jeep up the hill to the fort gate, which is quick and comfortable, or on foot for those who like a climb. Your guide meets you at the top and takes you through the palace courtyards."],
+      ["Is one day enough for Jaipur?", "One day covers Amber Fort, City Palace, Hawa Mahal and Jantar Mantar. An overnight stay adds the bazaars, Nahargarh at sunset and a far less rushed pace."]
     ]
   },
   "varanasi": {
@@ -290,7 +310,12 @@ const COLLECTION_PAGES = {
       ["How do we get to Varanasi?", "Flights from Delhi take about ninety minutes. Overnight trains run too, and we book either."],
       ["Is the evening aarti worth it?", "Yes, and it needs planning. We take a boat so you watch from the water rather than a packed ghat."],
       ["Is photography allowed at the cremation ghats?", "No, and your guide will say so clearly. Manikarnika is a working cremation ground, not a sight."],
-      ["How many days are enough?", "Two days: one for the river at dawn and the old city, one for Sarnath and the evening aarti."]
+      ["How many days are enough?", "Two days: one for the river at dawn and the old city, one for Sarnath and the evening aarti."],
+      ["What is the best time of year to visit Varanasi?", "October to March, when mornings on the river are cool and clear. Dev Deepawali, held in November on the full moon of Kartik, is the most spectacular time of all, with every ghat lit by oil lamps."],
+      ["Can I go to Varanasi from Agra?", "Yes. Overnight trains run from Agra to Varanasi, or you can fly via Delhi. It fits neatly at the end of a Golden Triangle tour."],
+      ["Can foreign tourists visit the Kashi Vishwanath Temple?", "Yes, visitors of all faiths can visit the temple complex. Phones, cameras and bags are not allowed inside, so your guide will arrange lockers and take you through the queue."],
+      ["What should I wear in Varanasi?", "Modest, comfortable clothes that cover shoulders and knees, and shoes you can slip off at temples. The ghats and lanes are uneven and can be wet, so good grip matters more than style."],
+      ["Is Varanasi safe for tourists?", "Yes, with sensible care. The lanes are crowded and confusing, which is exactly why a local guide helps, and the boats we use are run by boatmen we know."]
     ]
   },
   "south-india": {
@@ -303,7 +328,12 @@ const COLLECTION_PAGES = {
       ["How is South India different from the north?", "Greener, slower, hotter and more humid. Different food, different architecture, different languages. Many people who have done the Golden Triangle come back for this."],
       ["When should we go?", "October to March. The monsoon arrives in June and the hills stay comfortable through most of the year."],
       ["Can we combine north and south?", "Yes, with a domestic flight in the middle. Allow at least two weeks for both to be worth doing."],
-      ["Is a houseboat night worth it?", "For most guests, yes. A night on the backwaters is quiet in a way very little else in India is."]
+      ["Is a houseboat night worth it?", "For most guests, yes. A night on the backwaters is quiet in a way very little else in India is."],
+      ["Which places should a South India tour include?", "Kochi, Munnar and the Alleppey backwaters in Kerala, the temple towns of Madurai and Thanjavur, and Mahabalipuram and Pondicherry on the Tamil Nadu coast. Mysore and Hampi suit a route through Karnataka instead."],
+      ["How many days do I need for South India?", "Ten to fourteen days gives you Kerala and Tamil Nadu without rushing. A week works if you focus on Kerala alone."],
+      ["How do I get to South India from Delhi?", "Fly. Direct flights from Delhi to Kochi, Chennai and Bengaluru take around three hours, and we arrange pickup on arrival and a car for the whole route."],
+      ["Can non-Hindus enter South Indian temples?", "Most temples welcome visitors of all faiths into the main complex, though some inner sanctums are reserved for Hindus. Dress modestly, remove footwear at the entrance, and your guide will tell you where photography is allowed."],
+      ["What food should we try in South India?", "Dosa, idli and filter coffee for breakfast, a vegetarian meal served on a banana leaf, and Kerala's coconut-based fish curries. Spice levels can be adjusted if you ask."]
     ]
   },
   "rajasthan": {
@@ -317,7 +347,11 @@ const COLLECTION_PAGES = {
       ["How many days do I need?", "Twelve to thirteen days covers the full circuit comfortably. Eight to ten days works if you drop the desert leg."],
       ["Is a private car and driver included?", "Yes, for the whole route — the same driver stays with you across all the cities."],
       ["Can Rajasthan be added to a Golden Triangle tour?", "Yes. The eight and ten day routes do exactly that, adding Jodhpur, Pushkar or Udaipur to Delhi, Agra and Jaipur."],
-      ["When should I travel?", "October to March. Desert nights in December and January get genuinely cold, so pack for it."]
+      ["When should I travel?", "October to March. Desert nights in December and January get genuinely cold, so pack for it."],
+      ["Where do Rajasthan tours start and end?", "Most start in Delhi and finish in Udaipur, from where you fly back rather than drive. We can also start from Agra or Jaipur if that suits your plans better."],
+      ["How long are the drives between cities?", "Usually four to six hours, with stops for lunch, tea and anything interesting along the way. Jaisalmer is the most remote leg, which is why shorter routes leave it out."],
+      ["Can we stay in heritage hotels?", "Yes. Rajasthan is the best place in India for it, with converted palaces, forts and havelis in most cities. We suggest options in your budget and confirm them with you before booking."],
+      ["When is the Pushkar Camel Fair?", "It is held around the full moon of the Hindu month of Kartik, which falls in October or November. Hotels fill fast in Pushkar during the fair, so it is worth planning early."]
     ]
   },
   "wildlife": {
@@ -334,7 +368,11 @@ const COLLECTION_PAGES = {
       ["When is the safari season?", "October to June. Most core zones close from July to mid-October for the monsoon. March to May is hot but the best time for tigers, as animals come to the water."],
       ["Jeep or canter — which is better?", "A six-seat jeep (gypsy) is quieter and gets closer. Canters carry twenty people and are cheaper. All our tours use jeeps, and a private jeep can be booked for your group."],
       ["Do I need to book safaris in advance?", "Yes. Park permits are released online by the forest department, usually 90 to 120 days ahead, and popular zones sell out. We book them as soon as your dates are confirmed."],
-      ["Are wildlife tours suitable for children?", "Yes, for most children over five. Each safari lasts three to four hours in an open vehicle, so bring layers for cold winter mornings."]
+      ["Are wildlife tours suitable for children?", "Yes, for most children over five. Each safari lasts three to four hours in an open vehicle, so bring layers for cold winter mornings."],
+      ["Can I combine a tiger safari with the Taj Mahal?", "Yes. Ranthambore sits conveniently between Agra and Jaipur, so it slots into a Golden Triangle route with two nights and two or three safaris."],
+      ["Which tiger reserve is closest to Delhi?", "Jim Corbett, about five to six hours by road from Delhi. Ranthambore is the easier choice from Agra or Jaipur, while Bandhavgarh, Kanha and Pench in Madhya Pradesh are reached by flight or train via Jabalpur or Nagpur."],
+      ["What should I wear on a jungle safari?", "Neutral colours such as khaki, olive or beige, plus a hat, sunscreen and a scarf for the dust. Winter mornings in an open jeep are cold, so bring a warm jacket and gloves from November to February."],
+      ["Do I need ID for a safari permit?", "Yes. Permits are booked in each traveller's name with passport or ID details, and you must carry the same original ID on the safari, as forest staff check it at the gate."]
     ]
   }
 };
@@ -351,7 +389,11 @@ const CITY_PAGES = {
       ["Can I visit Agra from Delhi in one day?", "Yes, by private car or by train. Both are comfortable and get you back the same evening."],
       ["Which railway station should I use?", "Agra has several. Check your ticket for the arriving station — we arrange the transfer from whichever one it is."],
       ["Is the Taj Mahal closed any day?", "Yes, it is closed to visitors on Fridays. We plan around it."],
-      ["What should I wear?", "Comfortable clothes and walking shoes. The monuments involve more walking than people expect."]
+      ["What should I wear?", "Comfortable clothes and walking shoes. The monuments involve more walking than people expect."],
+      ["Where is the best area to stay in Agra?", "Near the Taj Mahal East Gate and along Fatehabad Road, where most of the good hotels are and the Taj is only a short drive away. Staying close makes a sunrise visit much easier."],
+      ["What local food should I try in Agra?", "Agra's petha, a translucent sweet made from ash gourd, and the breakfast of bedai with spicy potato curry and hot jalebi. The city is also known for rich Mughlai dishes."],
+      ["Is Fatehpur Sikri worth visiting from Agra?", "Yes. It is about 40 km away, roughly an hour by car, and Akbar's abandoned red sandstone capital is one of the most impressive sites in north India. It also sits on the road to Jaipur, so it is easy to add on the way."],
+      ["What is Agra famous for shopping?", "Marble inlay work in the same style as the Taj Mahal, along with leather goods, rugs and embroidery. Your guide can take you to workshops where you see the craftsmen at work before deciding to buy anything."]
     ]
   },
   delhi: {
@@ -364,7 +406,12 @@ const CITY_PAGES = {
       ["How many days do I need in Delhi?", "One full day covers both Old and New Delhi. Two days adds the museums, the temples and time in the markets."],
       ["Is the rickshaw ride through Chandni Chowk worth it?", "Yes. The lanes are too narrow and too busy for a car, and the spice market is the part people remember."],
       ["Which monuments close on certain days?", "Most are open daily, but the Red Fort closes on Mondays. We plan around it."],
-      ["Can the tour start from the airport?", "Yes. Many travellers do this on a long layover — airport pickup, the city tour, and back in time for the next flight."]
+      ["Can the tour start from the airport?", "Yes. Many travellers do this on a long layover — airport pickup, the city tour, and back in time for the next flight."],
+      ["Where is the best area to stay in Delhi?", "Central Delhi around Connaught Place and the embassy area is convenient for sightseeing and has a good choice of hotels. Aerocity, next to the airport, suits early flights and short stays."],
+      ["What local food should I try in Delhi?", "Stuffed parathas and street chaat in Old Delhi, butter chicken and kebabs, and a sweet lassi or kulfi to finish. Your guide will point you to places that are clean as well as good."],
+      ["Where should I go shopping in Delhi?", "Dilli Haat for crafts from every state, Janpath for souvenirs, Khan Market for books and boutiques, and Chandni Chowk for spices, textiles and wedding wear."],
+      ["How do I get from Delhi to Agra?", "Agra is about 230 km away, roughly three to three and a half hours by car on the Yamuna Expressway. The Gatimaan Express is faster, leaving Hazrat Nizamuddin at 8:10 am and taking about 100 minutes, but it does not run on Fridays."],
+      ["Is Delhi safe for tourists?", "Yes, with the usual big-city care. A private car and a guide take care of most of the hassle, and it is wise to keep valuables close in crowded markets like Chandni Chowk."]
     ]
   },
   jaipur: {
@@ -377,7 +424,12 @@ const CITY_PAGES = {
       ["How many days does Jaipur need?", "One day covers the main sights. Two lets you add Nahargarh at sunset, the craft workshops and the bazaars."],
       ["Is the elephant ride at Amber Fort available?", "Availability changes with the regulations. A jeep up to the fort is always available and many travellers prefer it."],
       ["What is worth buying in Jaipur?", "Gemstones, block-printed textiles and blue pottery. We can take you to workshops rather than commission shops."],
-      ["Can I visit Jaipur from Delhi in a day?", "Yes, though it is a long day — four to five hours each way. An overnight stay is more comfortable."]
+      ["Can I visit Jaipur from Delhi in a day?", "Yes, though it is a long day — four to five hours each way. An overnight stay is more comfortable."],
+      ["Where is the best area to stay in Jaipur?", "Close to the old city or in the central C-Scheme area keeps you near the main sights and restaurants. Jaipur also has many heritage havelis and palace hotels if you want somewhere with character."],
+      ["What local food should I try in Jaipur?", "Dal baati churma, the classic Rajasthani dish, plus pyaaz kachori for breakfast, laal maas for meat lovers and a thick lassi from the old city."],
+      ["What is the best time of year to visit Jaipur?", "October to March, when the days are mild and ideal for exploring forts. From April to June the afternoons get very hot, so sightseeing is best done in the early morning."],
+      ["How far is Jaipur from Agra?", "About four to five hours by road. Most travellers stop at Fatehpur Sikri, and the Chand Baori stepwell at Abhaneri is an easy detour on the way."],
+      ["What time should I visit Amber Fort?", "Right at opening in the morning, before the tour coaches arrive and the heat builds. By late morning it is noticeably busier."]
     ]
   },
   jodhpur: {
@@ -389,7 +441,13 @@ const CITY_PAGES = {
     faqs: [
       ["How long should I spend in Jodhpur?", "A full day covers Mehrangarh, Jaswant Thada and Umaid Bhawan. Two days adds Mandore Gardens and time in the old city."],
       ["Why are the houses blue?", "Several explanations compete — caste tradition, keeping interiors cool, repelling insects. Your guide will give you all of them."],
-      ["Is Jodhpur usually combined with other cities?", "Yes. It sits naturally between Jaipur and Udaipur, and appears on the 8, 10, 12 and 13 day routes."]
+      ["Is Jodhpur usually combined with other cities?", "Yes. It sits naturally between Jaipur and Udaipur, and appears on the 8, 10, 12 and 13 day routes."],
+      ["What is the best time to visit Jodhpur?", "October to March, when the days are warm and the evenings cool. Summer is very hot, so if you travel then, plan Mehrangarh for the early morning."],
+      ["How do I get to Jodhpur?", "By road from Jaipur in about five to six hours, or from Udaipur in about five hours with a stop at the Ranakpur Jain temple. There are also direct flights and trains from Delhi."],
+      ["How much time do I need at Mehrangarh Fort?", "Two to three hours for the palaces, the museum galleries and the views over the blue city. The audio guide is excellent and worth taking."],
+      ["Where should I stay in Jodhpur?", "In or near the old city below the fort if you want rooftop views of Mehrangarh and the blue houses. Hotels further out are quieter and easier to reach by car."],
+      ["What food is Jodhpur known for?", "Mirchi bada, a stuffed and fried green chilli, mawa kachori and the creamy makhaniya lassi. The stalls around the Clock Tower are the classic place to try them."],
+      ["What can I buy in Jodhpur?", "Spices and textiles from the Clock Tower market, bandhani tie-dye fabrics and antique-style furniture and handicrafts. Your guide can take you to reliable shops and help you avoid the commission traps."]
     ]
   },
   udaipur: {
@@ -401,7 +459,13 @@ const CITY_PAGES = {
     faqs: [
       ["How many days does Udaipur need?", "A full day covers the City Palace, the temple and a boat ride. Two days lets the city be the rest it is good at."],
       ["Is the Lake Pichola boat ride included?", "It depends on the package. It can be added to any Udaipur itinerary on request."],
-      ["Can I fly out of Udaipur?", "Yes, and most of our longer Rajasthan routes end that way rather than driving back to Delhi."]
+      ["Can I fly out of Udaipur?", "Yes, and most of our longer Rajasthan routes end that way rather than driving back to Delhi."],
+      ["What is the best time to visit Udaipur?", "October to March is the most pleasant. The weeks just after the monsoon are especially lovely, as the lakes are full and the hills are green."],
+      ["How do I get to Udaipur?", "Direct flights from Delhi take about an hour and a half. By road, Udaipur is about five hours from Jodhpur, with the Ranakpur Jain temple on the way."],
+      ["Where should I stay in Udaipur?", "Around Lake Pichola in the old city for lake views and walking access to the City Palace. The Fateh Sagar Lake area is calmer and still close to the sights."],
+      ["Where is the best place to watch the sunset in Udaipur?", "On a boat on Lake Pichola, from a lakeside rooftop, or up at the Monsoon Palace on the hill, which looks out over the city and the lakes."],
+      ["What else is there to see in Udaipur?", "Saheliyon ki Bari garden, Jagdish Temple, the evening folk dance show at Bagore ki Haveli and the vintage car collection. The old city lanes are good for an unhurried walk."],
+      ["Are there good day trips from Udaipur?", "Yes. Kumbhalgarh Fort with its enormous walls, the Ranakpur Jain temple and the hilltop fort of Chittorgarh are all easy day trips by private car."]
     ]
   },
   varanasi: {
@@ -410,10 +474,17 @@ const CITY_PAGES = {
     intro: "Varanasi tours along the ghats and through the old city — sunrise on the Ganga, the evening aarti, and Sarnath where Buddhism began.",
     welcome: ["Varanasi is the oldest continuously inhabited city in India and makes no effort to be comfortable. Pilgrims bathe at dawn, bodies burn at Manikarnika, and the lanes behind the ghats are too narrow for a car.",
               "A boat at first light is the thing to plan around. The city faces the river, so the only way to see it properly is from the water."],
-    faqs: [["What time does the sunrise boat start?", "Around 5 to 5:30 am depending on the season. It is early, and it is the reason people come."],
-           ["Is the evening aarti crowded?", "Very. We take a boat so you watch from the river rather than from inside the crush."],
-           ["Can we photograph the cremation ghats?", "No. It is a working cremation ground and photography there is both forbidden and unkind. Your guide will tell you where the line is."],
-           ["Is Sarnath worth half a day?", "Yes, especially the museum. It is a calm counterpoint after the intensity of the ghats."]]
+    faqs: [
+      ["What time does the sunrise boat start?", "Around 5 to 5:30 am depending on the season. It is early, and it is the reason people come."],
+      ["Is the evening aarti crowded?", "Very. We take a boat so you watch from the river rather than from inside the crush."],
+      ["Can we photograph the cremation ghats?", "No. It is a working cremation ground and photography there is both forbidden and unkind. Your guide will tell you where the line is."],
+      ["Is Sarnath worth half a day?", "Yes, especially the museum. It is a calm counterpoint after the intensity of the ghats."],
+      ["Where is the best area to stay in Varanasi?", "Near the ghats if you want to walk to the river at dawn and feel the city around you. Hotels in the Cantonment area are quieter and easier to reach by car, a short drive from the river."],
+      ["What time does the Ganga aarti start?", "Around sunset, roughly 6 to 7 pm depending on the season. We get you to the river early so you are settled on the boat before it begins."],
+      ["What food should I try in Varanasi?", "Kachori sabzi with jalebi for breakfast, a thick lassi served in a clay cup, Banarasi paan, and in winter the light, foamy malaiyo sold only in the early mornings."],
+      ["What is Varanasi famous for shopping?", "Banarasi silk saris and brocades, woven in the city for centuries. Your guide can take you to a weaving workshop where you see the looms before buying."],
+      ["How far is Sarnath from Varanasi?", "About 10 km, around half an hour by car. It is easy to combine with an afternoon in the city."]
+    ]
   },
   amritsar: {
     file: "amritsar-tours.html", name: "Amritsar", match: ["Amritsar"], img: "amritsar",
@@ -421,10 +492,17 @@ const CITY_PAGES = {
     intro: "Amritsar tours around the Golden Temple, the Jallianwala Bagh memorial and the evening ceremony at the Wagah border.",
     welcome: ["The Golden Temple is open to everyone, serves a free meal to anyone who sits down, and feeds roughly a hundred thousand people a day from a kitchen run almost entirely by volunteers.",
               "Jallianwala Bagh is a five-minute walk away, and the contrast between the two is the point of a day here."],
-    faqs: [["Can anyone enter the Golden Temple?", "Yes, regardless of faith. Heads must be covered, shoes left outside, and the pool walked around clockwise. Scarves are provided at the entrance."],
-           ["Should we eat at the langar?", "If you are comfortable sitting on the floor with everyone else, yes. It is the most quietly impressive thing in the city."],
-           ["Is the Wagah border ceremony worth it?", "It is loud, nationalistic and genuinely unusual. Go early — the stands fill well before it starts."],
-           ["How long do we need?", "One full day covers the temple, Jallianwala Bagh and Wagah. Two days adds the Partition Museum."]]
+    faqs: [
+      ["Can anyone enter the Golden Temple?", "Yes, regardless of faith. Heads must be covered, shoes left outside, and the pool walked around clockwise. Scarves are provided at the entrance."],
+      ["Should we eat at the langar?", "If you are comfortable sitting on the floor with everyone else, yes. It is the most quietly impressive thing in the city."],
+      ["Is the Wagah border ceremony worth it?", "It is loud, nationalistic and genuinely unusual. Go early — the stands fill well before it starts."],
+      ["How long do we need?", "One full day covers the temple, Jallianwala Bagh and Wagah. Two days adds the Partition Museum."],
+      ["How do I get to Amritsar from Delhi?", "Flights take about an hour, and fast day trains take around six hours. We arrange pickup at Amritsar airport or station."],
+      ["What is the best time to visit the Golden Temple?", "Early morning for a calm visit and the ceremony that opens the day, and again after dark when the temple is lit up and glowing on the water. Many guests go twice."],
+      ["How far is the Wagah border and what time is the ceremony?", "Wagah is about 30 km from Amritsar, roughly 45 minutes by car. The ceremony takes place shortly before sunset, so we leave in the early afternoon, and foreign visitors should carry their passports."],
+      ["What food should I try in Amritsar?", "Amritsari kulcha with chole, a tall glass of lassi, and Amritsari fried fish in the evening. Punjabi food is generous and rich, so come hungry."],
+      ["Where is the best place to stay in Amritsar?", "Close to the Golden Temple, so you can walk over early in the morning and again at night. The heritage street leading to the temple is pedestrian-only, so we drop you as close as cars are allowed."]
+    ]
   },
   ranthambore: {
     file: "ranthambore-tours.html", name: "Ranthambore", match: ["Ranthambore"], img: "ranthambore",
@@ -432,10 +510,17 @@ const CITY_PAGES = {
     intro: "Ranthambore safaris in one of India's best-known tiger reserves, usually added to a Golden Triangle route between Agra and Jaipur.",
     welcome: ["Ranthambore National Park covers around 1,300 square kilometres of dry forest around a tenth-century fort, and holds one of the more visible tiger populations in India.",
               "Safaris run morning and afternoon in open Gypsies or larger Canters. Zones and timings are allotted by the Forest Department, not by us, so bookings are made as early as possible."],
-    faqs: [["Will we see a tiger?", "Nobody can promise that. Two safaris give a reasonable chance; October to April is better than the monsoon months."],
-           ["Gypsy or Canter?", "A Gypsy seats six and gets closer. A Canter seats twenty and costs less. We book Gypsies unless you ask otherwise."],
-           ["Can we book a private Gypsy?", "Yes, at extra cost and subject to availability. Worth it for photographers."],
-           ["When is the park closed?", "Usually the first of July to the end of September for the monsoon. Some zones stay open — we check before quoting."]]
+    faqs: [
+      ["Will we see a tiger?", "Nobody can promise that. Two safaris give a reasonable chance; October to April is better than the monsoon months."],
+      ["Gypsy or Canter?", "A Gypsy seats six and gets closer. A Canter seats twenty and costs less. We book Gypsies unless you ask otherwise."],
+      ["Can we book a private Gypsy?", "Yes, at extra cost and subject to availability. Worth it for photographers."],
+      ["When is the park closed?", "Usually the first of July to the end of September for the monsoon. Some zones stay open — we check before quoting."],
+      ["How do I get to Ranthambore?", "By road it is about three to three and a half hours from Jaipur and around five hours from Agra. Trains also run to Sawai Madhopur, the station for the park."],
+      ["How many nights should I stay in Ranthambore?", "Two nights lets you take two or three safaris, which gives a much better chance of seeing a tiger than a single drive."],
+      ["What is the best month for tiger sightings?", "March to May is hot but often best, as the vegetation thins and animals gather near water. October to February is cooler and more comfortable, with good sightings too."],
+      ["Can we visit Ranthambore Fort?", "Yes. The tenth-century fort stands inside the park and can be visited separately from a safari, with its temples, lakes and wide views over the forest."],
+      ["What should I bring on safari?", "Neutral-coloured clothes, a hat, sunscreen and a scarf for the dust, plus warm layers for winter mornings. Carry the same original ID that was used to book the permit, as it is checked at the gate."]
+    ]
   },
   jaisalmer: {
     file: "jaisalmer-tours.html", name: "Jaisalmer", match: ["Jaisalmer", "desert"], img: "jaisalmer",
@@ -446,7 +531,13 @@ const CITY_PAGES = {
     faqs: [
       ["Is a night at a desert camp worth it?", "For most people it is the night they remember from the whole trip. Tented accommodation, dinner, music and dancing out at the dunes."],
       ["Is the camel ride compulsory?", "No. It is included but nobody has to ride — the sunset and the dinner stand on their own."],
-      ["When should I visit?", "October to March. Desert nights in December and January are cold, so bring layers."]
+      ["When should I visit?", "October to March. Desert nights in December and January are cold, so bring layers."],
+      ["How do I get to Jaisalmer?", "By road from Jodhpur in about five to six hours, or by overnight train from Delhi or Jaipur. It is the most remote city in Rajasthan, so it is worth giving it at least two nights."],
+      ["How many days are enough for Jaisalmer?", "Two days: one for the fort, the havelis and Gadisar Lake, and one for the desert, with a night at a camp in the dunes."],
+      ["Sam or Khuri — which dunes are better?", "Sam has the bigger dunes but gets busy with camps and crowds. Khuri is quieter and feels more remote, which is why we usually prefer it."],
+      ["Is Kuldhara worth visiting?", "Yes, as a short stop on the way to the dunes. It is an abandoned village with an eerie story that your guide will tell you, and it takes less than an hour."],
+      ["What is the best time of day to see Jaisalmer Fort?", "Late afternoon, when the low sun turns the sandstone gold. Gadisar Lake is lovely in the early morning before the day warms up."],
+      ["What should I buy in Jaisalmer?", "Mirror-work and embroidered textiles, patchwork bedspreads and carved stone pieces. The fort lanes and the old market are full of small shops, and your guide can steer you to fair prices."]
     ]
   }
 };
@@ -1151,7 +1242,9 @@ const TOURS = [
       ["What should I carry?", "Your passport or photo ID, comfortable walking shoes, sunglasses and a camera. Keep bags small, as large bags are not allowed inside the Taj Mahal complex."],
       ["What is the cancellation policy?", "Cancel more than seven days before travel for a full refund of the deposit; closer to the date, costs already committed with hotels and transport are deducted. Our terms page has the details."],
       ["What should I wear for the Taj Mahal visit?", "Comfortable clothes and good walking shoes. Modest dress that covers shoulders and knees is respectful, and a light layer helps on cool winter mornings."],
-      ["Is the tour wheelchair accessible?", "The Taj Mahal is largely wheelchair accessible, though a few spots have steps or uneven paths where some help is needed. Tell us in advance and your guide will plan the route and assist."]
+      ["Is the tour wheelchair accessible?", "The Taj Mahal is largely wheelchair accessible, though a few spots have steps or uneven paths where some help is needed. Tell us in advance and your guide will plan the route and assist."],
+      ["Is breakfast included on the sunrise tour?", "Breakfast is not in the base price, but a five-star hotel breakfast in Agra with Indian and continental choices can be added when you book. If you prefer, your guide can suggest a simpler local place instead."],
+      ["What happens if it is foggy at sunrise?", "Fog is common on winter mornings from about mid-December to January, and your driver will take the expressway carefully and leave a little earlier if needed. We cannot promise a clear sunrise, but the Taj in soft mist is beautiful in its own way, and your guide will still find the best viewpoints as it lifts."]
     ],
     gallery: ["tajSunrise", "mehtabBagh", "agraFortPalace"]
   },
@@ -1210,7 +1303,9 @@ const TOURS = [
       ["Is the Taj Mahal open every day of the week?", "No, the Taj Mahal is closed on Fridays, and the Gatimaan Express does not run on Fridays either. This tour therefore operates Saturday to Thursday."],
       ["What class options are there on the Gatimaan Express?", "There are two air-conditioned classes, Executive Chair Car and Standard Chair Car. Both serve food on board, usually breakfast on the way to Agra and a snack on the way back."],
       ["Can this Delhi to Taj Mahal train tour be private?", "Yes. Your guide and AC car in Agra are reserved for your group alone, so you can linger at the Taj Mahal, skip a stop or change the pace as you like."],
-      ["What's included in the package?", "Hotel pickup and drop-off in Delhi, Gatimaan Express tickets, and a private AC car with a licensed English-speaking guide in Agra are the core of the tour. Your written quote lists exactly what else is covered, such as monument tickets and lunch; tips and personal expenses are not included."]
+      ["What's included in the package?", "Hotel pickup and drop-off in Delhi, Gatimaan Express tickets, and a private AC car with a licensed English-speaking guide in Agra are the core of the tour. Your written quote lists exactly what else is covered, such as monument tickets and lunch; tips and personal expenses are not included."],
+      ["What happens if the train runs late?", "Your guide and driver in Agra keep track of the train and wait for you at Agra Cantt, and the day's timings are adjusted so you still get your full visit at the Taj Mahal. On the way back, your Delhi driver checks the arrival time and meets you at the station whenever the train comes in."],
+      ["Are vegetarian options available at lunch?", "Yes. Lunch is paid separately, and whether you choose a five-star hotel buffet or a local restaurant, there are plenty of vegetarian dishes. Just tell your guide about any dietary needs and they will recommend the right place."]
     ],
     gallery: ["taj", "agraFort", "babyTaj"]
   },
@@ -1271,7 +1366,11 @@ const TOURS = [
       ["How many nights of accommodation are included?", "One night in Agra when you pick a hotel option, with breakfast and taxes included."],
       ["Are monument entrance fees included in the tour price?", "Yes. Taj Mahal and Agra Fort tickets are included in the price, and your guide handles them at each gate so you skip the ticket queue."],
       ["Can I customise the hotel or upgrade my stay?", "Yes. We can match the hotel to your taste and budget, and upgrades to a higher category are available on request when booking, subject to availability."],
-      ["Is this a private overnight tour from Delhi to Agra?", "Yes, it is completely private, with a dedicated AC car, driver and licensed English-speaking guide on both days and no shared groups."]
+      ["Is this a private overnight tour from Delhi to Agra?", "Yes, it is completely private, with a dedicated AC car, driver and licensed English-speaking guide on both days and no shared groups."],
+      ["What time does the tour start and how long is the drive?", "We usually collect you at about 8 am from your Delhi hotel or the airport, and the drive to Agra on the Yamuna Expressway takes around three hours. That leaves time to check in and rest before the afternoon sightseeing."],
+      ["Are the Baby Taj and Mehtab Bagh tickets included?", "No, those two tickets are not included and are paid at the gate; your guide will help you buy them. Taj Mahal and Agra Fort tickets are included."],
+      ["Which days can we take this tour?", "Any day, as long as day two does not fall on a Friday, because the Taj Mahal is closed on Fridays. In practice that means starting on any day except Thursday, and we will check your dates when you enquire."],
+      ["What is the cancellation policy?", "Cancel more than seven days before travel for a full refund of the deposit; closer to the date, costs already committed with hotels and transport are deducted. Our terms page has the details."]
     ],
     gallery: ["mehtabBagh", "tajSunrise", "agraFortPalace"]
   },
@@ -1464,7 +1563,10 @@ const TOURS = [
       ["Is hotel accommodation included in the tour?", "Yes, four nights with breakfast and taxes, in a three-star, four-star or five-star hotel of your choice. You can also take the tour without hotels if you have your own accommodation."],
       ["What is the cancellation policy?", "Cancel more than seven days before travel for a full refund of the deposit; closer to the date, costs already committed with hotels and transport are deducted. Our terms page has the details."],
       ["Can this Delhi Agra Jaipur 5 Days Tour be customised?", "Yes, completely. Tell us how you like to travel and we will adjust the timings, hotels and stops to match."],
-      ["Is this tour available throughout the year?", "Yes, it runs all year round. October to March brings the most comfortable sightseeing weather, and we schedule your Agra day around the Taj Mahal's Friday closure."]
+      ["Is this tour available throughout the year?", "Yes, it runs all year round. October to March brings the most comfortable sightseeing weather, and we schedule your Agra day around the Taj Mahal's Friday closure."],
+      ["How much time is spent driving?", "About three hours from Delhi to Agra, around four hours from Agra to Jaipur with a stop at Fatehpur Sikri on the way, and the drive from Jaipur back to Delhi on the last day. Your driver stops for tea and rest breaks whenever you like."],
+      ["What if my flight lands late at night?", "That is fine. Airport pickup is included, and our representative meets you whatever time you land; day one has no sightseeing, so you can go straight to the hotel and rest."],
+      ["Will we be taken to shopping stops?", "Only if you ask. We never force shopping on our guests, and if you would like to buy something specific, such as textiles in Jaipur, your guide can suggest honest places to look."]
     ],
     gallery: ["indiaGate", "jalMahal", "tajGarden"]
   },
@@ -1529,7 +1631,10 @@ const TOURS = [
       ["Is hotel accommodation included in the tour?", "Yes. You can choose three-star, four-star or five-star hotels, or book the tour without hotels if you prefer to arrange your own."],
       ["What is the cancellation policy?", "Cancel more than seven days before travel for a full refund of the deposit; closer to the date, costs already committed with hotels and transport are deducted. Our terms page has the details."],
       ["Can this Delhi Agra Jaipur 6 Days Tour be customised?", "Yes. The itinerary can be shaped around your interests and pace, from timings and hotels to extra stops."],
-      ["Is this tour available throughout the year?", "Yes, it runs year-round. October to March is the most comfortable season for sightseeing, and we always plan around the Taj Mahal being closed on Fridays."]
+      ["Is this tour available throughout the year?", "Yes, it runs year-round. October to March is the most comfortable season for sightseeing, and we always plan around the Taj Mahal being closed on Fridays."],
+      ["How long are the drives between cities?", "About three hours from Delhi to Agra, around four hours from Agra to Jaipur with the Fatehpur Sikri stop, and four to five hours from Jaipur back to Delhi on the last day. Your driver will stop for breaks whenever you need one."],
+      ["What if our Delhi sightseeing day falls on a Monday?", "The Lotus Temple is closed on Mondays, so we either swap it for another sight or move the days around so you can still see it. The Red Fort is a photo stop from outside on this tour, so its Monday closure makes no difference."],
+      ["Are lunch and dinner included?", "Breakfast is included at every hotel, while lunch and dinner are paid as you go. Your guide and driver will point you to clean, well-loved restaurants, with good vegetarian choices in every city."]
     ],
     gallery: ["humayun", "amber", "babyTaj"]
   },
@@ -1583,7 +1688,9 @@ const TOURS = [
       ["Are food and drinks included?", "Meals are not part of the tour, but we keep bottled water in the car for you. Your guide is happy to suggest clean, well-loved places to eat in Old and New Delhi, so lunch is easy to sort out."],
       ["Is the Chandni Chowk rickshaw ride safe and included?", "Yes, the cycle-rickshaw ride through Chandni Chowk is included and is one of the highlights of the day. The riders know these lanes well, and your guide stays close to you the whole time."],
       ["Is this tour suitable for families and senior travellers?", "Yes. We keep the pace easy and the walking short, and your guide can add rest stops or change the order of sights for children, older travellers or anyone who needs extra breaks."],
-      ["Do I need a visa?", "Most foreign visitors, including those from the US, UK, Canada, UAE and Mexico, need a valid Indian visa or e-Visa before they travel. Please check the latest rules on the official Indian government visa website before you book flights."]
+      ["Do I need a visa?", "Most foreign visitors, including those from the US, UK, Canada, UAE and Mexico, need a valid Indian visa or e-Visa before they travel. Please check the latest rules on the official Indian government visa website before you book flights."],
+      ["What should I wear, especially at Jama Masjid?", "Clothes that cover your shoulders and legs are best, and you will remove your shoes before entering the mosque, so slip-on footwear is handy. Women may want to carry a scarf for their head, and loose robes are usually available at the gate if needed."],
+      ["Can I do this tour during a long layover?", "Yes. We can collect you from Delhi airport, keep your luggage locked in the car with the driver while you sightsee, and drop you back at the airport in good time for your flight."]
     ],
     gallery: ["qutub", "redFort", "lotusTemple"]
   },
@@ -1612,6 +1719,17 @@ const TOURS = [
     ],
     includes: ["One night in a heritage hotel with breakfast", "Private AC car and chauffeur", "Licensed Jaipur guide", "All monument tickets", "Taxes and parking"],
     excludes: ["Lunch and dinner", "Elephant ride at Amber", "Shopping", "Tips"],
+    faqs: [
+      ["Where does the tour start?", "We collect you from your hotel, the railway station or the airport in Jaipur in your private AC car. If you are coming from Delhi or Agra, tell us and we can plan the transfer as part of your trip."],
+      ["Are monument tickets included?", "Yes. All monument tickets are included in the price, and your guide handles them at each gate so you skip the ticket queue."],
+      ["Why do we visit Amber Fort so early?", "Arriving as the gates open means cooler air, softer light for photographs and the courtyards before the big groups arrive. It is the best way to enjoy the fort at an unhurried pace."],
+      ["Is the elephant ride at Amber Fort included?", "No, the elephant ride is not included. If you would like it, let us know in advance; otherwise you go up to the fort by jeep or on foot along the ramparts."],
+      ["Will the craft workshop turn into a shopping stop?", "No. The workshop is there so you can watch Jaipur's craftspeople at work, and buying anything is entirely up to you. We never force shopping on our guests."],
+      ["Can I upgrade the hotel or add another night?", "Yes. One night in a heritage hotel with breakfast is included, and we can upgrade the category or add nights on request, subject to availability. Your written quote will show any change before you pay."],
+      ["What is the best time of year for this tour?", "October to March brings the most comfortable weather for forts and bazaars. In the hot months of April to June we keep the sightseeing to the cooler early mornings and late afternoons, which this itinerary already favours."],
+      ["Is there much walking, and is it suitable for older travellers?", "Amber Fort and Nahargarh involve slopes, steps and uneven stone, so comfortable shoes help. Your guide sets an easy pace, adds rest stops and can skip the steepest parts for anyone who needs to take it gently."],
+      ["What is the cancellation policy?", "Cancel more than seven days before travel for a full refund of the deposit; closer to the date, costs already committed with hotels and transport are deducted. Our terms page has the details."]
+    ],
     gallery: ["amber", "hawaMahalClose", "jalMahal"]
   },
   {
@@ -1641,6 +1759,17 @@ const TOURS = [
     ],
     includes: ["Private AC car and chauffeur", "Licensed guide in Agra", "Taj Mahal and Agra Fort tickets", "Tolls, parking and taxes"],
     excludes: ["Meals", "Fatehpur Sikri tickets", "Camera fees", "Tips"],
+    faqs: [
+      ["How long is the drive from Jaipur to Agra?", "With the stops at Chand Baori and Fatehpur Sikri, leaving Jaipur at 6 am gets you to the Taj Mahal around 1 pm. If you continue to Delhi afterwards, expect to arrive around 10 pm."],
+      ["Does this tour run on Fridays?", "No. The Taj Mahal is closed on Fridays, so we run this tour on the other six days of the week."],
+      ["Which tickets are included?", "Taj Mahal and Agra Fort tickets are included. The Fatehpur Sikri ticket is not, and is paid at the gate on the day."],
+      ["Can the tour finish in Delhi instead of Agra?", "Yes. You can be dropped at your Agra hotel around 5 pm, or carry on to Delhi in the same car, arriving around 10 pm at your hotel or chosen address."],
+      ["What do we do with our luggage while sightseeing?", "Since you are moving cities, your bags travel with you in the car. They stay locked in the boot and your driver stays with the car while you visit each monument."],
+      ["What about meals along the way?", "Meals are not included, but your driver will stop for breakfast and lunch at clean roadside restaurants or in Agra. Vegetarian food is easy to find everywhere on this route."],
+      ["Is this long day suitable for children or older travellers?", "It is a long day, so we add rest stops whenever needed and keep the walking unhurried. If you would rather not travel on to Delhi the same night, ending in Agra makes the day much more comfortable."],
+      ["What should I carry for the day?", "Your passport or photo ID, comfortable walking shoes, sunglasses and a small day bag. Large bags, food and some other items are not allowed inside the Taj Mahal, so leave those in the car."],
+      ["How do I book this tour?", "We send you a written itinerary and a fixed price before any payment. The booking is confirmed with a deposit, and the balance is paid on arrival or as agreed."]
+    ],
     gallery: ["fatehpurSikri", "taj", "fatehpurRuins"]
   },
   {
@@ -1694,7 +1823,10 @@ const TOURS = [
       ["How long does it take to reach Agra from Delhi by luxury car?", "About three hours each way on the Yamuna Expressway. The full day, including the Taj Mahal, lunch and Agra Fort, runs around 12 hours."],
       ["Are Taj Mahal and Agra Fort entry tickets included?", "Yes. Taj Mahal and Agra Fort entry tickets, if selected are included in the price, and your guide handles them at each gate so you skip the ticket queue."],
       ["What should I wear during the tour?", "Comfortable clothes and walking shoes work best. Modest attire covering shoulders and knees is advised at the monuments."],
-      ["Is hotel pickup and drop-off included?", "Yes, door-to-door pickup and drop-off at your hotel anywhere in Delhi NCR is included, and we can also collect you from the airport."]
+      ["Is hotel pickup and drop-off included?", "Yes, door-to-door pickup and drop-off at your hotel anywhere in Delhi NCR is included, and we can also collect you from the airport."],
+      ["Does this tour run on Fridays?", "No. The Taj Mahal is closed on Fridays, so this tour runs on the other six days of the week."],
+      ["Can I have a guide who speaks my language?", "Your guide speaks English as standard, and guides in other languages can be arranged on request. Please tell us your language when you book so we can confirm availability."],
+      ["Will we be taken to shopping stops?", "Only if you ask. We never force shopping on our guests; the day is planned around the monuments, and any stop for marble inlay or souvenirs is entirely your choice."]
     ],
     gallery: ["tajPool", "babyTaj", "marbleInlay"]
   },
@@ -1746,7 +1878,12 @@ const TOURS = [
       ["Is the hotel included?", "One night can be included depending on the package you choose, and you pick the hotel category."],
       ["Which Delhi monuments can we see?", "Red Fort, Jama Masjid, India Gate, Humayun's Tomb and Qutub Minar are all possible — how many depends on the time we have."],
       ["Can the tour end in Agra instead of Delhi?", "Yes. It is a private tour, so the drop can be wherever your onward travel needs it."],
-      ["Can we start from Delhi airport?", "Yes, airport pickup works the same as hotel pickup."]
+      ["Can we start from Delhi airport?", "Yes, airport pickup works the same as hotel pickup."],
+      ["Which days can we start this tour?", "Day two includes sunrise at the Taj Mahal, which is closed on Fridays, so the tour should not start on a Thursday. Any other start day works, and we will check your dates when you enquire."],
+      ["How long is the drive from Delhi to Agra?", "About three to four hours on the Yamuna Expressway. We leave Delhi around 12:30 pm on day one and reach Agra by mid-afternoon, in time for sunset at Mehtab Bagh."],
+      ["Are monument entry tickets included?", "Monument tickets are included when you select them in your package, and your written quote shows exactly which ones. If you leave them out, your guide will help you buy them at each gate."],
+      ["Can I have a guide who speaks another language?", "Your guides speak English as standard, and guides in other languages can be arranged on request. Let us know when booking so we can confirm availability for both Delhi and Agra."],
+      ["What is the cancellation policy?", "Cancel more than seven days before travel for a full refund of the deposit; closer to the date, costs already committed with hotels and transport are deducted. Our terms page has the details."]
     ],
     gallery: ["indiaGate", "tajSunrise", "agraFort"]
   },
@@ -1862,7 +1999,10 @@ const TOURS = [
       ["Is hotel accommodation included?", "Yes, 7 nights with breakfast in handpicked 3, 4 or 5-star hotels of your choice. A without-hotel option is also available."],
       ["What is the cancellation policy?", "Cancel more than seven days before travel for a full refund of the deposit; closer to the date, costs already committed with hotels and transport are deducted. Our terms page has the details."],
       ["Is the Lake Pichola boat ride included?", "Yes, a boat ride on Lake Pichola is part of your Udaipur sightseeing, with lovely views of the City Palace and the island palaces on the water."],
-      ["Can the Delhi Agra Jaipur Udaipur tour be customized?", "Yes. We can adjust the route, pace and hotels to fit your preferences and travel dates, and we plan your Agra visit around the Taj Mahal's Friday closure."]
+      ["Can the Delhi Agra Jaipur Udaipur tour be customized?", "Yes. We can adjust the route, pace and hotels to fit your preferences and travel dates, and we plan your Agra visit around the Taj Mahal's Friday closure."],
+      ["Is the flight from Udaipur to Delhi included?", "Yes. The Udaipur to Delhi flight is included, so there is no long drive back at the end of the trip. If you are flying onward from Udaipur instead, tell us and we will adjust the plan."],
+      ["How long is the drive from Jaipur to Udaipur?", "About six hours through the Rajasthan countryside. Your driver stops for meals and breaks along the way, and the rest of that day is free to settle in."],
+      ["What is the best time of year for this tour?", "October to March is the most comfortable season, with pleasant days for sightseeing in all four cities. Udaipur's lakes are also usually at their fullest in the months after the monsoon."]
     ],
     gallery: ["udaipurLake", "amber", "tajGarden"]
   },
@@ -1982,7 +2122,10 @@ const TOURS = [
       ["Is the elephant ride at Amber Fort included in the price?", "No, the elephant ride is optional and not included as standard. We can add it on request, along with a camel ride in Pushkar."],
       ["Can this itinerary be extended beyond 10 days?", "Yes. Many guests stretch it to about 12 days by adding Ranthambore for a tiger safari or the desert city of Bikaner, and we are happy to plan a longer version for you."],
       ["Do I need a car, or can I use trains between cities?", "You will travel in a private AC car with a driver for the whole trip. It is more flexible than the train, reaches smaller stops like Pushkar and Ranakpur easily, and saves you waiting around at stations."],
-      ["Is this tour suitable for first-time visitors to India?", "Yes, it is one of the best routes for a first trip to India, and your licensed English-speaking guides explain the history and local customs as you go."]
+      ["Is this tour suitable for first-time visitors to India?", "Yes, it is one of the best routes for a first trip to India, and your licensed English-speaking guides explain the history and local customs as you go."],
+      ["How long are the drives in Rajasthan?", "Most drives take between three and six hours. The longest is the Jodhpur to Udaipur day, which is broken up by a stop at the Ranakpur Jain Temple, and your driver stops for breaks whenever you need one."],
+      ["Is there a dress code at the Ranakpur Jain Temple?", "Yes. Shoulders and knees should be covered, shoes are removed at the entrance, and leather items such as belts, bags and wallets are not allowed inside, so leave them in the car."],
+      ["What is the cancellation policy?", "Cancel more than seven days before travel for a full refund of the deposit; closer to the date, costs already committed with hotels and transport are deducted. Our terms page has the details."]
     ],
     gallery: ["blueCity", "udaipurLake", "mehrangarh"]
   },
@@ -2048,7 +2191,9 @@ const TOURS = [
       ["What is the cancellation policy?", "Cancel more than seven days before travel for a full refund of the deposit; closer to the date, costs already committed with hotels and transport are deducted. Our terms page has the details."],
       ["Is the Lake Pichola boat ride included?", "Yes, a boat ride on Lake Pichola is part of your Udaipur sightseeing."],
       ["Is the tiger safari included?", "Yes, you get two safaris in Ranthambore National Park, one in the morning and one in the afternoon. Safaris are in a shared Gypsy even though the rest of the tour is private."],
-      ["Can the tour be customized?", "Yes. We can tailor the itinerary to your interests, pace and travel dates."]
+      ["Can the tour be customized?", "Yes. We can tailor the itinerary to your interests, pace and travel dates."],
+      ["When is the best time to book this tour for tiger sightings?", "October to April suits the whole route, and sightings in Ranthambore tend to improve from February as the weather warms and animals come out to the waterholes. The park's core zones close during the monsoon, roughly July to September, so for those months we would suggest a version of the tour without the safaris."],
+      ["What if one of the sightseeing days falls on a Friday or a Monday?", "The Taj Mahal is closed on Fridays and the Lotus Temple on Mondays, so we set your start date so that the sunrise Taj visit on day 4 and the Delhi day avoid those closures. If your dates are fixed, we simply reorder the stops and tell you in the written itinerary before you book."]
     ],
     gallery: ["ranthambore", "udaipurLake", "jaswantThada"]
   },
@@ -2116,7 +2261,9 @@ const TOURS = [
       ["Can this 13-day Rajasthan tour be customized?", "Yes, completely. We can change the hotel category, slow down or speed up the pace and add extra stops you would like to see."],
       ["What is the best time to visit Rajasthan on this route?", "October to March is the most comfortable time across all seven cities, with cool evenings in the Jaisalmer desert and clear skies for your Lake Pichola boat ride in Udaipur."],
       ["Is this a good route for a couples trip?", "Yes, it is a romantic route, and small upgrades such as a private sunset camel ride in Jaisalmer or a lake-view room in Udaipur make it extra special."],
-      ["Do you offer Rajasthan luxury tour packages?", "Yes. We can upgrade this itinerary with heritage palace hotels, private desert camps and premium vehicles across all seven cities."]
+      ["Do you offer Rajasthan luxury tour packages?", "Yes. We can upgrade this itinerary with heritage palace hotels, private desert camps and premium vehicles across all seven cities."],
+      ["How long are the drives between cities?", "The longest stretches are Jaipur to Bikaner at about six hours and Jaisalmer to Jodhpur at about five, while Delhi to Agra is around three. Every long drive has comfortable breaks for tea, lunch and photos, and the Fatehpur Sikri and Ranakpur stops break up the Agra to Jaipur and Jodhpur to Udaipur days."],
+      ["What should I pack for the night at the desert camp?", "Bring a warm layer, because desert nights from December to February can turn properly cold even after a warm day, plus a torch and comfortable shoes for the sand. A small overnight bag is handy too, so your main luggage can stay safely in the car."]
     ],
     gallery: ["jaisalmerCity", "haveli", "udaipurLake"]
   },
@@ -2161,7 +2308,11 @@ const TOURS = [
       ["Are monument entrance tickets included?", "Yes. Monument tickets are included in the price, and your guide handles them at each gate so you skip the ticket queue."],
       ["Is hotel accommodation included?", "Yes, one night in a Jaipur hotel with breakfast is included."],
       ["Can I be picked up from Delhi Airport?", "Yes. We can collect you from Delhi airport and drop you back there at the end, as well as from any hotel in Delhi NCR."],
-      ["How much driving time is involved in this tour?", "Roughly three hours from Delhi to Agra and about four hours from Agra to Jaipur on day one, then around five to six hours back to Delhi on the evening of day two."]
+      ["How much driving time is involved in this tour?", "Roughly three hours from Delhi to Agra and about four hours from Agra to Jaipur on day one, then around five to six hours back to Delhi on the evening of day two."],
+      ["Can this tour start on a Friday?", "Day one cannot be a Friday, because the Taj Mahal is closed to visitors that day. Starting on any other day works well, and we will confirm the dates with you in the written itinerary before you pay anything."],
+      ["Is the elephant ride at Amber Fort included?", "No, the elephant ride is not included and depends on availability and local rules on the day. If you would like one, you pay for it at the fort; otherwise you can go up by jeep or on foot with your guide."],
+      ["Are meals included, and is vegetarian food easy to find?", "Breakfast at your Jaipur hotel is included, while lunch and dinner are paid as you go. Your driver will stop at clean, well-known restaurants, and vegetarian food is easy to find all along this route."],
+      ["Can we stretch this into a slower trip with an extra night?", "Yes. Adding a night in Agra or Jaipur turns the long days into a far more relaxed pace, and we will send you a revised itinerary and fixed price for the extra night before you book."]
     ],
     gallery: ["fatehpurSikri", "taj", "hawaMahalClose"]
   },
@@ -2195,8 +2346,17 @@ const TOURS = [
     ],
     includes: ["Private AC car and chauffeur for 7 days", "Licensed guides in all three cities", "6 nights hotel with breakfast", "All monument tickets", "Rickshaw ride in Old Delhi", "Tolls, parking and taxes"],
     excludes: ["Lunch and dinner", "Camera fees", "Tips", "Anything not listed under inclusions"],
-    faqs: [["How is this different from the 6 day tour?", "The extra day becomes free time rather than more sightseeing — an afternoon in each city with nothing booked."],
-           ["Can we add Ranthambore?", "Yes, that becomes the 7 day tour with Ranthambore, which swaps the free time for two tiger safaris."]],
+    faqs: [
+      ["How is this different from the 6 day tour?", "The extra day becomes free time rather than more sightseeing — an afternoon in each city with nothing booked."],
+      ["Can we add Ranthambore?", "Yes, that becomes the 7 day tour with Ranthambore, which swaps the free time for two tiger safaris."],
+      ["Do you meet us at Delhi Airport on arrival?", "Yes. Your driver meets you at the airport on day one, whatever time your flight lands, and takes you straight to your Delhi hotel. On day seven we can drop you back at the airport or at any address in Delhi."],
+      ["What happens if the sunrise Taj Mahal day falls on a Friday?", "The Taj Mahal is closed on Fridays, so we plan your start date to keep day four off a Friday. If your dates are fixed, we rearrange the Agra days so you still see the Taj at sunrise."],
+      ["Which hotel category can we choose?", "The six nights can be booked in 3, 4 or 5-star hotels, and we can quote heritage properties in Jaipur if you would like something special. Breakfast is included whichever category you pick."],
+      ["Will we be taken to shops during the free afternoons?", "Only if you want to go. The marble inlay workshops in Agra and the Jaipur bazaars are there as an option, and we never force shopping stops or pressure you to buy."],
+      ["Is winter fog a problem on this route?", "Dense fog can settle over Delhi and Agra on some mornings from late December to mid-January, which can slow the highway drives and soften the sunrise view of the Taj. Your driver builds in extra time on those days, and October to March is still the most comfortable season overall."],
+      ["Are meals included, and is vegetarian food available?", "Breakfast is included at every hotel; lunch and dinner are paid as you go, so you can eat wherever you like. Your guide and driver know clean, reliable restaurants in each city, and vegetarian food is easy to find everywhere."],
+      ["How do booking and payment work?", "We send you a written itinerary and a fixed price before any payment. Your booking is confirmed with a deposit, and the balance is paid on arrival or as agreed."]
+    ],
     gallery: ["amber", "tajSunrise", "jaliScreen"]
   },
   {
@@ -2288,7 +2448,10 @@ const TOURS = [
       ["Is the rickshaw ride included in the tour?", "Yes, a cycle-rickshaw ride through the busy lanes of Chandni Chowk is part of the experience."],
       ["Can I get picked up from Delhi Airport?", "Yes. We offer pickup and drop-off at Delhi Airport as well as at hotels across Delhi NCR."],
       ["Are monument entry tickets included?", "No, monument entry fees are not included in the standard price. You pay at the gate, and your guide helps you get tickets quickly."],
-      ["Is the evening tour safe for tourists?", "Yes. You are with an experienced driver and a professional local guide the whole time, and you travel in a private car, so you can enjoy the evening with peace of mind."]
+      ["Is the evening tour safe for tourists?", "Yes. You are with an experienced driver and a professional local guide the whole time, and you travel in a private car, so you can enjoy the evening with peace of mind."],
+      ["What should I wear to visit Jama Masjid?", "Clothes that cover shoulders and knees are best, and you will remove your shoes before entering the mosque courtyard. Covering robes are usually available at the gate if you need one, and women may want a scarf for the head."],
+      ["Can I take this tour on a Monday?", "Yes. The Red Fort is closed on Mondays, but on this tour it is a photo stop from outside, so the evening runs as planned on any day of the week. Jama Masjid briefly closes to visitors during prayer times, and your guide times the visit around them."],
+      ["Can we try street food along the way?", "Yes. Food and drinks are not included, but your guide can point you to clean, popular stalls in Chandni Chowk where you pay as you go. If food is your main interest, our Old Delhi food tasting tour builds the whole evening around it."]
     ],
     gallery: ["lotusNight", "redFort", "indiaGate"]
   },
@@ -2333,11 +2496,14 @@ const TOURS = [
     excludes: ["Meals and drinks", "Donations at temples", "Camera fees where charged", "Tips"],
     faqs: [
       ["Is this a private spiritual tour in Delhi?", "Yes. It is a private tour for your group only, with your own AC car, driver and licensed English-speaking guide, and pickup from your hotel or the airport in Delhi NCR."],
-      ["How long does the Delhi temple tour last?", "Plan on about 8 hours, starting around 9:00 AM, which covers both the time at each site and the drive between them."],
+      ["How long does the Delhi temple tour last?", "About 10 hours, from roughly 8 am to 6 pm, which covers the time at each temple and the drives between them."],
       ["Are entry tickets included for temples and monuments?", "Most temples and places of worship in Delhi are free to enter. Paid extras, such as special exhibitions or shows, are not included unless they are listed in your quote."],
       ["Is this tour suitable for senior citizens?", "Yes. You travel in a private car door to door, and we can slow the pace, cut down on walking or add rest breaks whenever needed."],
       ["What should I wear during temple visits?", "Please wear modest clothes that cover your shoulders and knees. You will remove your shoes at most temples, and at the Sikh gurudwara both men and women need to cover their heads; scarves are usually available there, but bringing your own helps."],
-      ["Are photography and videography allowed at all sites?", "You can take photos at most places, but some temples do not allow cameras inside the main shrine. At Akshardham, phones and cameras are not allowed at all and must be left at the cloakroom, and Akshardham and the Lotus Temple are closed on Mondays. Your guide will tell you the rules at each stop."]
+      ["Are photography and videography allowed at all sites?", "You can take photos at most places, but some temples do not allow cameras inside the main shrine. At Akshardham, phones and cameras are not allowed at all and must be left at the cloakroom, and Akshardham and the Lotus Temple are closed on Mondays. Your guide will tell you the rules at each stop."],
+      ["Where do we have lunch, and is it vegetarian?", "Around 1 pm your guide takes you to a well-regarded vegetarian restaurant near the temples, which suits the day well. Lunch is not included, so you pay at the restaurant and can order whatever you like."],
+      ["Can we eat at the langar at Gurudwara Bangla Sahib?", "Yes. The langar is open to everyone regardless of faith and is served free, seated on the floor with the community. Your guide will show you how it works, and you can also see the kitchen where volunteers cook for thousands every day."],
+      ["Are we expected to make donations at the temples?", "No, donations are entirely optional and are not part of the tour price. If you would like to leave an offering, a little small cash is handy, and your guide can explain the customs at each place."]
     ],
     gallery: ["lotusTemple", "lotusNight", "redFort"]
   },
@@ -2377,9 +2543,17 @@ const TOURS = [
     ],
     includes: ["Private AC car and driver for the day", "Hotel pickup and drop", "Shopping assistance and flexible stops", "Bottled water", "Parking and tolls"],
     excludes: ["Your shopping", "Meals and drinks", "Licensed guide, unless added", "Dilli Haat entry ticket", "Tips"],
-    faqs: [["Will you take us to commission shops?", "No. You choose where to go and we take no cut from any shop."],
-           ["Can we add a guide?", "Yes — a licensed guide can join for a small extra charge, useful in Chandni Chowk."],
-           ["Do shops take cards?", "Connaught Place and Dilli Haat mostly do. Janpath and Chandni Chowk stalls prefer cash or UPI."]],
+    faqs: [
+      ["Will you take us to commission shops?", "No. You choose where to go and we take no cut from any shop."],
+      ["Can we add a guide?", "Yes — a licensed guide can join for a small extra charge, useful in Chandni Chowk."],
+      ["Do shops take cards?", "Connaught Place and Dilli Haat mostly do. Janpath and Chandni Chowk stalls prefer cash or UPI."],
+      ["Which days are best for this shopping tour?", "Monday to Saturday works best, as many shops in Chandni Chowk close on Sundays. If Sunday is your only free day, we can replace Chandni Chowk with markets that stay open."],
+      ["Should we bargain, and how much?", "At the Janpath stalls and in Chandni Chowk, bargaining is normal and expected, so start well below the first price and settle somewhere in the middle. Dilli Haat stalls and the government emporiums in Connaught Place sell at fixed prices."],
+      ["Can we visit other markets instead of these four?", "Yes. The stops are flexible, so we can swap in places such as Khan Market, Sarojini Nagar or Lajpat Nagar depending on what is on your list. Just tell us when you book or on the morning itself."],
+      ["Can you drop us at the airport after shopping?", "Yes. Many guests book this on their last day, keep their luggage in the car and finish at Delhi Airport instead of the hotel. Let us know your flight time and we will plan the day so you reach the airport with plenty of time."],
+      ["Is lunch included?", "No, meals and drinks are not included. Your driver will suggest a clean local restaurant near the markets around 1 pm, with plenty of vegetarian and non-vegetarian choices."],
+      ["Is it safe to leave our shopping bags in the car?", "Yes, your driver stays with the car and your bags while you shop, which is the main point of the tour. We still suggest you keep passports, cash and valuables with you in the busy markets."]
+    ],
     gallery: ["craftsShop", "haveli", "indiaGate"]
   },
   {
@@ -2428,9 +2602,17 @@ const TOURS = [
     includes: ["Premium chauffeur-driven car for both days", "1 night in a luxury hotel with breakfast", "Licensed English-speaking guide",
                "Airport or station pickup and drop", "Fuel, tolls, parking and driver allowance"],
     excludes: ["Monument entry tickets", "Lunches and dinner", "Shopping and personal expenses", "Tips"],
-    faqs: [["Which hotel do we stay in?", "A five-star or luxury heritage hotel of your choice — we send two or three options with the quotation."],
-           ["Is Akshardham open every day?", "It is closed on Mondays. On a Monday we move it to day one or swap in another site."],
-           ["Can it start from the airport?", "Yes. Day one can begin straight off your flight."]],
+    faqs: [
+      ["Which hotel do we stay in?", "A five-star or luxury heritage hotel of your choice — we send two or three options with the quotation."],
+      ["Is Akshardham open every day?", "It is closed on Mondays. On a Monday we move it to day one or swap in another site."],
+      ["Can it start from the airport?", "Yes. Day one can begin straight off your flight."],
+      ["What kind of car do we travel in?", "A premium, air-conditioned sedan or SUV with a professional chauffeur, chosen to suit the size of your group and your luggage. The same car and chauffeur stay with you for both days."],
+      ["Are the lunches and dinner included?", "No, meals are paid as you go, so you can choose the cuisine and the budget. Breakfast at the hotel is included, and we are happy to recommend and reserve premium restaurants for you."],
+      ["Are monument entry tickets included?", "No, monument tickets are paid at each site. Your guide handles the purchase for you so you are not left waiting in queues."],
+      ["Is there a dress code for Jama Masjid and the temples?", "Clothes that cover shoulders and knees are best, and you will remove your shoes at Jama Masjid, the Lotus Temple and Akshardham. Covering robes are usually available at the Jama Masjid gate if you need one."],
+      ["Can we take photos at Akshardham?", "No. Phones, cameras and bags are not allowed inside Akshardham and are left at the cloakroom, so your guide will make sure you have photos from the other stops of the day."],
+      ["Can we add Agra or an extra night?", "Yes. We can add another night in Delhi or extend the trip to include the Taj Mahal in Agra, and we will send a revised itinerary with a fixed price before you book."]
+    ],
     gallery: ["humayun", "qutub", "redFort"]
   },
   {
@@ -2471,7 +2653,10 @@ const TOURS = [
       ["Is the rickshaw ride included in the tour?", "Yes, a rickshaw ride through Chandni Chowk is included and is a fun way to move between food stops."],
       ["Are monument entry tickets included?", "No, entry tickets for any monuments are not part of this tour; if you want to visit one, you pay at the gate."],
       ["Is this tour suitable for vegetarians?", "Yes, very much so. Old Delhi has a huge range of vegetarian food, and we can make the whole tour vegetarian if you prefer."],
-      ["Is the food safe for tourists?", "Your guide takes you only to clean, popular and well-known stalls that locals and visitors trust, and you can always try a smaller portion if you are unsure."]
+      ["Is the food safe for tourists?", "Your guide takes you only to clean, popular and well-known stalls that locals and visitors trust, and you can always try a smaller portion if you are unsure."],
+      ["Should we skip a meal before the tour?", "Yes, come hungry. The eight to ten tastings add up to a full meal, so most guests skip lunch or have only a light breakfast if they are starting early."],
+      ["Is the food very spicy, and is it suitable for children?", "Your guide can ask for milder versions wherever possible and will steer you towards sweets, parathas and gentler snacks if spice is a worry. Children usually love the rickshaw ride and the sweets, and you can always share portions."],
+      ["How much walking is there, and what should I wear?", "There is a fair amount of walking through narrow, crowded lanes, broken up by the rickshaw ride. Wear comfortable closed shoes and light clothes that cover shoulders and knees, which also suits the visit to Jama Masjid."]
     ],
     gallery: ["redFort", "craftsShop", "qutub"]
   },
@@ -2505,7 +2690,10 @@ const TOURS = [
       ["Is airport pick-up and drop-off available?", "Yes. We pick you up and drop you off at your hotel in Delhi NCR or at Delhi Airport on both days."],
       ["Does the tour include hotel accommodation?", "No, hotels are not part of this tour. You can book your own, or ask us and we will be glad to suggest and arrange a stay to suit your budget."],
       ["Is the rickshaw ride in Chandni Chowk included?", "Yes, it is part of the Old Delhi day. Since the Red Fort is closed on Mondays, we plan the Old Delhi day for another day of the week."],
-      ["Is this tour suitable for families and senior travelers?", "Yes. Spreading Delhi over two days keeps the pace gentle, and the private car and flexible timings make it comfortable for all ages."]
+      ["Is this tour suitable for families and senior travelers?", "Yes. Spreading Delhi over two days keeps the pace gentle, and the private car and flexible timings make it comfortable for all ages."],
+      ["Can we take phones and cameras into Akshardham?", "No. Phones, cameras and bags must be left at the cloakroom at Akshardham, so we allow a little extra time for that. Akshardham, like the Red Fort, is closed on Mondays, which is another reason we plan the Old Delhi day for a different day of the week."],
+      ["What should we wear for the mosques and temples?", "Clothes that cover shoulders and knees work for every stop, and you will remove your shoes at Jama Masjid, Akshardham, the Lotus Temple and Gurudwara Bangla Sahib. At the gurudwara everyone covers their head, so a scarf is useful."],
+      ["Are meals included, and where do we eat?", "Meals are not included, so you can eat wherever you like. Your guide will suggest clean, popular places along the way, from Old Delhi favourites to vegetarian restaurants, and you can even join the free langar at Bangla Sahib."]
     ],
     gallery: ["indiaGate", "qutub", "lotusTemple"]
   },
@@ -2552,7 +2740,10 @@ const TOURS = [
       ["Are monument tickets included?", "Yes. All monument tickets are included in the price, and your guide handles them at each gate so you skip the ticket queue."],
       ["What is the cancellation policy?", "Cancel more than seven days before travel for a full refund of the deposit; closer to the date, costs already committed with hotels and transport are deducted. Our terms page has the details."],
       ["What should I wear for the Jaipur city tour?", "Wear comfortable, light clothes and good walking shoes, as the forts involve slopes and steps. Modest clothing that covers shoulders and knees is best for forts, palaces and temples."],
-      ["Is the tour wheelchair accessible?", "Parts of it are, but Amber Fort has steep ramps, uneven stone paths and many steps, and some areas of the City Palace and Hawa Mahal are hard to reach without help. Tell us about any mobility needs when you book and we will plan the route and any assistance around them."]
+      ["Is the tour wheelchair accessible?", "Parts of it are, but Amber Fort has steep ramps, uneven stone paths and many steps, and some areas of the City Palace and Hawa Mahal are hard to reach without help. Tell us about any mobility needs when you book and we will plan the route and any assistance around them."],
+      ["Is the elephant ride at Amber Fort included?", "No, the elephant ride is not included and depends on availability and local rules on the day. If it is running you can pay for it at the fort; otherwise a jeep or a walk up the ramparts with your guide gets you to the gate."],
+      ["Where do we have lunch?", "Around 12:30 pm your guide takes you to a clean local restaurant serving Indian, Rajasthani or continental food, with plenty of vegetarian options. Lunch is not included, so you pay for what you order."],
+      ["What is the best time of year for this day trip?", "October to March is the most comfortable, with mild days for walking around the forts. On some winter mornings fog can slow the early drive, and in May and June the midday heat is intense, so we start early and keep you in the shade where we can."]
     ],
     gallery: ["hawaMahal", "amber", "jalMahal"]
   },
@@ -2599,11 +2790,14 @@ const TOURS = [
     excludes: ["Lunch in Jaipur", "Camera fees", "Tips"],
     faqs: [
       ["Is this a private Jaipur tour or a shared tour?", "It is private. We handle your station transfers in a private AC car, and in Jaipur you have your own car, driver and licensed English-speaking guide."],
-      ["Are train tickets included in the tour?", "That depends on the option you choose, and your written itinerary will state clearly whether the round-trip train fare is included. If it is, we book the seats for you in advance."],
+      ["Are train tickets included in the tour?", "Yes. Return train tickets in AC chair car are included, and we book the seats for you in advance so you simply board with your guide's help."],
       ["How fast is the train from Delhi to Jaipur?", "The fastest trains take around 4 to 4.5 hours, which makes this the quickest way to see Jaipur in a single day. The morning train usually leaves New Delhi around 6:00 AM and reaches Jaipur around 10:30 AM, and the evening train back gets you to Delhi at about 10:30 PM, so we pick you up at around 5:00 AM."],
       ["Is the elephant ride at Amber Fort guaranteed?", "No. Elephant rides depend on availability and local rules on the day, so we cannot promise one. If they are not running, you can go up to the fort by jeep or on foot instead."],
       ["Is this tour suitable for senior travelers?", "Yes. The train is comfortable and quick, you have private help at both stations, and we keep the sightseeing at a balanced, unhurried pace."],
-      ["What should I carry for the tour?", "Please bring a valid photo ID or passport (needed for train travel), comfortable walking shoes, sunglasses and light clothes suited to the weather. A scarf or shawl is useful for temples."]
+      ["What should I carry for the tour?", "Please bring a valid photo ID or passport (needed for train travel), comfortable walking shoes, sunglasses and light clothes suited to the weather. A scarf or shawl is useful for temples."],
+      ["Is food served on the train?", "Yes, breakfast is served on board on the morning train, and meals are usually served on the evening train back as well. Lunch in Jaipur is not included, and your guide will take you to a clean local restaurant with vegetarian options."],
+      ["What happens if the train is running late?", "Your guide and driver track the train and wait for you at the Jaipur coach, and your Delhi driver does the same at night. If the morning train is delayed, we adjust the order of the sightseeing so you still see the main sites."],
+      ["Can I bring large luggage on this day trip?", "It is best to travel light with a day bag, since you will be moving between stations, the car and the sights. If you are checking out of your Delhi hotel that day, ask the hotel to hold your bags, or tell us in advance and we will plan around it."]
     ],
     gallery: ["jalMahal", "amber", "hawaMahalClose"]
   },
@@ -2653,7 +2847,11 @@ const TOURS = [
       ["How long does the Jaipur city tour last?", "About 8 hours, usually from a 9:00 AM pickup to around 5:00 PM, including sightseeing, a lunch break and hotel pick-up and drop-off."],
       ["Are monument entrance tickets included?", "Yes. All monument tickets are included in the price, and your guide handles them at each gate so you skip the ticket queue."],
       ["Is this tour suitable for families and senior travelers?", "Yes. With a private car, a flexible pace and walking kept to a minimum, the day suits families with children and older travellers alike."],
-      ["What should I wear during the Jaipur city tour?", "Choose comfortable, light clothes and walking shoes, as Amber Fort has slopes and steps. Modest clothing that covers shoulders and knees is best for forts, palaces and temples."]
+      ["What should I wear during the Jaipur city tour?", "Choose comfortable, light clothes and walking shoes, as Amber Fort has slopes and steps. Modest clothing that covers shoulders and knees is best for forts, palaces and temples."],
+      ["Can we go inside Jal Mahal?", "No, the Lake Palace is not open to visitors, so it is a photo stop from the lakeside promenade. Your guide will point out the best angle, and the light is lovely around midday when we pass."],
+      ["How do we get up to Amber Fort?", "Most guests walk up the stone path from the lake, which takes about 15 minutes at an easy pace, or take a jeep, paid locally since it is not included. Your guide will suggest whichever suits your group best."],
+      ["Will we be taken to shops along the way?", "Only if you ask. We never force shopping stops, and if you would like to see block printing, gems or textiles, your guide can add a stop at a place that makes its own work."],
+      ["Where do we have lunch, and are there vegetarian options?", "Your guide suggests a clean local restaurant serving Indian, Rajasthani or continental food, and vegetarian dishes are easy to find everywhere in Jaipur. Lunch is not included, so you order and pay for what you like."]
     ],
     gallery: ["hawaMahalClose", "amber", "jalMahal"]
   },
@@ -2679,9 +2877,17 @@ const TOURS = [
     ],
     includes: ["Private AC car for the duration", "Local guide", "Bottled water", "Parking and taxes"],
     excludes: ["Anything you buy", "Shipping costs", "Meals", "Tips"],
-    faqs: [["Do you take commission from the shops?", "No. That is the point of this tour. Your guide is paid by us, not by the shopkeepers, so the recommendations are honest."],
-           ["Can you arrange shipping?", "Most established shops ship internationally and will handle it. Your guide checks the paperwork before you pay."],
-           ["Are gemstones in Jaipur a good buy?", "They can be, and they can also be a trap. Buy from certified dealers, ask for the certificate in writing, and never buy a 'resale at home' story."]],
+    faqs: [
+      ["Do you take commission from the shops?", "No. That is the point of this tour. Your guide is paid by us, not by the shopkeepers, so the recommendations are honest."],
+      ["Can you arrange shipping?", "Most established shops ship internationally and will handle it. Your guide checks the paperwork before you pay."],
+      ["Are gemstones in Jaipur a good buy?", "They can be, and they can also be a trap. Buy from certified dealers, ask for the certificate in writing, and never buy a 'resale at home' story."],
+      ["Do we have to buy anything?", "Not at all. You can browse, watch the artisans at work and walk away from any shop, and your guide will never push you towards a purchase."],
+      ["What time does the tour start?", "Late afternoon is best, when the bazaars are busiest and cooler, but as a private tour we can start whenever suits you. Your driver and guide pick you up from your Jaipur hotel."],
+      ["Should I bring cash or a card?", "Bring both. Established shops and workshops take cards, while smaller bazaar stalls prefer cash or UPI, and your guide can point you to an ATM if you run short."],
+      ["Is bargaining expected?", "In the open bazaars, yes, politely. Your guide gives you a sense of the fair price before you start, so you know when a deal is reasonable."],
+      ["Can we focus on just one thing, like textiles or jewellery?", "Yes. Tell us what you are after when you book and your guide will shape the afternoon around it, whether that is block-printed fabric, silver, juttis or blue pottery."],
+      ["Can we combine this with a sightseeing tour?", "Yes. Many guests do Amber Fort and the palaces in the morning and the bazaars in the late afternoon, and we can plan both into one day or two."]
+    ],
     gallery: ["craftsShop", "hawaMahal", "marbleInlay"]
   },
   {
@@ -2703,8 +2909,17 @@ const TOURS = [
     ],
     includes: ["Private AC car for both days", "Licensed guides in Agra and Jaipur", "One night hotel with breakfast", "All monument tickets", "Tolls, parking and taxes"],
     excludes: ["Lunch and dinner", "Camera fees", "Tips", "Anything not listed under inclusions"],
-    faqs: [["Why skip Delhi?", "Many travellers have already seen Delhi or are flying in and out of it. This route spends the time on Agra and Jaipur instead."],
-           ["Which city should we stay in?", "Jaipur, usually. It makes day two start at the fort rather than in the car."]],
+    faqs: [
+      ["Why skip Delhi?", "Many travellers have already seen Delhi or are flying in and out of it. This route spends the time on Agra and Jaipur instead."],
+      ["Which city should we stay in?", "Jaipur, usually. It makes day two start at the fort rather than in the car."],
+      ["How long are the drives?", "Delhi to Agra takes about three to four hours, Agra to Jaipur about four to five hours with the stop at Fatehpur Sikri, and Jaipur back to Delhi about five hours. Day one starts early, so the car is a good place to rest between sights."],
+      ["Can we start this tour on a Friday?", "Not for day one, because the Taj Mahal is closed on Fridays. Start on any other day, or tell us your dates and we will reshape the route around the closure."],
+      ["Is lunch included?", "No, lunch and dinner are not included, but your driver stops at clean restaurants on the highway and in each city. Vegetarian food is easy to find all along the route."],
+      ["Are there extra camera fees?", "Phone photography is generally free, but a few monuments charge a small fee for video cameras, which you pay on the spot. Your guide will tell you where it applies."],
+      ["Can we end the tour in Jaipur instead of driving back to Delhi?", "Yes. We can drop you at Jaipur airport or station on day two, or add a night so you are not rushing, and we will adjust the quote before you book."],
+      ["Can we choose a better hotel?", "Yes. We offer 3, 4 and 5-star options for your night, and the category you pick is reflected in the fixed price we send you."],
+      ["How do booking and payment work?", "We send you a written itinerary and a fixed price before you pay anything. The tour is confirmed with a deposit, and the balance is paid on arrival or as agreed."]
+    ],
     gallery: ["taj", "amber", "fatehpurSikri"]
   },
   {
@@ -2733,9 +2948,17 @@ const TOURS = [
     ],
     includes: ["Private AC car and chauffeur", "Licensed guide in Agra", "Taj Mahal and Agra Fort tickets", "Conservation centre entry and donation", "Bottled water, tolls and taxes"],
     excludes: ["Meals", "Camera fees", "Tips", "Anything not listed under inclusions"],
-    faqs: [["Can we ride the elephants?", "No, and that is deliberate. The centre rehabilitates elephants rescued from riding and begging work; riding and performances are not part of the visit."],
-           ["Is the centre suitable for children?", "Yes. It is an observation visit with keepers explaining each animal's history, and children generally take to it."],
-           ["How long is the day?", "About fifteen hours door to door, starting at 2:30 am. It is a long one — the sunrise is what makes it worth it."]],
+    faqs: [
+      ["Can we ride the elephants?", "No, and that is deliberate. The centre rehabilitates elephants rescued from riding and begging work; riding and performances are not part of the visit."],
+      ["Is the centre suitable for children?", "Yes. It is an observation visit with keepers explaining each animal's history, and children generally take to it."],
+      ["How long is the day?", "About fifteen hours door to door, starting at 2:30 am. It is a long one — the sunrise is what makes it worth it."],
+      ["Can we do this tour on a Friday?", "No, the Taj Mahal is closed to visitors every Friday. Any other day of the week works."],
+      ["What if it is foggy at sunrise?", "In December and January the Taj can sit in mist at dawn, and nobody can control that. It is still a quiet, beautiful hour, and the haze usually lifts by the time you reach Agra Fort."],
+      ["Is breakfast included?", "Meals are not included, but after the Taj we stop at a good restaurant for breakfast, and vegetarian options are always on the menu. You order and pay for what you like."],
+      ["What can we take into the Taj Mahal?", "Keep it light: phone, camera, water and a small bag. Food, tripods, drones and large bags are not allowed, and your guide will tell you what to leave in the car."],
+      ["How should we prepare for a 2:30 am pickup?", "Sleep early, lay out warm layers, and bring a small pillow or shawl so you can doze on the drive to Agra. The roads are empty at that hour, so the journey is quiet and smooth."],
+      ["Can we stay overnight in Agra instead of returning the same day?", "Yes. We can turn this into a two-day trip with a night in Agra, which makes the day far less tiring, and we will send you a revised itinerary and price."]
+    ],
     gallery: ["tajSunrise", "agraFort", "mehtabBagh"]
   },
   {
@@ -2798,7 +3021,10 @@ const TOURS = [
       ["How many days do I need for the Golden Triangle and Varanasi?", "Eight days works well and gives each city enough time without rushing. If you prefer a gentler pace, we can stretch it to around 10 days with a few rest days."],
       ["What does the cost depend on?", "The price on the page is per person for two people sharing, and it depends on group size, car and hotel category, as well as the class of train travel you choose. We confirm a fixed quote with you before you pay anything."],
       ["What time does the Varanasi morning boat ride happen?", "The boat sets off early, usually before sunrise, so you can watch the ghats wake up as the sun rises over the river. The ride is included in your tour."],
-      ["Is Sarnath included in the Varanasi sightseeing?", "Yes. Sarnath, a short drive from the city and one of the most important Buddhist sites in the world, is part of your Varanasi sightseeing day."]
+      ["Is Sarnath included in the Varanasi sightseeing?", "Yes. Sarnath, a short drive from the city and one of the most important Buddhist sites in the world, is part of your Varanasi sightseeing day."],
+      ["Which days of the week affect the plan?", "The Taj Mahal is closed on Fridays and the Lotus Temple on Mondays, while the Red Fort is a photo stop from outside anyway. We arrange your dates so each sight falls on an open day."],
+      ["How much luggage can we bring on the train and flight?", "The Vande Bharat chair car has overhead racks, so medium suitcases work better than very large ones. Domestic economy flights usually allow 15 kg checked baggage, and any excess is paid at the airport."],
+      ["Can we add an extra night anywhere?", "Yes. Many guests add a night in Varanasi or Jaipur for a slower pace, and we will send you a revised written itinerary and price before you confirm."]
     ],
     gallery: ["gangaAarti", "tajSunrise", "amber"]
   },
@@ -2838,9 +3064,17 @@ const TOURS = [
     ],
     includes: ["Private AC car", "Licensed Varanasi guide", "Two private boat rides", "One night hotel with breakfast", "All entry tickets", "Taxes"],
     excludes: ["Flights or trains to Varanasi", "Meals other than breakfast", "Camera fees", "Tips"],
-    faqs: [["How early is the sunrise boat?", "On the water by 5:30 am in summer, closer to 6 in winter. It is the best hour of the day here."],
-           ["Is there a dress code?", "Modest clothing, and shoes come off at the temples. The lanes are uneven, so wear something you can walk in."],
-           ["Can we photograph the cremation ghats?", "No. Your guide will be direct about this. Everywhere else is fine."]],
+    faqs: [
+      ["How early is the sunrise boat?", "On the water by 5:30 am in summer, closer to 6 in winter. It is the best hour of the day here."],
+      ["Is there a dress code?", "Modest clothing, and shoes come off at the temples. The lanes are uneven, so wear something you can walk in."],
+      ["Can we photograph the cremation ghats?", "No. Your guide will be direct about this. Everywhere else is fine."],
+      ["Should we watch the aarti from the steps or from a boat?", "Either works, and the choice is yours. The boat gives you a calm view away from the crowds, while the steps put you right in the energy of the ceremony."],
+      ["Can we take phones into Kashi Vishwanath Temple?", "No. Phones, bags and cameras go into lockers outside, and your guide will help you with them before you go in."],
+      ["Can we stay close to the ghats?", "Yes, if you choose a riverside hotel, though most are reached on foot through narrow lanes the car cannot enter. A city hotel is easier for luggage and access, and we will suggest what suits you."],
+      ["Can you meet us at the airport or station?", "Yes. Getting to Varanasi is not included, but we can add an arrival transfer if you send us your flight or train details, and on day two we drop you at the airport or station."],
+      ["Is vegetarian food easy to find?", "Very. The old city around the temples is largely vegetarian, and your guide can point you to good places for kachori, chaat and a proper thali."],
+      ["When is the best time to visit Varanasi?", "October to March is the most comfortable, with mild days and cool mornings on the river. In the monsoon the Ganga can rise high enough that boats are suspended for safety, so we plan around that if needed."]
+    ],
     gallery: ["varanasi", "gangaAarti", "craftsShop"]
   },
   {
@@ -2900,7 +3134,11 @@ const TOURS = [
       ["Are monument entrance fees included?", "Yes. All monument tickets are included in the price, and your guide handles them at each gate so you skip the ticket queue."],
       ["Is hotel accommodation included in the tour?", "Yes, 7 nights with breakfast and taxes in handpicked 3, 4 or 5-star hotels of your choice. A without-hotel option is also available."],
       ["What is the cancellation policy?", "Cancel more than seven days before travel for a full refund of the deposit; closer to the date, costs already committed with hotels and transport are deducted. Our terms page has the details."],
-      ["Can this Delhi Agra Jaipur Amritsar tour be customized?", "Yes. We can change the order of cities, add nights or switch hotels to suit your plans, keeping in mind that the Taj Mahal is closed on Fridays when we schedule your Agra day."]
+      ["Can this Delhi Agra Jaipur Amritsar tour be customized?", "Yes. We can change the order of cities, add nights or switch hotels to suit your plans, keeping in mind that the Taj Mahal is closed on Fridays when we schedule your Agra day."],
+      ["What should we wear at the Golden Temple?", "Cover your head with a scarf or cloth, remove your shoes and socks, and wash your feet at the entrance. Modest clothing is best, and headscarves are available at the temple if you forget."],
+      ["How does the Wagah border ceremony work?", "The ceremony is held just before sunset, and we leave Amritsar early so you can find a good seat, as seating is first come, first served. Carry your passport and leave bags in the car, as they are not allowed inside."],
+      ["Can we eat at the langar in the Golden Temple?", "Yes. The langar serves a free vegetarian meal to everyone, all day, and sitting on the floor to eat with thousands of others is one of the most moving parts of the visit."],
+      ["How much luggage can we take on the flight to Amritsar?", "Domestic economy flights usually allow 15 kg of checked baggage plus a small cabin bag. Any excess is paid at the airport, so pack light or tell us in advance."]
     ],
     gallery: ["amritsar", "tajSunrise", "hawaMahal"]
   },
@@ -2929,9 +3167,17 @@ const TOURS = [
     includes: ["2 nights resort accommodation with all meals", "Four safaris by shared Gypsy", "Park entry and permits",
                "Private AC car transfers", "Bottled water", "Taxes"],
     excludes: ["Private Gypsy upgrade", "Camera fees charged by the park", "Tips", "Travel to and from Sawai Madhopur unless added"],
-    faqs: [["How likely is a tiger sighting?", "With four safaris, reasonable — but it is a wild animal in 1,300 square kilometres and nobody can promise it."],
-           ["Which months are best?", "October to April. Visibility improves through the dry months as animals come to the water."],
-           ["Can children go on safari?", "Yes. The Gypsy is open and the drives are two to three hours, which most children manage well."]],
+    faqs: [
+      ["How likely is a tiger sighting?", "With four safaris, reasonable — but it is a wild animal in 1,300 square kilometres and nobody can promise it."],
+      ["Which months are best?", "October to April. Visibility improves through the dry months as animals come to the water."],
+      ["Can children go on safari?", "Yes. The Gypsy is open and the drives are two to three hours, which most children manage well."],
+      ["Is the park open all year?", "No. The core safari zones close for the monsoon, usually from July to the end of September. Outside that, safaris run in the morning and afternoon."],
+      ["What are the safari timings?", "The morning safari starts around sunrise and the afternoon safari a few hours before sunset, each lasting about three hours. Exact times shift with the season, and we confirm them when you book."],
+      ["Can we choose the safari zone or vehicle?", "Zones are allotted by the forest department, so nobody can promise a specific one. Safaris are by shared Gypsy, and a private Gypsy can be arranged on request at extra cost."],
+      ["What should we wear on safari?", "Earthy colours like green, khaki and brown, and layers you can peel off. Winter mornings in an open Gypsy are genuinely cold, so bring a warm jacket, cap and gloves, and sunscreen for the afternoons."],
+      ["Do we need ID for the safari?", "Yes. Permits are issued in each guest's name with an ID number, so carry the same passport or ID you send us when booking."],
+      ["How do we get to Ranthambore?", "Sawai Madhopur is well connected by train from Delhi and Jaipur, and we meet you there. Travel to and from Sawai Madhopur is not included, but we can add a private car from Jaipur or Delhi."]
+    ],
     gallery: ["ranthambore", "chittorgarh", "amber"]
   },
   {
@@ -2988,7 +3234,13 @@ const TOURS = [
     faqs: [
       ["When is Eravikulam closed?", "Every year from 1 February to around the end of March, for the Nilgiri tahr calving season. We swap in other Munnar viewpoints then."],
       ["When is the bird sanctuary at its best?", "November to February, when the migrants are in."],
-      ["Is the monsoon a bad time?", "June to September is green and quiet, with rain most afternoons. It works if you do not mind getting wet."]
+      ["Is the monsoon a bad time?", "June to September is green and quiet, with rain most afternoons. It works if you do not mind getting wet."],
+      ["Is the houseboat private?", "Yes. The kettuvallam is yours alone, with a crew and a cook on board, and all meals on the houseboat night are included."],
+      ["What is the food like, and can you cater to dietary needs?", "Kerala food is rich in coconut, rice and fresh fish, with plenty of vegetarian dishes. Tell us about any diet or allergy and we will pass it on to the houseboat crew and the cooking class."],
+      ["Are the roads to Munnar and Thekkady winding?", "Yes, the hill roads have plenty of bends. If you are prone to motion sickness, sit in front, take something beforehand and ask your driver for stops whenever you need them."],
+      ["What should we pack?", "Light cotton for Kochi and the backwaters, plus a sweater for Munnar's cool evenings. Comfortable walking shoes, an umbrella and insect repellent are worth packing too."],
+      ["Can we add a few days at the beach?", "Yes. Many guests add two or three nights at a beach after Kumarakom, and we will send you a revised itinerary and price before you confirm."],
+      ["How do booking and payment work?", "We send you a written itinerary and a fixed price before you pay anything. The tour is confirmed with a deposit, and the balance is paid on arrival or as agreed."]
     ],
     gallery: ["kochiNets", "munnarTea", "kerala"]
   },
@@ -3139,9 +3391,17 @@ const TOURS = [
     includes: ["Private AC car and driver", "Licensed English-speaking guide", "Sunrise and evening boat rides", "Entry tickets where charged",
                "Bottled water", "Tolls, parking and taxes"],
     excludes: ["Hotel stay", "Meals", "Shopping", "Tips"],
-    faqs: [["Can we photograph the cremation ghats?", "No. Manikarnika is seen from the boat, without cameras. Your guide will say when."],
-           ["Are phones allowed inside Kashi Vishwanath?", "No. Phones, bags and cameras are left in lockers outside the temple. Your guide will help."],
-           ["Is it a long day?", "It is, with a three-hour break in the middle. Anyone who wants to skip a part can do so."]],
+    faqs: [
+      ["Can we photograph the cremation ghats?", "No. Manikarnika is seen from the boat, without cameras. Your guide will say when."],
+      ["Are phones allowed inside Kashi Vishwanath?", "No. Phones, bags and cameras are left in lockers outside the temple. Your guide will help."],
+      ["Is it a long day?", "It is, with a three-hour break in the middle. Anyone who wants to skip a part can do so."],
+      ["Do we need to book our own hotel?", "Yes, a hotel stay is not part of this tour. We pick you up from wherever you stay in Varanasi, and we are happy to suggest options if you have not booked yet."],
+      ["Is Sarnath included?", "No, this day stays in Varanasi itself. If you would like to see Sarnath, where the Buddha first taught, we can add it or swap it in for part of the afternoon."],
+      ["What should we wear?", "Modest clothing that covers shoulders and knees, and shoes that slip off easily for the temples. Winter mornings on the river are cold, so bring a warm layer for the sunrise boat."],
+      ["Is this tour suitable for older travellers?", "Yes, with some care. The ghat steps are steep and the old lanes uneven, so your guide sets an easy pace, and anyone can rest at the hotel during part of the day."],
+      ["What is the best season for this tour?", "October to March is the most comfortable. In the peak monsoon the river can rise enough that boats are suspended, and winter dawns can be foggy, so we keep the plan flexible."],
+      ["Is vegetarian food easy to find?", "Very. Much of old Varanasi is vegetarian, and your guide will recommend a good place for lunch, which you order and pay for yourself."]
+    ],
     gallery: ["gangaAarti", "varanasi", "craftsShop"]
   },
   {
@@ -3167,9 +3427,17 @@ const TOURS = [
     includes: ["Return economy flights Delhi to Varanasi", "Airport transfers in Delhi and Varanasi", "Private AC car and driver in Varanasi",
                "Licensed guide in Varanasi", "Two boat rides", "2 nights hotel with breakfast and taxes", "Entry tickets where charged", "Bottled water, tolls and parking"],
     excludes: ["Lunch and dinner", "Excess baggage on flights", "Shopping", "Tips"],
-    faqs: [["Can we add Sarnath?", "Yes, it fits into the morning of day 3 if your flight is after 2 pm."],
-           ["Which hotel do we stay in?", "A riverside or city hotel of the category you choose. We send the name with the quotation."],
-           ["Is it possible by train instead?", "Yes, on the Vande Bharat Express. It saves money but adds a day of travel."]],
+    faqs: [
+      ["Can we add Sarnath?", "Yes, it fits into the morning of day 3 if your flight is after 2 pm."],
+      ["Which hotel do we stay in?", "A riverside or city hotel of the category you choose. We send the name with the quotation."],
+      ["Is it possible by train instead?", "Yes, on the Vande Bharat Express. It saves money but adds a day of travel."],
+      ["What time do we leave Delhi on day one?", "We pick you up about three hours before your morning flight, so the exact time depends on the flight we book. We confirm it with your itinerary."],
+      ["How much luggage can we take on the flights?", "Economy fares usually allow 15 kg of checked baggage and a small cabin bag. Excess baggage is not included and is paid at the airport, so pack light for the short trip."],
+      ["Can we take phones into Kashi Vishwanath Temple?", "No. Phones, bags and cameras go into lockers outside, and your guide will help you with them before you go in."],
+      ["Can winter fog affect the flights?", "In December and January, morning fog sometimes delays flights in north India. We choose flight times with some margin and keep the Varanasi plan flexible if anything moves."],
+      ["Can we connect from an international flight?", "Yes. We can collect you at Delhi airport on arrival and drop you at the international terminal on day three. Leave a few hours between flights to be safe."],
+      ["How do booking and payment work?", "We send you a written itinerary and a fixed price before you pay anything. The tour is confirmed with a deposit, and the balance is paid on arrival or as agreed."]
+    ],
     gallery: ["varanasi", "gangaAarti", "craftsShop"]
   },
   {
@@ -3202,7 +3470,11 @@ const TOURS = [
       ["Is hotel accommodation included in the tour price?", "Yes, one night in a Jaipur hotel with breakfast is included. The hotel category you choose affects the final price, which we confirm before you pay."],
       ["Are monument entrance tickets included?", "Yes. Monument tickets are included in the price, and your guide handles them at each gate so you skip the ticket queue."],
       ["Can I be picked up from Delhi Airport?", "Yes. We can pick you up from and drop you back at Delhi Airport, or at any hotel in Delhi NCR."],
-      ["What is the total driving time between Delhi and Jaipur?", "The drive usually takes about 4 to 5 hours each way, depending on traffic. We normally leave Delhi around 8:00 AM on day one and get you back to Delhi by about 7:00 PM on day two."]
+      ["What is the total driving time between Delhi and Jaipur?", "The drive usually takes about 4 to 5 hours each way, depending on traffic. We normally leave Delhi around 8:00 AM on day one and get you back to Delhi by about 7:00 PM on day two."],
+      ["Are the monkeys at Galta Ji safe?", "They are used to people and generally harmless if left alone. Keep food and loose items out of sight and follow your guide's lead."],
+      ["How do we get up to Amber Fort?", "You can walk up the stone path in about 15 minutes or take a jeep, paid locally. The elephant ride is not included."],
+      ["Where do we have lunch?", "Lunch is not included, but your driver and guide suggest clean restaurants on the highway and in Jaipur. Vegetarian food is easy to find everywhere."],
+      ["When is the best time to do this tour?", "October to March, when the days are pleasant for walking around the forts. In summer we start early and keep the outdoor sights to the cooler hours."]
     ],
     gallery: ["hawaMahal", "amber", "jalMahal"]
   },
@@ -3602,7 +3874,9 @@ const TOURS = [
       ["What is the cancellation policy?", "Cancel more than seven days before travel for a full refund of the deposit; closer to the date, costs already committed with hotels and transport are deducted. Our terms page has the details."],
       ["Is the Lake Pichola boat ride included?", "Yes, a boat ride on Lake Pichola in Udaipur is included."],
       ["Is the desert safari included in Jaisalmer?", "Yes. Your Jaisalmer desert experience includes a camel ride on the dunes, a folk cultural programme and dinner at the desert camp."],
-      ["Can the tour be customized, for example starting from Mumbai and going in reverse?", "Yes. We can reverse the route to start in Mumbai or adjust it in other ways to fit your flights and plans."]
+      ["Can the tour be customized, for example starting from Mumbai and going in reverse?", "Yes. We can reverse the route to start in Mumbai or adjust it in other ways to fit your flights and plans."],
+      ["What is the best time of year for this tour?", "October to March is ideal, with warm sunny days and pleasant evenings in the desert. December and January nights at the Sam dunes can be cold, so pack a warm layer, and April to June is very hot across Rajasthan."],
+      ["What if our Taj Mahal day falls on a Friday?", "The Taj Mahal is closed on Fridays, so we plan your start date to keep the Agra days clear of it. If your dates are fixed, we rearrange the Agra visit so you still see the Taj at sunrise on another morning."]
     ],
     gallery: ["jaisalmerCity", "mehrangarh", "mumbai"]
   },
@@ -3703,10 +3977,17 @@ const TOURS = [
                "Licensed English-speaking guides for sightseeing", "Two jeep safaris in Ranthambore with park permits",
                "Naturalist and rickshaw at Bharatpur", "Tolls, parking, fuel, driver allowance and taxes"],
     excludes: ["Flights", "Monument entry tickets", "Lunch and dinner", "Camera fees in the parks", "Tips and personal expenses"],
-    faqs: [["Is a tiger sighting guaranteed?", "No one can promise it, but Ranthambore is one of the best parks in India for tigers, and two safaris give you real chances."],
-           ["When is Bharatpur best?", "November to February, when the migratory birds are in. The resident birds are there year-round."],
-           ["Can we add more safaris?", "Yes. An extra night in Ranthambore adds two more drives — tell us when you enquire."],
-           ["Is it suitable for children?", "Yes. The safaris are three hours each and the drives between parks are four to five hours at most."]],
+    faqs: [
+      ["Is a tiger sighting guaranteed?", "No one can promise it, but Ranthambore is one of the best parks in India for tigers, and two safaris give you real chances."],
+      ["When is Bharatpur best?", "November to February, when the migratory birds are in. The resident birds are there year-round."],
+      ["Can we add more safaris?", "Yes. An extra night in Ranthambore adds two more drives — tell us when you enquire."],
+      ["Is it suitable for children?", "Yes. The safaris are three hours each and the drives between parks are four to five hours at most."],
+      ["What time do the Ranthambore safaris start?", "The morning drive leaves around sunrise and the afternoon drive a few hours before sunset, each lasting about three hours. Exact gate timings shift with the season, and your driver will have you at the gate in good time."],
+      ["Is Ranthambore open all year?", "The core zones close for the monsoon, roughly July to September, which is why we run this tour from October to April. Within that window, the warmer months towards April often bring tigers out to the water."],
+      ["What should we wear on safari?", "Neutral colours such as khaki, olive or beige, comfortable shoes, a hat and sunscreen. Winter mornings in an open jeep are surprisingly cold, so bring a warm jacket, gloves and a scarf for the dust."],
+      ["Will we see the Taj Mahal if our last day is a Friday?", "The Taj Mahal is closed on Fridays, so we set your start date to keep Day 8 clear of it. If your dates cannot move, we adjust the Agra plan so you still see it on the way."],
+      ["Are vegetarian meals easy to find on this tour?", "Very easy. Lunch and dinner are not included, so you eat where you like, and every hotel, jungle resort and roadside stop has plenty of vegetarian choice. Mathura and Vrindavan on the last day are almost entirely vegetarian."]
+    ],
     gallery: ["ranthambore", "jungleSafari", "taj"]
   },
   {
@@ -3756,10 +4037,17 @@ const TOURS = [
                "Up to nine jeep safaris with park permits and a naturalist", "Licensed English-speaking guides for sightseeing",
                "Jhansi to Agra train tickets", "Tolls, parking, fuel, driver allowance and taxes"],
     excludes: ["Delhi to Nagpur flight (we book it at cost)", "Monument entry tickets", "Lunch and dinner", "Camera fees in the parks", "Tips"],
-    faqs: [["When are the parks closed?", "The core zones close for the monsoon, from July to mid-October. March to May gives the best tiger sightings as animals gather at water."],
-           ["How many safaris are included?", "Up to nine — evening on arrival in Pench, then morning and evening drives in each park."],
-           ["Is the flight included?", "We book the Delhi to Nagpur flight at cost so you can choose the timing. Everything on the ground is included."],
-           ["Can we add Satpura or Panna?", "Yes. Both fit into this route with an extra two nights."]],
+    faqs: [
+      ["When are the parks closed?", "The core zones close for the monsoon, from July to mid-October. March to May gives the best tiger sightings as animals gather at water."],
+      ["How many safaris are included?", "Up to nine — evening on arrival in Pench, then morning and evening drives in each park."],
+      ["Is the flight included?", "We book the Delhi to Nagpur flight at cost so you can choose the timing. Everything on the ground is included."],
+      ["Can we add Satpura or Panna?", "Yes. Both fit into this route with an extra two nights."],
+      ["How long are the drives between the parks?", "About five hours each from Pench to Kanha, Kanha to Bandhavgarh and Bandhavgarh to Khajuraho, mostly on quiet rural roads through forest and villages. Your driver stops for tea and photographs whenever you like."],
+      ["What do you need from us to book the safari permits?", "The name, passport number and nationality of each traveller, as the permits are issued in your name and released in advance in limited numbers. Carry the same passport on every safari, as it is checked at the gate."],
+      ["What should we pack for the jungle?", "Neutral-coloured clothes, a hat, sunscreen, binoculars and a scarf for dust. From December to February the early drives in open jeeps are close to freezing, so warm layers and gloves matter; by April and May it is hot by mid-morning."],
+      ["What is the train from Jhansi to Agra like?", "It is an afternoon train of a few hours, and the tickets are included. Your driver sees you onto the train at Jhansi and our representative meets you at Agra station to take you to your hotel."],
+      ["What if our Taj Mahal morning falls on a Friday?", "The Taj Mahal is closed on Fridays, so we plan the dates to keep Day 11 clear of it. If your flights are fixed, we rearrange the Agra visit so you still see it before returning to Delhi."]
+    ],
     gallery: ["jungleSafari", "khajuraho", "tajSunrise"]
   },
   {
@@ -3809,10 +4097,17 @@ const TOURS = [
                "Licensed English-speaking guides in Delhi, Jaipur and Agra", "Two jeep safaris and one elephant safari with permits",
                "Naturalist for the nature walk", "Tolls, parking, fuel, driver allowance and taxes"],
     excludes: ["Flights", "Monument entry tickets", "Lunch and dinner", "Camera fees in the park", "Adventure activities in Corbett", "Tips"],
-    faqs: [["Which zone of Corbett will we visit?", "Bijrani or Jhirna for day safaris, or Dhikala if you want to stay inside the park — Dhikala permits open 45 days ahead and go fast."],
-           ["When is Corbett open?", "Dhikala and Bijrani close for the monsoon, roughly mid-June to mid-October. Jhirna stays open year-round."],
-           ["Is the drive from Agra too long?", "It is the longest leg of the tour, about seven hours. We can break it with a night in Delhi if you prefer."],
-           ["Can we skip Jaipur?", "Yes. A shorter seven-day version keeps Delhi, Agra and Corbett."]],
+    faqs: [
+      ["Which zone of Corbett will we visit?", "Bijrani or Jhirna for day safaris, or Dhikala if you want to stay inside the park — Dhikala permits open 45 days ahead and go fast."],
+      ["When is Corbett open?", "Dhikala and Bijrani close for the monsoon, roughly mid-June to mid-October. Jhirna stays open year-round."],
+      ["Is the drive from Agra too long?", "It is the longest leg of the tour, about seven hours. We can break it with a night in Delhi if you prefer."],
+      ["Can we skip Jaipur?", "Yes. A shorter seven-day version keeps Delhi, Agra and Corbett."],
+      ["What if our Delhi sightseeing day is a Monday?", "The Red Fort and Akshardham are closed on Mondays, as is the Lotus Temple. We either plan your arrival so Day 2 is not a Monday, or swap them for Humayun's Tomb, India Gate and Raj Ghat."],
+      ["What happens if our Agra day falls on a Friday?", "The Taj Mahal is closed on Fridays, so we set the dates to keep Day 6 clear. If your dates are fixed, we switch the Agra and Fatehpur Sikri days around so you still see the Taj at sunrise."],
+      ["What time do the Corbett jeep safaris run?", "The morning safari starts around sunrise and the afternoon one in the mid-afternoon, each about three to four hours. Gate timings change with the season and your naturalist and driver handle the check-in."],
+      ["What can we do in Corbett apart from the safaris?", "River walks, Corbett Falls and the Garjia temple are part of the free afternoon. Activities such as river rafting in season, ziplining or angling can be arranged locally and are paid separately."],
+      ["What should we wear in Corbett?", "Neutral, earthy colours, comfortable shoes and a hat. From November to February the foothill mornings are cold, so bring a warm jacket and gloves for the open jeep; by May and June it is hot during the day."]
+    ],
     gallery: ["tigerForest", "amber", "taj"]
   },
   {
@@ -3874,10 +4169,17 @@ const TOURS = [
                "Tolls, parking, fuel, driver allowance and taxes"],
     excludes: ["Nagpur to Mumbai flight (booked at cost)", "International flights", "Monument entry tickets",
                "Lunch and dinner", "Camera fees in the parks", "Tips"],
-    faqs: [["Is sixteen days too long?", "It is a big trip, but the parks are spaced so there is never more than one long drive in a row, and each reserve gets at least one full day."],
-           ["Can it end in Delhi instead of Mumbai?", "Yes. We change the last flight from Nagpur to Delhi."],
-           ["When should we go?", "November to May. Central Indian parks close from July to mid-October, Corbett from mid-June."],
-           ["Can we shorten it?", "Yes — the North India half (Corbett, Ranthambore, Bharatpur, Agra) or the Central India half both work on their own."]],
+    faqs: [
+      ["Is sixteen days too long?", "It is a big trip, but the parks are spaced so there is never more than one long drive in a row, and each reserve gets at least one full day."],
+      ["Can it end in Delhi instead of Mumbai?", "Yes. We change the last flight from Nagpur to Delhi."],
+      ["When should we go?", "November to May. Central Indian parks close from July to mid-October, Corbett from mid-June."],
+      ["Can we shorten it?", "Yes — the North India half (Corbett, Ranthambore, Bharatpur, Agra) or the Central India half both work on their own."],
+      ["How long is the drive from Agra to Khajuraho?", "It is the longest day of the tour, roughly eight hours with stops for meals and tea. If you prefer, we can make part of the journey by train via Jhansi and meet you there with the car."],
+      ["Do you book the Nagpur to Mumbai flight?", "Yes. We book it at cost once you confirm, so you can choose the timing, and it is added to your written price before you pay anything."],
+      ["What do you need from us for the safari permits?", "The name, passport number and nationality of each traveller, as permits are issued in your name and released in limited numbers in advance. Carry the same passport on every safari, as it is checked at the gate."],
+      ["What clothes should we pack for five different parks?", "Layers. Corbett and the winter months in Central India mean cold early mornings in open jeeps, while April and May are hot everywhere by mid-morning. Neutral colours, a hat, sunscreen, binoculars and a scarf for dust cover everything."],
+      ["What if our Agra day is a Friday?", "The Taj Mahal is closed on Fridays, so we plan the dates to keep Day 9 clear. If your dates are fixed, we rearrange the order so you still see the Taj."]
+    ],
     gallery: ["leopard", "corbettElephant", "khajuraho"]
   }
   ,
@@ -3914,9 +4216,17 @@ const TOURS = [
     includes: ["Private AC car and driver", "Licensed English-speaking guide", "Cycle-rickshaw ride in Old Delhi",
                "Bottled water", "Parking, fuel and taxes"],
     excludes: ["Monument entry tickets", "Food and drinks", "Camera fees", "Tips"],
-    faqs: [["Is the Red Fort open every day?", "It is closed on Mondays. On Mondays we swap it for Humayun's Tomb."],
-           ["Is the rickshaw ride safe?", "Yes. The rickshaw pullers work with us regularly and your guide rides alongside you."],
-           ["What should we wear to Jama Masjid?", "Covered shoulders and knees. Robes are provided at the gate if needed, and shoes are left at the entrance."]],
+    faqs: [
+      ["Is the Red Fort open every day?", "It is closed on Mondays. On Mondays we swap it for Humayun's Tomb."],
+      ["Is the rickshaw ride safe?", "Yes. The rickshaw pullers work with us regularly and your guide rides alongside you."],
+      ["What should we wear to Jama Masjid?", "Covered shoulders and knees. Robes are provided at the gate if needed, and shoes are left at the entrance."],
+      ["Can you pick us up from Gurgaon or Noida?", "Yes, from any hotel in Delhi, Noida or Gurgaon. From Gurgaon or Noida we may collect you a little earlier to stay ahead of the traffic into Old Delhi."],
+      ["Can we try street food in Chandni Chowk?", "Yes. Food is not included, but your guide knows the well-known, busy stalls where everything is cooked fresh in front of you, and can suggest gentler choices if you are new to Indian food."],
+      ["Can we visit Jama Masjid on a Friday?", "Yes, but visitors are not allowed in during the midday Friday prayers. On Fridays we change the order and visit the mosque earlier in the morning."],
+      ["Is this tour suitable for elderly travellers?", "Mostly, yes. The rickshaw does the work in the lanes, but the Red Fort involves some walking and Jama Masjid has a long flight of steps, so tell us and your guide will set an easy pace."],
+      ["Is it safe for a solo woman traveller?", "Yes. It is a private tour with your own guide beside you throughout, and our team has been running it for years. The lanes are crowded, so keep your bag in front of you as you would in any busy market."],
+      ["How much should we tip?", "Tips are not included and are entirely up to you. Many guests give something to the guide, the driver and the rickshaw puller if they have enjoyed the morning."]
+    ],
     gallery: ["redFort", "humayun", "craftsShop"]
   },
   {
@@ -3949,8 +4259,17 @@ const TOURS = [
     ],
     includes: ["Private AC car and driver", "Licensed English-speaking guide", "Bottled water", "Parking, fuel and taxes"],
     excludes: ["Monument entry tickets", "Breakfast", "Camera fees", "Tips"],
-    faqs: [["Why start so early?", "Delhi's roads are empty at dawn, the light is best for photographs, and you are done before the midday heat."],
-           ["Can we add Old Delhi?", "Yes. Add the Red Fort and a rickshaw through Chandni Chowk and the tour becomes a full day."]],
+    faqs: [
+      ["Why start so early?", "Delhi's roads are empty at dawn, the light is best for photographs, and you are done before the midday heat."],
+      ["Can we add Old Delhi?", "Yes. Add the Red Fort and a rickshaw through Chandni Chowk and the tour becomes a full day."],
+      ["Is breakfast included?", "No. We stop at a café on the way to Humayun's Tomb and you choose and pay for what you like. Tell us if you prefer somewhere specific and we will plan around it."],
+      ["Can we do this tour on any day of the week?", "Yes. India Gate, Lodhi Garden, Humayun's Tomb and Qutub Minar are all open every day, so it works well on a Monday when the Red Fort is closed."],
+      ["What happens if it is foggy in winter?", "In December and January, Delhi mornings can be foggy and the sunrise at India Gate may be soft or hidden. The tour still runs, and your guide can shuffle the order so you reach the monuments as the light clears."],
+      ["Can you pick us up from Gurgaon or Noida?", "Yes. Pickup is from your hotel anywhere in Delhi NCR, and the empty early-morning roads make the journey quick. Drop-off can also be anywhere in Delhi NCR."],
+      ["How much walking is involved?", "A gentle walk in Lodhi Garden and easy, level paths at Humayun's Tomb and Qutub Minar. It suits most ages, and your guide will keep to your pace with plenty of rests."],
+      ["Do we need to buy entry tickets in advance?", "No. Entry tickets are not included, but your guide helps you buy them at Humayun's Tomb and Qutub Minar on the spot. India Gate and Lodhi Garden are free."],
+      ["Can you drop us at the airport after the tour?", "Yes. Bring your luggage in the car and we can finish at the airport instead of your hotel, which suits an afternoon or evening flight."]
+    ],
     gallery: ["indiaGate", "humayun", "qutub"]
   },
   {
@@ -3982,8 +4301,17 @@ const TOURS = [
     includes: ["Luxury car with chauffeur for 8 hours", "Senior licensed guide", "Lunch at a five-star hotel",
                "Monument entry tickets", "Bottled water, parking and taxes"],
     excludes: ["Camera fees", "Shopping", "Tips"],
-    faqs: [["Which cars do you use?", "Mercedes E-Class, BMW 5 Series, Audi A6 or similar, depending on availability. Tell us if you have a preference."],
-           ["Can the tour start from the airport?", "Yes. Many guests do this on a long layover — we meet you at arrivals."]],
+    faqs: [
+      ["Which cars do you use?", "Mercedes E-Class, BMW 5 Series, Audi A6 or similar, depending on availability. Tell us if you have a preference."],
+      ["Can the tour start from the airport?", "Yes. Many guests do this on a long layover — we meet you at arrivals."],
+      ["Are monument entry tickets included?", "Yes. All entry tickets on the itinerary are included and your guide handles them, so you walk straight in. Only camera fees, shopping and tips are extra."],
+      ["What if we take the tour on a Monday?", "The Red Fort and the Lotus Temple are closed on Mondays. We replace them with other highlights such as Lodhi Garden or a longer stop at Humayun's Tomb, so the day stays just as full."],
+      ["Can the lunch cater for vegetarian or other diets?", "Yes. Five-star hotel restaurants handle vegetarian, vegan, Jain and gluten-free meals easily. Let us know when you book and we will pass it on."],
+      ["Can we change the order or skip some places?", "Of course. The itinerary is a suggestion and the pace is yours, so your guide can spend longer where you are enjoying yourself and skip anything that does not interest you."],
+      ["Will you take us shopping?", "Only if you ask. We never force shopping stops, but if you would like to visit a market or a craft store, your guide can suggest good places and fit them into the day."],
+      ["Can we keep the car for longer than eight hours?", "Usually, yes. Let us know in advance or on the day and we will confirm the cost of the extra time before it starts."],
+      ["Is there a dress code for the day?", "Smart casual works well for the five-star lunch. For Jama Masjid, covered shoulders and knees are needed and shoes are left at the entrance, so comfortable slip-on shoes help."]
+    ],
     gallery: ["lotusTemple", "redFort", "indiaGate"]
   }
   ,
@@ -4016,9 +4344,17 @@ const TOURS = [
     ],
     includes: ["Private AC car and driver for the day", "Licensed English-speaking guide", "Bottled water", "Parking, fuel and taxes"],
     excludes: ["Monument entry tickets", "Meals", "Camera fees", "Tips"],
-    faqs: [["Is this tour for people already staying in Agra?", "Yes — it starts and ends in Agra. If you are coming from Delhi, see our same day Agra tour by car."],
-           ["Can you pick us up from the railway station?", "Yes, from Agra Cantt, Agra Fort or Raja ki Mandi station. Send us your train number."],
-           ["What if we are in Agra on a Friday?", "The Taj Mahal is closed, so we swap it for Fatehpur Sikri and Akbar's Tomb, and see the Taj from Mehtab Bagh."]],
+    faqs: [
+      ["Is this tour for people already staying in Agra?", "Yes — it starts and ends in Agra. If you are coming from Delhi, see our same day Agra tour by car."],
+      ["Can you pick us up from the railway station?", "Yes, from Agra Cantt, Agra Fort or Raja ki Mandi station. Send us your train number."],
+      ["What if we are in Agra on a Friday?", "The Taj Mahal is closed, so we swap it for Fatehpur Sikri and Akbar's Tomb, and see the Taj from Mehtab Bagh."],
+      ["Do we have to visit the marble inlay workshop?", "No. It is an optional twenty minutes to watch the craftsmen at work, and you can skip it entirely. We never force shopping and there is no obligation to buy."],
+      ["What can we take inside the Taj Mahal?", "Keep it light: phones, cameras, a small bag and a bottle of water are fine. Food, tobacco, tripods, drones and large bags are not allowed, so leave them in the car."],
+      ["Can we see the Taj Mahal at sunrise instead?", "Yes. We simply collect you earlier so you are at the gate when it opens around sunrise, and the rest of the day moves forward to match."],
+      ["Do we need to book Taj Mahal tickets in advance?", "No. Entry tickets are not included, but your guide helps you buy them on the morning, usually online to skip the queue. Foreign visitors should carry their passport."],
+      ["Is the Taj Mahal suitable for wheelchair users or elderly travellers?", "Largely, yes. Electric buses run from the parking area to the gate, and wheelchairs are available at the entrance, though the main mausoleum platform has steps. Tell us in advance and your guide will plan the easiest route."],
+      ["What if it is foggy in winter?", "In December and January the Taj Mahal can sit in morning mist until the sun burns it off. Your guide can switch the order and return to the best viewpoints once it clears, and the Mehtab Bagh sunset gives you a second look."]
+    ],
     gallery: ["taj", "agraFortPalace", "babyTaj"]
   },
   {
@@ -4049,9 +4385,17 @@ const TOURS = [
     ],
     includes: ["Private AC car and driver", "Local guide in Mathura and Vrindavan", "Bottled water", "Tolls, parking, fuel and taxes"],
     excludes: ["Meals", "Temple donations", "Tips"],
-    faqs: [["Can this tour start from Delhi?", "Yes. From Delhi we usually stop in Vrindavan and Mathura on the way and continue to Agra for the night."],
-           ["Can we take phones into the temples?", "Not into all of them — the Krishna Janmabhoomi complex does not allow phones or cameras. Leave them in the car."],
-           ["Can we add the elephant conservation centre?", "Yes. The Wildlife SOS elephant centre is just outside Mathura; it needs to be booked in advance."]],
+    faqs: [
+      ["Can this tour start from Delhi?", "Yes. From Delhi we usually stop in Vrindavan and Mathura on the way and continue to Agra for the night."],
+      ["Can we take phones into the temples?", "Not into all of them — the Krishna Janmabhoomi complex does not allow phones or cameras. Leave them in the car."],
+      ["Can we add the elephant conservation centre?", "Yes. The Wildlife SOS elephant centre is just outside Mathura; it needs to be booked in advance."],
+      ["What should we wear to the temples?", "Modest clothing that covers shoulders and knees. Shoes come off at every temple, so slip-on shoes and a pair of socks help, especially on hot marble in summer."],
+      ["Why is Banke Bihari visited so late in the day?", "The major Vrindavan temples close in the early afternoon and reopen for evening darshan. We plan the day around those hours, so you reach Banke Bihari just as the doors open again."],
+      ["Are non-Hindus welcome in the temples?", "Yes. Visitors of all faiths are welcome at every temple on this tour, and your guide explains the customs as you go."],
+      ["Are the monkeys in Vrindavan a problem?", "They are famous for snatching glasses, phones and bags. Keep sunglasses and spectacles tucked away in the old lanes and follow your guide's advice, and you will be fine."],
+      ["How crowded does it get?", "Weekends and festivals such as Janmashtami and Holi bring huge crowds, especially at Banke Bihari. A weekday is calmer, and with young children or elderly travellers your guide will pick quieter moments."],
+      ["Will we be pressured to make donations?", "No. Donations are entirely your choice and not included in the price. Your guide will steer you away from anyone pushing for money at the temples."]
+    ],
     gallery: ["premMandir", "jaliScreen", "taj"]
   }
 ];
